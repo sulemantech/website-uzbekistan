@@ -4,7 +4,15 @@ const Header = () => {
   return (
     <>
       <div className="">
-        <video className="rounded-b-xl" src="headerbgvideo.mov"></video>
+      <video 
+  className="rounded-b-xl" 
+  src="headerbgvideo.mov" 
+  autoPlay 
+  loop 
+  muted 
+  playsInline
+></video>
+
         <span className="absolute top-5">
           <img className="ml-5" src="gigafibertoplogo.svg" alt="" />
         </span>
@@ -12,7 +20,7 @@ const Header = () => {
           <p className="font-bold  text-8xl ml-5 text-white ">
             TRANSFORMING INFRASTRUCTURE.
           </p>
-          <p className="font-bold  text-8xl ml-5 text-black leading-2">
+          <p className="font-bold  text-8xl ml-5 text-[#1E1A2E] leading-2">
             DRIVING REGIONAL GROWTH.​
           </p>
           <p className="font-bold  text-[20px] ml-5 text-white">
