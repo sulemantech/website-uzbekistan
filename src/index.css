@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/fonts.css */
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-regular-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-regular-webfont.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* src/fonts.css */
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-extralight-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-extralight-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+/* src/fonts.css */
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-black-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-bold-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-extrabold-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-extrabold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-light-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-medium-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-semibold-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Condensed";
+  src: url("/fonts/sairacondensed-thin-webfont.woff2") format("woff2"),
+    url("/fonts/sairacondensed-thin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+/* src/fonts.css */
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-black-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-bold-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-extrabold-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-extrabold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* src/fonts.css */
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-extralight-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-extralight-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-light-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-medium-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-semibold-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-thin-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-thin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("/fonts/sairasemicondensed-regular-webfont.woff2") format("woff2"),
+    url("/fonts/sairasemicondensed-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
