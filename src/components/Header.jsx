@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="relative h-screen overflow-hidden">
       <video
-        className="absolute rounded-3xl top-0 left-0 w-full h-full object-cover"
+        className="absolute rounded-b-3xl top-0 left-0 w-full h-full object-cover"
         src="headerbgvideo.mov"
         autoPlay
         loop
