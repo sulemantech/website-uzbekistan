@@ -35,6 +35,33 @@ const FrameComponent6 = () => {
         "Once your order has shipped, you will receive a tracking number via email. You can use this tracking number to check the status of your order on our shipping partner's website.",
     },
   ];
+
+  const imagedesData = [
+    {
+      img: "R1.png",
+      text: "Einsatz von 5G und 6G Funktürmen,  die für die Echtzeit-kommunikation zwischen autonomen Fahrzeugen  und der Infrastruktur (V2X) entscheidend ist.",
+    },
+    {
+      img: "R2.png",
+      text: "Durch die hochsicheren Daten-übertragungen kann die Teststrecke von zahlreichen Automobil-herstellern genutzt werden, Potenziale heimischer Automobil-hersteller können vollumfänglich ausgeschöpft werden.",
+    },
+    {
+      img: "R3.png",
+      text: "Die 5G und 6G Internetinfrastruktur eignet sich zur Schaffung von zahlreichen Simulations-umgebungen, die abseits der realen Testfahrten nachzustellen sind.",
+    },
+    {
+      img: "R4.png",
+      text: "Das Testgebiet fördert Forschungsprojekte in der Automobilindustrie, unabhängig von Produktions-tätigkeit. Testgebiet ist die Region Karakalpakstan.",
+    },
+    {
+      img: "R5.png",
+      text: "Ausbau einer resilienten und redundanten Glasfaser-infrastruktur in der Region, welche die Forschungs-ergebnisse auf hochsicheren  Verbindungen weiterleitet.",
+    },
+    {
+      img: "R6.png",
+      text: "Hohes Interesse angesiedelter chinesischer Hersteller​.",
+    },
+  ];
   return (
     <>
       <div className="bg-white rounded-2xl p-10 m-5">
@@ -166,7 +193,23 @@ const FrameComponent6 = () => {
         </div>
         <DropdownFaq
           question="Technologie & Infrastruktur Ziele der Zusammenarbeit mit GIGA FIBER"
-          answer="ZIELE DER KOOPERATION MIT GIGA FIBER ZIELE DER KOOPERATION MIT GIGA FIBER ZIELE DER KOOPERATION MIT GIGA FIBER"
+          answer={
+            <div className="bg-white rounded-3xl m-2 p-[40px]">
+              <p>
+                Durch die Zusammenarbeit mit GIGA FIBER entsteht der Zugang zu
+                fortschrittlicher Technologie und Infrastruktur. <br />
+                Einheimischer Automobilproduktionen wird die Möglichkeit
+                gegeben, die heimische Produktionen zu modernisieren und den
+                Technischen Stand internationaler Automobilhersteller
+                aufzuholen. 
+              </p>
+              <div className="flex flex-wrap justify-between mt-5">
+              {imagedesData.map((data, index) => (
+                <Imagewithdiscription  key={index}  imageSrc={data.img}  text={data.text} />
+              ))}
+              </div>
+            </div>
+          }
         />
       </div>
     </>
@@ -174,3 +217,16 @@ const FrameComponent6 = () => {
 };
 
 export default FrameComponent6;
+
+const Imagewithdiscription = ({ imageSrc, text }) => {
+  return (
+    <>
+      <div className="w-[550px] h-[152px] bg-[#F5EEFF] mt-3 rounded-3xl flex space-x-1">
+        <div className="w-[185px]">
+          <img src={imageSrc} alt="" className="w-[185px] h-[152px] object-cover" />
+        </div>
+        <p className="w-[365px] flex justify-center items-center"><span className="w-[90%]">{text}</span></p>
+      </div>
+    </>
+  );
+};

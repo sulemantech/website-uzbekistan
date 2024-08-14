@@ -39,6 +39,26 @@ const FrameComponent7 = () => {
       ],
     },
   ];
+  const sectionDataDropdown = [
+    {
+      title2: "Optimierung der Kundenerfahrung",
+      imageSrc: "Rectangle 16.png",
+      points: [
+        "Unterstützung lokaler Unternehmen durch Zugang zu nationalen und internationalen Märkten.",
+        "Förderung der wirtschaftlichen Diversifikation und Exportsteigerung durch neue Partnerschaften.",
+        "Schaffung neuer Wirtschaftszweige im Technologie-Bereich, was zu erhöhter Innovationskraft führt.",
+      ],
+    },
+    {
+      title2: "Discounter & Malls",
+      imageSrc: "rectangle17.png",
+      points: [
+        "Durch die Geräte-unabhängigkeit und den Schutz der Privatsphäre verbessert GIGA FIBER Connectivity das Nutzererlebnis.",
+        "Ziel ist die direkte Datenerfassung und Analyse des Konsum- und Besucherverhaltens mit Hilfe von local-based Technologie und Indoor GPS",
+        "Erhöht die Umsätze",
+      ],
+    },
+  ];
   return (
     <>
       <div className="bg-white  flex flex-col items-center rounded-2xl p-10 m-5">
@@ -148,7 +168,7 @@ const FrameComponent7 = () => {
                     {isMuted ? (
                       <img src="Sound on off.svg" alt="" srcset="" />
                     ) : (
-                      "Mute"
+                      <img src="sound-on.svg" alt="" srcset="" />
                     )}
                   </button>
                 </div>
@@ -169,7 +189,30 @@ const FrameComponent7 = () => {
 
         <DropdownFaq
           question="VORTEILE & ZIELE"
-          answer="ZIELE DER KOOPERATION MIT GIGA FIBER ZIELE DER KOOPERATION MIT GIGA FIBER ZIELE DER KOOPERATION MIT GIGA FIBER"
+          answer={
+            <div className="bg-white rounded-3xl m-2 p-[40px]">
+              <p>
+                Dieses Projekt trägt maßgeblich zur digitalen Transformation
+                Usbekistans bei und stellt sicher, dass der Wohlstandszuwachs
+                aus den Rohstoffprojekten nachhaltig in den Aufbau einer
+                modernen und vernetzten Wirtschaft investiert wird. <br /><br /> Durch die
+                vorherigen Projekte gewonnene Kaufkraft wird landesweit
+                unterstützt. GIGA FIBER Connectivity schafft eine Plattform für
+                gezielte Marketingstrategien und stärkt die finanzielle
+                Inklusion durch digitale Zahlungen.
+              </p>
+              <p className="flex space-x-10 max-w-[1500px] justify-between w-full my-6">
+                {sectionDataDropdown.map((data, index) => (
+                  <Section
+                    key={index}
+                    title2={data.title2}
+                    imageSrc={data.imageSrc}
+                    points={data.points}
+                  />
+                ))}
+              </p>
+            </div>
+          }
         />
       </div>
     </>
@@ -178,17 +221,20 @@ const FrameComponent7 = () => {
 
 export default FrameComponent7;
 
-const Section = ({ title, imageSrc, points }) => {
+const Section = ({ title, title2 = null, imageSrc, points }) => {
   return (
     <div className="w-[50%] rounded-xl z-50 bg-gradient-to-t from-[#903fff30] to-transparent">
       <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
         <img src={imageSrc} alt="" className="w-full h-full object-cover" />
-        <div className="absolute w-full bg-gradient-to-t from-[#903fff30] to-transparent z-50 h-[264px] top-0 rounded-xl overflow-hidden">
+        <div className="absolute w-full bg-gradient-to-t from-[#271C5BAA] to-transparent z-50 h-[264px] top-0 rounded-xl overflow-hidden">
           <span className="text-white absolute bottom-2 left-8 font-saira-condensed text-[30px] font-bold leading-[125%]">
             {title}
           </span>
         </div>
       </div>
+      <span className="text-[#903fff] ml-[39px] font-saira-condensed text-[16px] font-bold leading-[314%]">
+        {title2}
+      </span>
       <ul className="list-none w-[70%] mx-3 my-3">
         {points.map((point, index) => (
           <li
