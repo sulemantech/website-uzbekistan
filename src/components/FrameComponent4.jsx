@@ -28,24 +28,24 @@ const FrameComponent4 = () => {
   ];
 
   return (
-    <div className="flex justify-center flex-wrap gap-4 p-4">
+    <div className="flex justify-center flex-wrap mt-4 gap-4 p-4">
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="relative cursor-pointer w-[32%] h-[30.2rem] border border-gray-300 rounded-lg overflow-hidden"
+          className="relative cursor-pointer w-[445px] h-[582px] border border-gray-300 rounded-lg overflow-hidden"
         >
-          <p className="absolute top-[2rem] left-[2rem] text-5xl text-white z-50">{card.number}</p>
+          <p className="absolute top-[74px] left-[40px] text-5xl text-white z-50">{card.number}</p>
           <img
             className="absolute top-0 left-0 w-full h-full object-cover"
             alt={card.title}
             src={card.imgSrc}
           />
-          <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-[8.438rem]" />
-          <div className="w-[85%] group absolute bottom-[2rem] text-[#903fff]  left-[2rem] text-lg flex justify-between">
+          <div className="absolute bottom-0 left-0 bg-gradient-to-t from-[#3B2A89] to-transparent w-full h-[8.438rem]" />
+          <div className="w-[85%] group absolute bottom-[62.5px] left-[40px] text-[#903fff] text-lg flex justify-between">
             <b className="font-bold text-5xl">{card.title}</b>
             <img className="group-hover:rotate-90 transition-transform" src="objects1.svg" alt="" srcset="" />
           </div>
-          <div className="absolute bottom-[5rem] left-[2rem] text-3xl font-bold text-white">
+          <div className="absolute bottom-[128px] left-[40px] text-3xl font-bold text-white">
             <p className="m-0">{card.description}</p>
           </div>
         </div>
