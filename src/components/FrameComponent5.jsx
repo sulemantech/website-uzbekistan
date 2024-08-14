@@ -1,153 +1,131 @@
-import Property1Default from "./Property1Default";
-import ZieleDerKooperationMitGigaFiber from "./ZieleDerKooperationMitGigaFiber";
-import PropTypes from "prop-types";
+import React, { useState } from "react";
+import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
+import DropdownFaq from "./SingleDropDown";
 
-const FrameComponent5 = ({ className = "" }) => {
+const FrameComponent5 = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+  const questionsAndAnswers = [
+    {
+      question: "What is your return policy?",
+      answer:
+        "We offer a 30-day return policy on all items. Please ensure that the items are in their original packaging and condition. For more details, visit our returns page.",
+    },
+    {
+      question: "How long does shipping take?",
+      answer:
+        "Shipping times vary depending on your location. Typically, domestic orders take 3-5 business days, while international orders can take 7-14 business days.",
+    },
+    {
+      question: "Do you offer international shipping?",
+      answer:
+        "Yes, we offer international shipping to most countries. Shipping costs and delivery times will be calculated at checkout based on your location.",
+    },
+    {
+      question: "Can I change my order after placing it?",
+      answer:
+        "If you need to make changes to your order, please contact us as soon as possible. We can only make changes if the order has not yet been processed or shipped.",
+    },
+    {
+      question: "How can I track my order?",
+      answer:
+        "Once your order has shipped, you will receive a tracking number via email. You can use this tracking number to check the status of your order on our shipping partner's website.",
+    },
+  ];
+
   return (
-    <div
-      className={`w-[85.625rem] flex flex-col items-center justify-center pt-[0rem] px-[2.562rem] pb-[2.5rem] box-border text-left text-[3.438rem] text-giga-fiber-lila font-saira-condensed ${className}`}
-    >
-      <div className="w-[85.625rem] rounded-22xl bg-white flex flex-col items-start justify-start py-[4.5rem] px-[2.562rem] box-border">
-        <div className="w-[79.75rem] flex flex-col items-start justify-start gap-[3.812rem]">
-          <div className="self-stretch flex flex-row items-start justify-start gap-[5.812rem]">
-            <div className="w-[32.375rem] flex flex-col items-start justify-start gap-[3.5rem]">
-              <div className="flex flex-col items-start justify-start gap-[1.75rem]">
-                <div className="flex flex-row items-center justify-center gap-[1.75rem]">
-                  <div className="w-[3.438rem] relative h-[4.313rem]">
-                    <div className="absolute top-[0rem] left-[0rem] leading-[125%] font-medium">
-                      01
-                    </div>
-                    <div className="absolute top-[-0.031rem] left-[3.344rem] border-giga-fiber-lila border-r-[3px] border-solid box-border w-[0.188rem] h-[4.375rem]" />
-                  </div>
-                  <b className="w-[32.375rem] relative text-[1.875rem] leading-[125%] inline-block shrink-0">
-                    <p className="m-0">WIE STEIGERN ​WIR DIE REGIONALE </p>
-                    <p className="m-0">WIRTSCHAFTSKRAFT?​</p>
-                  </b>
-                </div>
-                <div className="w-[32.375rem] relative text-[1rem] leading-[125%] font-saira text-black inline-block">
-                  <p className="m-0">
-                    Moderne Bergbautechnologien sowie fortschrittliche Methoden
-                    im Abbau, Digitalisierung, Energieeffizienz und
-                    Arbeitsschutz sind zentrale Bestandteile des Projekts. 
-                  </p>
-                  <p className="m-0">&nbsp;</p>
-                  <p className="m-0">
-                    Zudem liegt ein Schwerpunkt auf der Aus- und Weiterbildung
-                    von Fachkräften, im Bergbau. Dies stärkt die regionale
-                    Wirtschaft erheblich durch die Erhöhung des
-                    Produktionsvolumens von Lithium und Kupfererzeugnissen für
-                    den Export und nationale Industrie.
-                  </p>
-                </div>
-              </div>
-              <Property1Default
-                property1DefaultWidth="32.375rem"
-                property1DefaultPosition="unset"
-                property1DefaultGap="1.75rem"
-                pOTENZIALFRDIEFontSize="1.875rem"
-                frameDivWidth="30.313rem"
-                frameDivGap="1.5rem"
-                groupDivHeight="2.031rem"
-                investitionenInDokumentationTop="0rem"
-                investitionenInDokumentationLeft="0rem"
-                investitionenInDokumentationFontSize="1rem"
-                investitionenInDokumentationWidth="26.463rem"
-                groupDivTop="0.5rem"
-                groupDivLeft="0rem"
-                groupDivWidth="30.313rem"
-                groupDivHeight1="1.531rem"
-                lineIconTop="1.531rem"
-                lineIconLeft="0rem"
-                lineIconWidth="30.313rem"
-                subtractIconWidth="1.444rem"
-                subtractIconHeight="0.819rem"
-                groupDivHeight2="1.781rem"
-                wirtschaftlicheAuswirkungenTop="0rem"
-                wirtschaftlicheAuswirkungenLeft="0rem"
-                wirtschaftlicheAuswirkungenFontSize="1rem"
-                wirtschaftlicheAuswirkungenWidth="27.631rem"
-                groupDivTop1="0.25rem"
-                groupDivLeft1="0rem"
-                groupDivWidth1="30.313rem"
-                groupDivHeight3="1.531rem"
-                lineIconTop1="1.531rem"
-                lineIconLeft1="0rem"
-                lineIconWidth1="30.313rem"
-                subtractIconWidth1="1.444rem"
-                subtractIconHeight1="0.819rem"
-                groupDivHeight4="2.031rem"
-                internationaleStandardsUndTop="0rem"
-                internationaleStandardsUndLeft="0rem"
-                internationaleStandardsUndFontSize="1rem"
-                internationaleStandardsUndWidth="27.631rem"
-                groupDivTop2="0.5rem"
-                groupDivLeft2="0rem"
-                groupDivWidth2="30.313rem"
-                groupDivHeight5="1.531rem"
-                lineIconTop2="1.531rem"
-                lineIconLeft2="0rem"
-                lineIconWidth2="30.313rem"
-                subtractIconWidth2="1.444rem"
-                subtractIconHeight2="0.819rem"
-                groupDivHeight6="1.781rem"
-                schaffungVonArbeitspltzenTop="0rem"
-                schaffungVonArbeitspltzenLeft="0rem"
-                schaffungVonArbeitspltzenFontSize="1rem"
-                schaffungVonArbeitspltzenWidth="27.631rem"
-                groupDivTop3="0.25rem"
-                groupDivLeft3="0rem"
-                groupDivWidth3="30.313rem"
-                groupDivHeight7="1.531rem"
-                groupDivTop4="0rem"
-                groupDivLeft4="0rem"
-                groupDivWidth4="30.313rem"
-                groupDivHeight8="1.531rem"
-                lineIconTop3="1.531rem"
-                lineIconLeft3="0rem"
-                lineIconWidth3="30.313rem"
-                subtractIconWidth3="1.444rem"
-                subtractIconHeight3="0.819rem"
-              />
+    <>
+      <div className="bg-white rounded-2xl p-10 m-5">
+        <div className="flex space-x-10 rounded-2xl h-[580px]">
+          <div className="flex flex-col space-y-7">
+            <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
+              <p className="border-r-2 px-3 border-[#903fff]">01</p>{" "}
+              <p className="text-3xl font-bold">
+                WIE STEIGERN ​WIR DIE REGIONALE  WIRTSCHAFTSKRAFT?​
+              </p>
+            </span>
+            <div className="w-[518px] text-[16px] font-normal text-left">
+              Moderne Bergbautechnologien sowie fortschrittliche Methoden im
+              Abbau, Digitalisierung, Energieeffizienz und Arbeitsschutz sind
+              zentrale Bestandteile des Projekts. 
+              <br /> Zudem liegt ein Schwerpunkt auf der Aus- und Weiterbildung
+              von Fachkräften, im Bergbau. Dies stärkt die regionale Wirtschaft
+              erheblich durch die Erhöhung des Produktionsvolumens von Lithium
+              und Kupfererzeugnissen für den Export und nationale Industrie.
             </div>
-            <div className="w-[41.125rem] flex flex-row flex-wrap items-end justify-start gap-x-[1.937rem] gap-y-[1.875rem] text-white">
-              <div className="w-[41.125rem] relative h-[16.5rem]">
-                <div className="absolute top-[0rem] left-[0rem] rounded-sm w-[41.125rem] h-[16.5rem]" />
-                <div className="absolute top-[4.125rem] left-[0rem] rounded-sm [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#3b2a89)] w-[41.125rem] h-[12.375rem]" />
-                <b className="absolute top-[10.813rem] left-[2.125rem] leading-[125%]">
-                  CU29 TECH
-                </b>
-              </div>
-              <div className="w-[19.313rem] relative h-[17.438rem]">
-                <img
-                  className="absolute top-[0rem] left-[0rem] rounded-sm w-[19.313rem] h-[17.438rem] object-cover"
-                  alt=""
-                  src="/gettyimages1325323162-1@2x.png"
-                />
-                <div className="absolute top-[9rem] left-[0rem] rounded-sm [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(42,_30,_97,_0.71))] w-[19.313rem] h-[8.438rem]" />
-              </div>
-              <div className="w-[19.938rem] relative h-[17.438rem]">
-                <img
-                  className="absolute top-[0rem] left-[0rem] rounded-sm w-[19.938rem] h-[17.438rem] object-cover"
-                  alt=""
-                  src="/gettyimages186413947-1@2x.png"
-                />
-                <div className="absolute top-[9rem] left-[0rem] rounded-sm [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(42,_30,_97,_0.71))] w-[19.938rem] h-[8.438rem]" />
+            <div>
+              <p className="text-3xl font-bold text-[#903fff] mb-3">
+                POTENZIAL FÜR DIE REGION
+              </p>{" "}
+              <div className="accordion w-[518px]">
+                {questionsAndAnswers.map((item, index) => (
+                  <div key={index} className="mb-2 p-1">
+                    <div
+                      className=" bg-white cursor-pointer border-b-2 border-[#903fff] text-lg font-medium relative overflow-hidden"
+                      onClick={() => toggleAccordion(index)}
+                    >
+                      <div className="flex justify-between items-center text-[#3d3a3a]">
+                        <div>{item.question}</div>
+                        <div>
+                          {activeIndex === index ? (
+                            <IconChevronUp color="#903fff" />
+                          ) : (
+                            <IconChevronDown />
+                          )}
+                        </div>
+                      </div>
+                      <div
+                        className={` text-gray-400 ${
+                          activeIndex === index
+                            ? "max-h-[500px] opacity-100 p-2"
+                            : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        {item.answer}
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-          <ZieleDerKooperationMitGigaFiber
-            zieleDerKooperationMitGigaWidth="79.75rem"
-            zieleDerKooperationMitGigaHeight="5.75rem"
-            zIELEDERKOOPERATIONFontSize="1.875rem"
-          />
+          <div className="grid grid-cols-1 gap-4 h-[580px] overflow-hidden">
+            <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
+              {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
+              <video
+                className="rounded-xl"
+                src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/c1e9/7c07/-88e2-41b5-bd00-31430518b95d?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ERo3ruKVOh13Ag~mmS4bN9mTVc7RABHbAb~fdz9t7s5UhQ2ORPVFJpFDrBxcNkoDOglL33IGwGooAQ~t9nQYYKjZ~dnKyHzlYvZfym2-PtWJQizb1XIwgOm~zKRxzLceJSADgsfKylxEAgtgbKAzROULUd~eWx4WJQyGrCCFVOjDMVxscu4pMJuBa2iHOz-xAvLPdKMh8icK2utrhDrfBXhY-KsoCpUyw~vGftR~is8OV4U9Cr3IlSCO8gneMoa0whDoeFGpdQS0RxO2SsllTAvSAxmHLnd0x-a53SBHcdj13NvhY9RzEfnt3n5yWUZ5FR0MBWGkX1EfEy5shFx92A__"
+                autoPlay
+                loop
+                muted
+                playsInline
+              ></video>
+              <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
+                <span className="text-white absolute bottom-4 left-8 font-saira-condensed text-[55px] font-bold leading-[125%]">
+                CU29 TECH
+                </span>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 h-[279px] gap-4 col-span-1">
+              <span className="w-full">
+                <img src="rock.png" alt="" className="w-full h-auto" />
+              </span>
+              <span className="w-full">
+                <img src="machine.png" alt="" className="w-full h-auto" />
+              </span>
+            </div>
+          </div>
         </div>
+        <DropdownFaq
+          question="ZIELE DER KOOPERATION MIT GIGA FIBER"
+          answer="ZIELE DER KOOPERATION MIT GIGA FIBER ZIELE DER KOOPERATION MIT GIGA FIBER ZIELE DER KOOPERATION MIT GIGA FIBER"
+        />
       </div>
-    </div>
+    </>
   );
-};
-
-FrameComponent5.propTypes = {
-  className: PropTypes.string,
 };
 
 export default FrameComponent5;
