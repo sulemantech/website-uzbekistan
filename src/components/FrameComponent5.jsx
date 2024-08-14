@@ -39,11 +39,11 @@ const FrameComponent5 = () => {
   return (
     <>
       <div className="bg-white rounded-2xl p-10 m-5">
-        <div className="flex space-x-10 rounded-2xl h-[580px]">
+        <div className="flex justify-between items-center max-w-[1500px] mx-auto space-x-10 rounded-2xl h-[580px]">
           <div className="flex flex-col space-y-7">
-            <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
-              <p className="border-r-2 px-3 border-[#903fff]">01</p>{" "}
-              <p className="text-3xl font-bold">
+            <span className="flex space-x-6 text-5xl font-medium leading-[68px] text-[#903fff]">
+              <p className="border-r-2 pr-3 border-[#903fff]">01</p>{" "}
+              <p className="text-3xl w-[518px] font-bold">
                 WIE STEIGERN ​WIR DIE REGIONALE  WIRTSCHAFTSKRAFT?​
               </p>
             </span>
@@ -92,7 +92,7 @@ const FrameComponent5 = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 h-[580px] overflow-hidden">
+          <div className="grid grid-cols-1 gap-4 max-w-[658px] h-[580px] overflow-hidden">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
@@ -103,7 +103,7 @@ const FrameComponent5 = () => {
                 muted
                 playsInline
               ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
+              <div className="absolute w-full bg-gradient-to-t from-[#3B2A89] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
                 <span className="text-white absolute bottom-4 left-8 font-saira-condensed text-[55px] font-bold leading-[125%]">
                 CU29 TECH
                 </span>
@@ -111,10 +111,10 @@ const FrameComponent5 = () => {
             </div>
             <div className="grid grid-cols-2 h-[279px] gap-4 col-span-1">
               <span className="w-full">
-                <img src="rock.png" alt="" className="w-full h-auto" />
+                <img src="rock.png" alt="" className="w-full h-full" />
               </span>
               <span className="w-full">
-                <img src="machine.png" alt="" className="w-full h-auto" />
+                <img src="machine.png" alt="" className="w-full h-full" />
               </span>
             </div>
           </div>

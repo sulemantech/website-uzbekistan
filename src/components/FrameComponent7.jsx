@@ -41,8 +41,8 @@ const FrameComponent7 = () => {
   ];
   return (
     <>
-      <div className="bg-white flex flex-col items-center rounded-2xl p-10 m-5">
-        <div className="flex space-x-10 rounded-2xl">
+      <div className="bg-white  flex flex-col items-center rounded-2xl p-10 m-5">
+        <div className="flex space-x-10 max-w-[1500px] rounded-2xl">
           <div className="flex flex-col space-y-4">
             <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 px-3 border-[#903fff]">03</p>{" "}
@@ -65,7 +65,7 @@ const FrameComponent7 = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 overflow-hidden">
+          <div className="grid grid-cols-1  gap-4 overflow-hidden">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
@@ -85,10 +85,10 @@ const FrameComponent7 = () => {
           </div>
         </div>
         <div>
-          <p className="text-3xl mt-10 my-2 font-bold text-[#903fff] border-[#903fff] uppercase">
+          <p className="text-3xl mt-10  my-2 font-bold text-[#903fff] border-[#903fff] uppercase">
             GIGA FIBER Connectivity
           </p>
-          <p className="text-black  mt-6 mb-2 text-[16px] font-normal leading-[1.25]">
+          <p className="text-black max-w-[1500px]  mt-6 mb-2 text-[16px] font-normal leading-[1.25]">
             GIGA FIBER Connectivity ist ein umfassendes Projekt, welches auf den
             Aufbau und die Erweiterung digitaler Infrastrukturen abzielt. Es
             schafft Schnittstellen für den Einzelhandel, die kontextsensitive
@@ -102,7 +102,7 @@ const FrameComponent7 = () => {
           </p>
         </div>
 
-        <div className="flex justify-between items-center space-x-10 relative">
+        <div className="flex justify-between max-w-[1500px] items-center space-x-10 relative">
           <div className="flex items-end h-[450px] justify-center bottom-0  space-x-2">
             <img className="w-[71px] h-[49px]" src="db.png" alt="" />
             <img className="w-[263px] h-[46px]" src="lufthansa.png" alt="" />
@@ -156,7 +156,7 @@ const FrameComponent7 = () => {
             </div>
           </div>
         </div>
-        <div className="flex space-x-10 justify-between w-full my-6">
+        <div className="flex space-x-10 max-w-[1500px] justify-between w-full my-6">
           {sectionData.map((data, index) => (
             <Section
               key={index}

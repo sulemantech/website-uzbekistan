@@ -38,9 +38,9 @@ const FrameComponent6 = () => {
   return (
     <>
       <div className="bg-white rounded-2xl p-10 m-5">
-        <div className="flex space-x-10 rounded-2xl h-[580px]">
+        <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px]">
           <div className="grid grid-cols-1 gap-4 h-[580px] overflow-hidden">
-            <div className="relative col-span-1 h-[264px] rounded-xl overflow-hidden">
+            <div className="relative col-span-1 h-[264px] max-w-[658px] rounded-xl overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
                 className="rounded-xl"
@@ -56,19 +56,19 @@ const FrameComponent6 = () => {
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 h-[279px] gap-4 col-span-1">
+            <div className="grid grid-cols-2 h-[279px] max-w-[658px] gap-4 col-span-1">
               <span className="w-full">
-                <img src="d9.png" alt="" className="w-full h-auto" />
+                <img src="d9.png" alt="" className="w-full h-full" />
               </span>
               <span className="w-full">
-                <img src="car.png" alt="" className="w-full h-auto" />
+                <img src="car.png" alt="" className="w-full h-full" />
               </span>
             </div>
           </div>
           <div className="flex flex-col space-y-7">
-            <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
-              <p className="border-r-2 px-3 border-[#903fff]">02</p>{" "}
-              <p className="text-3xl font-bold">
+            <span className="flex space-x-7 text-5xl font-medium leading-[68px] text-[#903fff]">
+              <p className="border-r-2 pr-3  border-[#903fff]">02</p>{" "}
+              <p className="text-3xl w-[518px] font-bold">
                 WIE UNTERSTÜTZEN WIR  DIE AUTOMOBILINDUSTRIE?​
               </p>
             </span>
@@ -99,7 +99,7 @@ const FrameComponent6 = () => {
             <div></div>
           </div>
         </div>
-        <div className="w-[90vw] mt-6 bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white font-saira-condensed text-[30px] font-bold leading-[107%] uppercase">
+        <div className="w-[90vw] max-w-[1500px] mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white font-saira-condensed text-[30px] font-bold leading-[107%] uppercase">
           <span className="w-[96%]">
             5G/6G Funkmasten von GIGA FIBER haben extrem niedrige Latenzzeiten
             und hohe Bandbreiten größer 1Bit/s. Flächendeckende und zuverlässige
@@ -108,7 +108,7 @@ const FrameComponent6 = () => {
           </span>
         </div>
 
-        <div className="flex space-x-10 mt-10 rounded-2xl h-[580px]">
+        <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px]">
           <div className="flex flex-col space-y-7">
             <span className=" text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="text-3xl font-bold">
@@ -137,7 +137,7 @@ const FrameComponent6 = () => {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 h-[580px] overflow-hidden">
+          <div className="grid grid-cols-1 gap-4 h-[580px] max-w-[658px] overflow-hidden">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video

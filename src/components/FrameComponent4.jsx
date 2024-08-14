@@ -28,7 +28,7 @@ const FrameComponent4 = () => {
   ];
 
   return (
-    <div className="flex justify-center flex-wrap mt-4 gap-4 p-4">
+    <div className="flex justify-center flex-wrap mt-4 gap-3 p-2 ">
       {cardData.map((card, index) => (
         <div
           key={index}
