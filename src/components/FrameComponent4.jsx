@@ -43,7 +43,7 @@ const FrameComponent4 = () => {
           <div className="absolute bottom-0 left-0 bg-gradient-to-t from-[#3B2A89] to-transparent w-full h-[8.438rem]" />
           <div className="w-[85%] group absolute bottom-[62.5px] left-[40px] text-[#903fff] text-lg flex justify-between">
             <b className="font-bold text-5xl">{card.title}</b>
-            <img className="group-hover:rotate-90 transition-transform" src="objects1.svg" alt="" srcset="" />
+            <img className="group-hover:rotate-90 transition-transform" src="objects1.svg" alt="" srcSet="" />
           </div>
           <div className="absolute bottom-[128px] left-[40px] text-3xl font-bold text-white">
             <p className="m-0">{card.description}</p>

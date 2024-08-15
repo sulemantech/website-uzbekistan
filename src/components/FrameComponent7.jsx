@@ -166,9 +166,9 @@ const FrameComponent7 = () => {
                     className=" text-white p-2 rounded-full"
                   >
                     {isMuted ? (
-                      <img src="Sound on off.svg" alt="" srcset="" />
+                      <img src="Sound on off.svg" alt="" srcSet="" />
                     ) : (
-                      <img src="sound-on.svg" alt="" srcset="" />
+                      <img src="sound-on.svg" alt="" srcSet="" />
                     )}
                   </button>
                 </div>

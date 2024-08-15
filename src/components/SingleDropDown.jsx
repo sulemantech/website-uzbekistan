@@ -22,7 +22,7 @@ const DropdownFaq = ({ question, answer }) => {
             } transition-transform`}
             src="objects3.svg"
             alt=""
-            srcset=""
+            srcSet=""
           />
         </div>
       </div>
