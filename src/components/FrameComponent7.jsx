@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState ,forwardRef } from "react";
 import DropdownFaq from "./SingleDropDown";
-const FrameComponent7 = () => {
+const FrameComponent7 = forwardRef((props, ref) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
@@ -61,8 +61,8 @@ const FrameComponent7 = () => {
   ];
   return (
     <>
-      <div className="bg-white  flex flex-col items-center rounded-2xl p-10 m-5">
-        <div className="flex space-x-10 max-w-[1500px] rounded-2xl">
+      <div ref={ref} className="bg-white  flex flex-col items-center rounded-2xl p-10 m-5 ">
+        <div className="flex space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">
             <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 px-3 border-[#903fff]">03</p>{" "}
@@ -70,7 +70,7 @@ const FrameComponent7 = () => {
                 WIE FÖRDERN WIR WACHSTUM  UND DIGITALE INTEGRATION?​
               </p>
             </span>
-            <div className="w-[518px] text-[16px] font-normal text-left">
+            <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
               Die bisherigen Projekte – der Abbau von Kupfer und Lithium sowie
               der Bau einer autonomen Teststrecke – setzen bedeutende
               wirtschaftliche Impulse in Usbekistan. Sie schaffen nicht nur
@@ -89,7 +89,7 @@ const FrameComponent7 = () => {
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
-                className="rounded-xl"
+                className="rounded-xl w-full h-full object-cover"
                 src="03vid.mov"
                 autoPlay
                 loop
@@ -122,8 +122,8 @@ const FrameComponent7 = () => {
           </p>
         </div>
 
-        <div className="flex justify-between max-w-[1500px] items-center space-x-10 relative">
-          <div className="flex items-end h-[450px] justify-center bottom-0  space-x-2">
+        <div className="flex justify-between w-[90vw] max-xl:w-full max-xl:flex-col max-w-[1500px] items-center space-x-10 max-xl:space-x-0 relative">
+          <div className="flex items-end h-[450px] max-xl:h-fit justify-center bottom-0  space-x-2">
             <img className="w-[71px] h-[49px]" src="db.png" alt="" />
             <img className="w-[263px] h-[46px]" src="lufthansa.png" alt="" />
           </div>{" "}
@@ -133,7 +133,7 @@ const FrameComponent7 = () => {
               <div className="relative flex justify-center items-center">
                 <video
                   ref={videoRef}
-                  className=" rounded-2xl"
+                  className=" rounded-xl w-full h-full object-cover"
                   width="100%"
                   height="450px"
                   autoPlay
@@ -186,6 +186,7 @@ const FrameComponent7 = () => {
             />
           ))}
         </div>
+        
 
         <DropdownFaq
           question="VORTEILE & ZIELE"
@@ -217,7 +218,7 @@ const FrameComponent7 = () => {
       </div>
     </>
   );
-};
+});
 
 export default FrameComponent7;
 

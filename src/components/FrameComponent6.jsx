@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState ,forwardRef } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
 
-const FrameComponent6 = () => {
+const FrameComponent6 = forwardRef((props, ref) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -64,13 +64,13 @@ const FrameComponent6 = () => {
   ];
   return (
     <>
-      <div className="bg-white rounded-2xl p-10 m-5">
-        <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px]">
-          <div className="grid grid-cols-1 gap-4 h-[580px] overflow-hidden">
-            <div className="relative col-span-1 h-[264px] max-w-[658px] rounded-xl overflow-hidden">
+      <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
+        <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
+          <div className="grid grid-cols-1 gap-4 h-[580px]  max-xl:w-full  overflow-hidden">
+            <div className="relative col-span-1 h-[264px] w-[658px] max-xl:w-full rounded-xl overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
-                className="rounded-xl"
+                className="rounded-xl w-full h-full object-cover"
                 src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/03b2/cfbd/-a72d-4de6-a877-0bf1f5ef7225?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z9PZZLlQYOajJcnfUGH7yH0pNUZXYkJP5gjVEyk4-OHMA~4IXSICksHwcN9bnPklfwQytAvZlhACPspybDzMys~TnoCNvfpFr9zks1bPzlE01GOtFLwJ0u9OHu0CbTp-Tq6j7-DVNi1UE4LQ7kcD3qagYsY2pr~lM--7emzg48i3QeCpcohAiVxAC2qXmntIxFL4ZW2sBGfWOU6EviLObvQaEzPz2W8MsRwF56Br7hG-uZXRjTTIEVroAInOogc-CWAzeOGiJRfW0n6uwe8wR-f-aoah2hIyBs2rNLoeXasM95EO582XetHYD9J~nnbx4gFF7WSQzKo4i0dx0jDxNA__"
                 autoPlay
                 loop
@@ -83,7 +83,7 @@ const FrameComponent6 = () => {
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 h-[279px] max-w-[658px] gap-4 col-span-1">
+            <div className="grid grid-cols-2 h-[279px] w-[658px]  max-xl:h-full max-xl:w-full gap-4 col-span-1">
               <span className="w-full">
                 <img src="d9.png" alt="" className="w-full h-full" />
               </span>
@@ -95,11 +95,11 @@ const FrameComponent6 = () => {
           <div className="flex flex-col space-y-7">
             <span className="flex space-x-7 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 pr-3  border-[#903fff]">02</p>{" "}
-              <p className="text-3xl w-[518px] font-bold">
+              <p className="text-3xl w-[518px] max-xl:w-full font-bold">
                 WIE UNTERSTÜTZEN WIR  DIE AUTOMOBILINDUSTRIE?​
               </p>
             </span>
-            <div className="w-[518px] text-[16px] font-normal text-left">
+            <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
               Autonomes Fahren zielt auf die Entwicklung von Fahrzeugen ab, die
               ohne menschliches Eingreifen fahren können. GIGA FIBER liefert die
               Technologie für Teststrecken für autonomes Fahren. Wir liefern dem
@@ -126,8 +126,8 @@ const FrameComponent6 = () => {
             <div></div>
           </div>
         </div>
-        <div className="w-[90vw] max-w-[1500px] mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white font-saira-condensed text-[30px] font-bold leading-[107%] uppercase">
-          <span className="w-[96%]">
+        <div className=" max-w-[1500px] mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white font-saira-condensed text-[30px] font-bold leading-[107%] uppercase">
+          <span className="w-[96%] mx-auto">
             5G/6G Funkmasten von GIGA FIBER haben extrem niedrige Latenzzeiten
             und hohe Bandbreiten größer 1Bit/s. Flächendeckende und zuverlässige
             Netzabdeckung sowie eine hohe Netzwerkdichte, gewährleistet eine
@@ -135,14 +135,14 @@ const FrameComponent6 = () => {
           </span>
         </div>
 
-        <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px]">
+        <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
           <div className="flex flex-col space-y-7">
             <span className=" text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="text-3xl font-bold">
                 TOWER-INFRASTRUKTUR & Lithiumbatterieherstellung
               </p>
             </span>
-            <div className="w-[518px] text-[16px] font-normal text-left">
+            <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
               <span>
                 Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie
                 (40% des Wertes) und Conenctivität für die Kommunikation sowohl
@@ -164,7 +164,7 @@ const FrameComponent6 = () => {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 h-[580px] max-w-[658px] overflow-hidden">
+          <div className="grid grid-cols-1 gap-4 h-[580px] w-[658px] max-xl:w-full overflow-hidden">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
@@ -214,14 +214,14 @@ const FrameComponent6 = () => {
       </div>
     </>
   );
-};
+});
 
 export default FrameComponent6;
 
-const Imagewithdiscription = ({ imageSrc, text }) => {
+export const Imagewithdiscription = ({ imageSrc, text , applyBg=true }) => {
   return (
     <>
-      <div className="w-[550px] h-[152px] bg-[#F5EEFF] mt-3 rounded-3xl flex space-x-1">
+      <div className={`w-[550px] h-[152px]  ${applyBg ? `bg-[#F5EEFF]` : 'bg-[#903fff]'} mt-3 rounded-3xl flex space-x-1`}>
         <div className="w-[185px]">
           <img src={imageSrc} alt="" className="w-[185px] h-[152px] object-cover" />
         </div>

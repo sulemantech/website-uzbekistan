@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState ,forwardRef } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
+import { Imagewithdiscription } from "./FrameComponent6";
 
-const FrameComponent5 = () => {
+const FrameComponent5 = forwardRef((props, ref) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -36,18 +37,90 @@ const FrameComponent5 = () => {
     },
   ];
 
+  const divcontainer = (question, answar) => {
+    return (
+      <div>
+        <span className="text-[#903fff] font-bold text-[16px] leading-[114%]">
+          {question}
+        </span>
+        <br />
+        {answar}
+      </div>
+    );
+  };
+
+
+  const imagedesData = [
+    {
+      img: "R11.png",
+      text: divcontainer(
+        "Erschließung einer Kupfermine",
+        "Ausbildung von jungen Arbeitskräften und Schaffung neuer Arbeitsplätze gemäß europäischer Standards"
+      ),
+    },
+    {
+      img: "R15.png",
+      text: divcontainer(
+        "Erschließung einer Lithiummine",
+        "Aktive politische Stärkung zum Wirtschaftsstandort Deutschland, Belieferung von Unternehmen in Usbekistan"
+      ),
+    },
+    {
+      img: "R12.png",
+      text: divcontainer(
+        "Förderung des usbekischen Bergbaus",
+        "Export von Kupfererzeugnissen nach Europa und Belieferung internationaler Automobilindustrie mit Lithium"
+      ),
+    },
+    {
+      img: "R16.png",
+      text: divcontainer(
+        "Bau einer Batteriefabrik",
+        "Lithiumlieferung für die Funkmastversorgung und für die autonome Teststrecke"
+      ),
+    },
+    {
+      img: "R13.png",
+      text: divcontainer(
+        "Diversifizierung der Wirtschaftssektoren",
+        "Förderung der industriellen Entwicklung Usbekistans durch Ansiedlung europäischer Unternehmen"
+      ),
+    },
+    {
+      img: "R17.png",
+      text: divcontainer(
+        "Steigerung der Standortattraktivität",
+        "Zuwachs an Automobilindustrie und Infrastruktur"
+      ),
+    },
+    {
+      img: "R14.png",
+      text: divcontainer(
+        "Kooperationen mit regionalen Unternehmen",
+        "Schaffung nachhaltiger Geschäftsbeziehungen"
+      ),
+    },
+    {
+      img: "R18.png",
+      text: divcontainer(
+        (<div className="text-[34px] text-white">50%</div>),
+        (<div className="text-white">des erwirtschafteten Profits werden in die Teststrecke autonomes Fahren investiert.</div>)
+      ),
+    },
+  ];
+  
   return (
     <>
-      <div className="bg-white rounded-2xl p-10 m-5">
-        <div className="flex justify-between items-center max-w-[1500px] mx-auto space-x-10 rounded-2xl h-[580px]">
+      <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
+        <div className="flex justify-between items-center max-w-[1500px] mx-auto space-x-10 rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-7">
             <span className="flex space-x-6 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 pr-3 border-[#903fff]">01</p>{" "}
-              <p className="text-3xl w-[518px] font-bold">
+              <p className="text-3xl w-[518px] max-xl:w-full font-bold">
                 WIE STEIGERN ​WIR DIE REGIONALE  WIRTSCHAFTSKRAFT?​
               </p>
             </span>
-            <div className="w-[518px] text-[16px] font-normal text-left">
+            <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
               Moderne Bergbautechnologien sowie fortschrittliche Methoden im
               Abbau, Digitalisierung, Energieeffizienz und Arbeitsschutz sind
               zentrale Bestandteile des Projekts. 
@@ -60,7 +133,7 @@ const FrameComponent5 = () => {
               <p className="text-3xl font-bold text-[#903fff] mb-3">
                 POTENZIAL FÜR DIE REGION
               </p>{" "}
-              <div className="accordion w-[518px]">
+              <div className="accordion w-[518px] max-xl:w-full">
                 {questionsAndAnswers.map((item, index) => (
                   <div key={index} className="mb-2 p-1">
                     <div
@@ -92,12 +165,12 @@ const FrameComponent5 = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 max-w-[658px] h-[580px] overflow-hidden">
+          <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full h-[580px] overflow-hidden">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
-                className="rounded-xl"
-                src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/c1e9/7c07/-88e2-41b5-bd00-31430518b95d?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ERo3ruKVOh13Ag~mmS4bN9mTVc7RABHbAb~fdz9t7s5UhQ2ORPVFJpFDrBxcNkoDOglL33IGwGooAQ~t9nQYYKjZ~dnKyHzlYvZfym2-PtWJQizb1XIwgOm~zKRxzLceJSADgsfKylxEAgtgbKAzROULUd~eWx4WJQyGrCCFVOjDMVxscu4pMJuBa2iHOz-xAvLPdKMh8icK2utrhDrfBXhY-KsoCpUyw~vGftR~is8OV4U9Cr3IlSCO8gneMoa0whDoeFGpdQS0RxO2SsllTAvSAxmHLnd0x-a53SBHcdj13NvhY9RzEfnt3n5yWUZ5FR0MBWGkX1EfEy5shFx92A__"
+                className="rounded-xl w-full h-full object-cover"
+                src="01screenvid.mp4"
                 autoPlay
                 loop
                 muted
@@ -109,23 +182,34 @@ const FrameComponent5 = () => {
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 h-[279px] gap-4 col-span-1">
-              <span className="w-full">
-                <img src="rock.png" alt="" className="w-full h-full" />
+            <div className="grid grid-cols-2 h-[279px] max-xl:h-full gap-4 col-span-1">
+              <span className="w-full h-full">
+                <img src="rock.png" alt="" className=" rounded-xl w-full h-full object-cover" />
               </span>
-              <span className="w-full">
-                <img src="machine.png" alt="" className="w-full h-full" />
+              <span className="w-full h-full">
+                <img src="machine.png" alt="" className="rounded-xl w-full h-full object-cover" />
               </span>
             </div>
           </div>
         </div>
         <DropdownFaq
           question="ZIELE DER KOOPERATION MIT GIGA FIBER"
-          answer="ZIELE DER KOOPERATION MIT GIGA FIBER ZIELE DER KOOPERATION MIT GIGA FIBER ZIELE DER KOOPERATION MIT GIGA FIBER"
+          answer={<div>
+             <div className="bg-white rounded-3xl m-2 p-[40px]">
+              <p>
+              Usbekistan verfügt über eine beeindruckende Vielfalt an mineralischen Metall- und Nichtmetallrohstoffen, die enorme Potenziale für Unternehmen bieten.  Die im Jahr 2024 abgeschlossene Partnerschaft mit der EU eröffnet vielfältige Möglichkeiten zur Kooperation im Bergbau. Diese strategische Allianz schafft eine solide Grundlage für nachhaltige Investitionen und technologische Innovationen im usbekischen Rohstoffsektor.​
+              </p>
+              <div className="flex flex-wrap justify-between mt-5">
+              {imagedesData.map((data, index) => (
+                <Imagewithdiscription  key={index}  imageSrc={data.img} applyBg={index == "7" ? false : true}  text={data.text} />
+              ))}
+              </div>
+            </div>
+          </div>}
         />
       </div>
     </>
   );
-};
+});
 
 export default FrameComponent5;
