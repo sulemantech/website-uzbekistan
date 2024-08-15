@@ -1,39 +1,41 @@
-import { number } from "prop-types";
-import React , {forwardRef} from "react";
+import React, { forwardRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const FrameComponent4 = forwardRef(({ scrollToFrame5, scrollToFrame6, scrollToFrame7 }, ref) => {
+  const { t } = useTranslation();
+
   const cardData = [
     {
-      number:"01",
-      title: "CU29 TECH",
-      description: "WIE STEIGERN ​WIR DIE REGIONALE WIRTSCHAFTSKRAFT",
+      number: "01",
+      title: t("frameComponent4_card1_title"),
+      description: t("frameComponent4_card1_description"),
       imgSrc: "01.png",
-      buttonText: "Learn More",
+      buttonText: t("frameComponent4_card1_buttonText"),
       scrollTo: scrollToFrame5,
     },
     {
-      number:"02",
-      title: "GIGA DRIVE HUB",
-      description: "WIE UNTERSTÜTZEN WIR DIE AUTOMOBILINDUSTRIE?​",
+      number: "02",
+      title: t("frameComponent4_card2_title"),
+      description: t("frameComponent4_card2_description"),
       imgSrc: "02.png",
-      buttonText: "View Details",
+      buttonText: t("frameComponent4_card2_buttonText"),
       scrollTo: scrollToFrame6,
     },
     {
-      number:"03",
-      title: "GIGA FUTURE",
-      description: "WIE FÖRDERN WIR WACHSTUM UND DIGITALE INTEGRATION?​",
+      number: "03",
+      title: t("frameComponent4_card3_title"),
+      description: t("frameComponent4_card3_description"),
       imgSrc: "03.png",
-      buttonText: "View Details",
+      buttonText: t("frameComponent4_card3_buttonText"),
       scrollTo: scrollToFrame7,
     },
   ];
 
   return (
-    <div ref={ref} className="flex  justify-center flex-wrap mt-4 gap-3 p-2 ">
+    <div ref={ref} className="flex justify-center flex-wrap mt-4 gap-3 p-2">
       {cardData.map((card, index) => (
         <div
-        onClick={card.scrollTo}
+          onClick={card.scrollTo}
           key={index}
           className="relative group cursor-pointer w-[445px] h-[582px] max-lg:w-full max-lg:mx-4 rounded-lg overflow-hidden"
         >

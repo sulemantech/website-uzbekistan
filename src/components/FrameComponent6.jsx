@@ -1,65 +1,62 @@
 import React, { useState ,forwardRef } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
-
+import { useTranslation } from 'react-i18next';
 const FrameComponent6 = forwardRef((props, ref) => {
   const [activeIndex, setActiveIndex] = useState(null);
-
+  const { t } = useTranslation(); // Call useTranslation here
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
   const questionsAndAnswers = [
     {
-      question: "What is your return policy?",
-      answer:
-        "We offer a 30-day return policy on all items. Please ensure that the items are in their original packaging and condition. For more details, visit our returns page.",
+      question: t("frameComponent5_q1_question"),
+      answer: t("frameComponent5_q1_answer"),
     },
     {
-      question: "How long does shipping take?",
-      answer:
-        "Shipping times vary depending on your location. Typically, domestic orders take 3-5 business days, while international orders can take 7-14 business days.",
+      question: t("frameComponent5_q2_question"),
+      answer: t("frameComponent5_q2_answer"),
     },
     {
-      question: "Do you offer international shipping?",
-      answer:
-        "Yes, we offer international shipping to most countries. Shipping costs and delivery times will be calculated at checkout based on your location.",
+      question: t("frameComponent5_q3_question"),
+      answer: t("frameComponent5_q3_answer"),
     },
     {
-      question: "Can I change my order after placing it?",
-      answer:
-        "If you need to make changes to your order, please contact us as soon as possible. We can only make changes if the order has not yet been processed or shipped.",
+      question: t("frameComponent5_q4_question"),
+      answer: t("frameComponent5_q4_answer"),
     },
     {
-      question: "How can I track my order?",
-      answer:
-        "Once your order has shipped, you will receive a tracking number via email. You can use this tracking number to check the status of your order on our shipping partner's website.",
+      question: t("frameComponent5_q5_question"),
+      answer: t("frameComponent5_q5_answer"),
     },
   ];
+
 
   const imagedesData = [
     {
       img: "R1.png",
-      text: "Einsatz von 5G und 6G Funktürmen,  die für die Echtzeit-kommunikation zwischen autonomen Fahrzeugen  und der Infrastruktur (V2X) entscheidend ist.",
+      text: t("frameComponent6_img1_description"),
     },
     {
       img: "R2.png",
-      text: "Durch die hochsicheren Daten-übertragungen kann die Teststrecke von zahlreichen Automobil-herstellern genutzt werden, Potenziale heimischer Automobil-hersteller können vollumfänglich ausgeschöpft werden.",
+      text: t("frameComponent6_img2_description"),
     },
     {
       img: "R3.png",
-      text: "Die 5G und 6G Internetinfrastruktur eignet sich zur Schaffung von zahlreichen Simulations-umgebungen, die abseits der realen Testfahrten nachzustellen sind.",
+      text: t("frameComponent6_img3_description"),
     },
     {
       img: "R4.png",
-      text: "Das Testgebiet fördert Forschungsprojekte in der Automobilindustrie, unabhängig von Produktions-tätigkeit. Testgebiet ist die Region Karakalpakstan.",
+      text: t("frameComponent6_img4_description"),
     },
     {
       img: "R5.png",
-      text: "Ausbau einer resilienten und redundanten Glasfaser-infrastruktur in der Region, welche die Forschungs-ergebnisse auf hochsicheren  Verbindungen weiterleitet.",
+      text: t("frameComponent6_img5_description"),
     },
     {
       img: "R6.png",
-      text: "Hohes Interesse angesiedelter chinesischer Hersteller​.",
+      text: t("frameComponent6_img6_description"),
     },
   ];
   return (
@@ -96,42 +93,26 @@ const FrameComponent6 = forwardRef((props, ref) => {
             <span className="flex space-x-7 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 pr-3  border-[#903fff]">02</p>{" "}
               <p className="text-3xl w-[518px] max-xl:w-full font-bold">
-                WIE UNTERSTÜTZEN WIR  DIE AUTOMOBILINDUSTRIE?​
+                {t("frameComponent6_title")}
               </p>
             </span>
             <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
-              Autonomes Fahren zielt auf die Entwicklung von Fahrzeugen ab, die
-              ohne menschliches Eingreifen fahren können. GIGA FIBER liefert die
-              Technologie für Teststrecken für autonomes Fahren. Wir liefern dem
-              internationalen Automobilmarkt Zugang zu Technik und
-              Infrastruktur, um die Entwicklung autonomer Fahrzeuge weiter zu
-              entwickeln und zu testen.
+             {t("frameComponent6_intro_part1")}
               <br />
-              Forschung in diesem Themengebiet bietet nachhaltige
-              Wettbewerbsvorteile und die Ausweitung der eigenen
-              Automobilproduktion. Es entsteht eine 100 km Teststrecke für die
-              Erforschung autonomer Fahrzeugsysteme.
+              {t("frameComponent6_intro_part2")}
               <br />
               <br />
-              Die Technologie verspricht äußerst geringe Latenzzeiten  und hohe
-              Datenübertragungsraten, wodurch es möglich ist, Fahrdaten nahezu
-              in Echtzeit zu übertragen. Dies ist von besonderer Bedeutung für
-              die Kommunikation zwischen Fahrzeugen und der Infrastruktur. 
+              {t("frameComponent6_intro_part3")}
               <br />
-              Zudem kann die Latenz durch die Verarbeitung von Daten in der Nähe
-              des Fahrzeugs, also am sogenannten „Edge“ des Netzwerks, weiter
-              reduziert werden, da die Daten nicht erst an entfernte
-              Rechenzentren gesendet werden müssen.
+              {t("frameComponent6_intro_part4")}
+            
             </div>
             <div></div>
           </div>
         </div>
         <div className=" max-w-[1500px] mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white font-saira-condensed text-[30px] font-bold leading-[107%] uppercase">
           <span className="w-[96%] mx-auto">
-            5G/6G Funkmasten von GIGA FIBER haben extrem niedrige Latenzzeiten
-            und hohe Bandbreiten größer 1Bit/s. Flächendeckende und zuverlässige
-            Netzabdeckung sowie eine hohe Netzwerkdichte, gewährleistet eine
-            stabile Verbindung.
+           {t("frameComponent6_highlight")}
           </span>
         </div>
 
@@ -139,27 +120,19 @@ const FrameComponent6 = forwardRef((props, ref) => {
           <div className="flex flex-col space-y-7">
             <span className=" text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="text-3xl font-bold">
-                TOWER-INFRASTRUKTUR & Lithiumbatterieherstellung
+                {t("frameComponent6_infrastructure_title")}
               </p>
             </span>
             <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
               <span>
-                Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie
-                (40% des Wertes) und Conenctivität für die Kommunikation sowohl
-                beim Fahren als auch beim Tanken. GIGA FIBER Technologies plant,
-                eine Lithiummine zu erwerben und eine Fabrik zur Herstellung von
-                Batterien und Funktürmen zu errichten. Diese Fabrik wird
-                Batterien produzieren, die für die Stromversorgung von
-                Funktürmen benötigt werden.
+                {t("frameComponent6_infrastructure_paragraph")}
               </span>
               <ul className="list-none">
                 <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
-                  Besonderes Interesse für europäische E-Auto Hersteller
-                  aufgrund kostengünstiger Herstellungskosten für ein
-                  Batteriewerk.
+                  {t("frameComponent6_infrastructure_bullet1")}
                 </li>
                 <li className="relative pl-5 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
-                  Entstehung von ca. 1000 neuer Arbeitsplätze in den Werken.
+                  {t("frameComponent6_infrastructure_bullet2")}
                 </li>
               </ul>
             </div>
@@ -177,7 +150,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
               ></video>
               <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
                 <span className="text-white absolute bottom-4 left-8 font-saira-condensed text-[55px] font-bold leading-[125%]">
-                  CU29 TECH
+                  {t("frameComponent6_title2")}
                 </span>
               </div>
             </div>
@@ -192,16 +165,11 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </div>
         </div>
         <DropdownFaq
-          question="Technologie & Infrastruktur Ziele der Zusammenarbeit mit GIGA FIBER"
+          question={t('frameComponent6_faq_question')}
           answer={
             <div className="bg-white rounded-3xl m-2 p-[40px]">
               <p>
-                Durch die Zusammenarbeit mit GIGA FIBER entsteht der Zugang zu
-                fortschrittlicher Technologie und Infrastruktur. <br />
-                Einheimischer Automobilproduktionen wird die Möglichkeit
-                gegeben, die heimische Produktionen zu modernisieren und den
-                Technischen Stand internationaler Automobilhersteller
-                aufzuholen. 
+              {t('frameComponent6_faq_description')}
               </p>
               <div className="flex flex-wrap justify-between mt-5">
               {imagedesData.map((data, index) => (
