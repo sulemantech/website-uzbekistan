@@ -1,6 +1,9 @@
 import React, { useRef, useState ,forwardRef } from "react";
 import DropdownFaq from "./SingleDropDown";
+import { useTranslation } from 'react-i18next';
+
 const FrameComponent7 = forwardRef((props, ref) => {
+  const { t } = useTranslation();
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
@@ -15,47 +18,50 @@ const FrameComponent7 = forwardRef((props, ref) => {
     }
   };
 
+ 
+
   const toggleMute = () => {
     videoRef.current.muted = !videoRef.current.muted;
     setIsMuted(videoRef.current.muted);
   };
   const sectionData = [
     {
-      title: "Hospitality & Hotels",
+      title: t("frameComponent7_sectionData_1_title"),
       imageSrc: "tree.png",
       points: [
-        "Umsatzsteigerung durch gezielte Ansprache spezifischer Zielgruppen.",
-        "WIFI und Kontextintensive Ansprachen der Kunden, local-based",
-        "Erhöhung der Buchungsraten aufgrund von positivem Kundenerlebnis",
+      t("frameComponent7_sectionData_1_points_1"),
+      t("frameComponent7_sectionData_1_points_2"),
+      t("frameComponent7_sectionData_1_points_3")
       ],
     },
     {
-      title: "Discounter & Malls",
+      title: t("frameComponent7_sectionData_2_title"),
       imageSrc: "Dhouse.png",
       points: [
-        "Schaffung neuer Wirtschaftszweige im Technologie-Bereich, was zu erhöhter Innovation führt.",
-        "Transparenz des Konsumentenverhaltens dank local-based Technologie und Indoor GPS.",
-        "Umsatzsteigerung durch gezielte Ansprache spezifischer Zielgruppen.",
+       t("frameComponent7_sectionData_2_points_1"),
+       t("frameComponent7_sectionData_2_points_2"),
+       t("frameComponent7_sectionData_2_points_3"),
+    
       ],
     },
   ];
   const sectionDataDropdown = [
     {
-      title2: "Optimierung der Kundenerfahrung",
+      title2: t("frameComponent7_sectionDataDropdown_1_title2"),
       imageSrc: "Rectangle 16.png",
       points: [
-        "Unterstützung lokaler Unternehmen durch Zugang zu nationalen und internationalen Märkten.",
-        "Förderung der wirtschaftlichen Diversifikation und Exportsteigerung durch neue Partnerschaften.",
-        "Schaffung neuer Wirtschaftszweige im Technologie-Bereich, was zu erhöhter Innovationskraft führt.",
-      ],
+        t("frameComponent7_sectionDataDropdown_1_points_1"),
+      t("frameComponent7_sectionDataDropdown_1_points_2"),
+      t("frameComponent7_sectionDataDropdown_1_points_3")
+    ]
     },
     {
-      title2: "Discounter & Malls",
+      title2: t("frameComponent7_sectionDataDropdown_2_title2"),
       imageSrc: "rectangle17.png",
       points: [
-        "Durch die Geräte-unabhängigkeit und den Schutz der Privatsphäre verbessert GIGA FIBER Connectivity das Nutzererlebnis.",
-        "Ziel ist die direkte Datenerfassung und Analyse des Konsum- und Besucherverhaltens mit Hilfe von local-based Technologie und Indoor GPS",
-        "Erhöht die Umsätze",
+       t("frameComponent7_sectionDataDropdown_2_points_1"),
+       t("frameComponent7_sectionDataDropdown_2_points_2"),
+       t("frameComponent7_sectionDataDropdown_2_points_3"),
       ],
     },
   ];
@@ -67,21 +73,11 @@ const FrameComponent7 = forwardRef((props, ref) => {
             <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 px-3 border-[#903fff]">03</p>{" "}
               <p className="text-3xl font-bold">
-                WIE FÖRDERN WIR WACHSTUM  UND DIGITALE INTEGRATION?​
+                {t("frameComponent7_title")}
               </p>
             </span>
             <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
-              Die bisherigen Projekte – der Abbau von Kupfer und Lithium sowie
-              der Bau einer autonomen Teststrecke – setzen bedeutende
-              wirtschaftliche Impulse in Usbekistan. Sie schaffen nicht nur
-              Arbeitsplätze, sondern tragen auch zur gesellschaftlichen
-              Entwicklung bei und bilden die Grundlage für eine nachhaltige
-              wirtschaftliche Entwicklung.  <br />
-              Diese Fortschritte legen das Fundament für unser neues Vorhaben:
-              GIGA FIBER Connectivity. Mithilfe der in den Minen gewonnenen
-              Kupfer- und Lithiumressourcen sowie der bestehenden
-              5G/6G-Infrastruktur zielt dieses Projekt darauf ab, die digitale
-              Transformation des Landes weiter zu fördern.
+             {t("frameComponent7_intro")}
             </div>
           </div>
 
@@ -106,19 +102,13 @@ const FrameComponent7 = forwardRef((props, ref) => {
         </div>
         <div>
           <p className="text-3xl mt-10  my-2 font-bold text-[#903fff] border-[#903fff] uppercase">
-            GIGA FIBER Connectivity
+            {t("frameComponent7_title2")}
           </p>
           <p className="text-black max-w-[1500px]  mt-6 mb-2 text-[16px] font-normal leading-[1.25]">
-            GIGA FIBER Connectivity ist ein umfassendes Projekt, welches auf den
-            Aufbau und die Erweiterung digitaler Infrastrukturen abzielt. Es
-            schafft Schnittstellen für den Einzelhandel, die kontextsensitive
-            Werbung, digitale Zahlungen und optimierte Kommunikation
-            ermöglichen, um den Konsum und die wirtschaftliche Aktivität in
-            Usbekistan zu steigern. <br />
+            {t("frameComponent7_intro2_part1")}
             <br />
-            Die Geschäftsidee von GIGA FIBER Connectivity hat sich bereits in
-            verschiedenen Projekten in der EU erfolgreich bewährt. Beispiele
-            dafür sind:
+            <br />
+            {t("frameComponent7_intro2_part2")}
           </p>
         </div>
 
@@ -189,18 +179,12 @@ const FrameComponent7 = forwardRef((props, ref) => {
         
 
         <DropdownFaq
-          question="VORTEILE & ZIELE"
+          question={t("frameComponent7_dropdown_title")}
           answer={
             <div className="bg-white rounded-3xl m-2 p-[40px]">
               <p>
-                Dieses Projekt trägt maßgeblich zur digitalen Transformation
-                Usbekistans bei und stellt sicher, dass der Wohlstandszuwachs
-                aus den Rohstoffprojekten nachhaltig in den Aufbau einer
-                modernen und vernetzten Wirtschaft investiert wird. <br /><br /> Durch die
-                vorherigen Projekte gewonnene Kaufkraft wird landesweit
-                unterstützt. GIGA FIBER Connectivity schafft eine Plattform für
-                gezielte Marketingstrategien und stärkt die finanzielle
-                Inklusion durch digitale Zahlungen.
+                {t("frameComponent7_dropdown_intro_part1")} <br /><br /> Durch die
+                {t("frameComponent7_dropdown_intro_part2")}
               </p>
               <p className="flex space-x-10 max-w-[1500px] justify-between w-full my-6">
                 {sectionDataDropdown.map((data, index) => (

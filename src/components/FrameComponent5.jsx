@@ -1,114 +1,119 @@
-import React, { useState ,forwardRef } from "react";
+import React, { useState, forwardRef } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
 import { Imagewithdiscription } from "./FrameComponent6";
+import { useTranslation } from 'react-i18next';
 
 const FrameComponent5 = forwardRef((props, ref) => {
+  const { t } = useTranslation(); // Initialize the translation function
   const [activeIndex, setActiveIndex] = useState(null);
 
+  console.log("frameComponent5_q1_question:", t("frameComponent5_q1_question"));
+  console.log("frameComponent5_q1_answer:", t("frameComponent5_q1_answer"));
+  console.log("frameComponent5_title:", t("frameComponent5_title"));
+  console.log("frameComponent5_intro:", t("frameComponent5_intro"));
+  console.log("frameComponent5_potential:", t("frameComponent5_potential"));
+  
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
   const questionsAndAnswers = [
     {
-      question: "What is your return policy?",
-      answer:
-        "We offer a 30-day return policy on all items. Please ensure that the items are in their original packaging and condition. For more details, visit our returns page.",
+      question: t("frameComponent5_q1_question"),
+      answer: t("frameComponent5_q1_answer"),
     },
     {
-      question: "How long does shipping take?",
-      answer:
-        "Shipping times vary depending on your location. Typically, domestic orders take 3-5 business days, while international orders can take 7-14 business days.",
+      question: t("frameComponent5_q2_question"),
+      answer: t("frameComponent5_q2_answer"),
     },
     {
-      question: "Do you offer international shipping?",
-      answer:
-        "Yes, we offer international shipping to most countries. Shipping costs and delivery times will be calculated at checkout based on your location.",
+      question: t("frameComponent5_q3_question"),
+      answer: t("frameComponent5_q3_answer"),
     },
     {
-      question: "Can I change my order after placing it?",
-      answer:
-        "If you need to make changes to your order, please contact us as soon as possible. We can only make changes if the order has not yet been processed or shipped.",
+      question: t("frameComponent5_q4_question"),
+      answer: t("frameComponent5_q4_answer"),
     },
     {
-      question: "How can I track my order?",
-      answer:
-        "Once your order has shipped, you will receive a tracking number via email. You can use this tracking number to check the status of your order on our shipping partner's website.",
+      question: t("frameComponent5_q5_question"),
+      answer: t("frameComponent5_q5_answer"),
     },
   ];
 
-  const divcontainer = (question, answar) => {
+  const divcontainer = (question, answer) => {
     return (
       <div>
         <span className="text-[#903fff] font-bold text-[16px] leading-[114%]">
           {question}
         </span>
         <br />
-        {answar}
+        {answer}
       </div>
     );
   };
-
 
   const imagedesData = [
     {
       img: "R11.png",
       text: divcontainer(
-        "Erschließung einer Kupfermine",
-        "Ausbildung von jungen Arbeitskräften und Schaffung neuer Arbeitsplätze gemäß europäischer Standards"
+        t("frameComponent5_q1_question"),
+        t("frameComponent5_q1_answer")
       ),
     },
     {
       img: "R15.png",
       text: divcontainer(
-        "Erschließung einer Lithiummine",
-        "Aktive politische Stärkung zum Wirtschaftsstandort Deutschland, Belieferung von Unternehmen in Usbekistan"
+        t("frameComponent5_q2_question"),
+        t("frameComponent5_q2_answer")
       ),
     },
     {
       img: "R12.png",
       text: divcontainer(
-        "Förderung des usbekischen Bergbaus",
-        "Export von Kupfererzeugnissen nach Europa und Belieferung internationaler Automobilindustrie mit Lithium"
+        t("frameComponent5_q3_question"),
+        t("frameComponent5_q3_answer")
       ),
     },
     {
       img: "R16.png",
       text: divcontainer(
-        "Bau einer Batteriefabrik",
-        "Lithiumlieferung für die Funkmastversorgung und für die autonome Teststrecke"
+        t("frameComponent5_q4_question"),
+        t("frameComponent5_q4_answer")
       ),
     },
     {
       img: "R13.png",
       text: divcontainer(
-        "Diversifizierung der Wirtschaftssektoren",
-        "Förderung der industriellen Entwicklung Usbekistans durch Ansiedlung europäischer Unternehmen"
+        t("frameComponent5_q5_question"),
+        t("frameComponent5_q5_answer")
       ),
     },
     {
       img: "R17.png",
       text: divcontainer(
-        "Steigerung der Standortattraktivität",
-        "Zuwachs an Automobilindustrie und Infrastruktur"
+        t("frameComponent5_q1_question"),
+        t("frameComponent5_q1_answer")
       ),
     },
     {
       img: "R14.png",
       text: divcontainer(
-        "Kooperationen mit regionalen Unternehmen",
-        "Schaffung nachhaltiger Geschäftsbeziehungen"
+        t("frameComponent5_q2_question"),
+        t("frameComponent5_q2_answer")
       ),
     },
     {
       img: "R18.png",
       text: divcontainer(
         (<div className="text-[34px] text-white">50%</div>),
-        (<div className="text-white">des erwirtschafteten Profits werden in die Teststrecke autonomes Fahren investiert.</div>)
+        (<div className="text-white">
+          {t("frameComponent5_q1_answer")}
+        </div>)
       ),
     },
   ];
-  
+
   return (
     <>
       <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
@@ -117,21 +122,15 @@ const FrameComponent5 = forwardRef((props, ref) => {
             <span className="flex space-x-6 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 pr-3 border-[#903fff]">01</p>{" "}
               <p className="text-3xl w-[518px] max-xl:w-full font-bold">
-                WIE STEIGERN ​WIR DIE REGIONALE  WIRTSCHAFTSKRAFT?​
+                {t("frameComponent5_title")}
               </p>
             </span>
             <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
-              Moderne Bergbautechnologien sowie fortschrittliche Methoden im
-              Abbau, Digitalisierung, Energieeffizienz und Arbeitsschutz sind
-              zentrale Bestandteile des Projekts. 
-              <br /> Zudem liegt ein Schwerpunkt auf der Aus- und Weiterbildung
-              von Fachkräften, im Bergbau. Dies stärkt die regionale Wirtschaft
-              erheblich durch die Erhöhung des Produktionsvolumens von Lithium
-              und Kupfererzeugnissen für den Export und nationale Industrie.
+              {t("frameComponent5_intro")}
             </div>
             <div>
               <p className="text-3xl font-bold text-[#903fff] mb-3">
-                POTENZIAL FÜR DIE REGION
+                {t("frameComponent5_potential")}
               </p>{" "}
               <div className="accordion w-[518px] max-xl:w-full">
                 {questionsAndAnswers.map((item, index) => (
@@ -167,7 +166,6 @@ const FrameComponent5 = forwardRef((props, ref) => {
           </div>
           <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full h-[580px] overflow-hidden">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
-              {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
                 className="rounded-xl w-full h-full object-cover"
                 src="01screenvid.mp4"
@@ -178,34 +176,45 @@ const FrameComponent5 = forwardRef((props, ref) => {
               ></video>
               <div className="absolute w-full bg-gradient-to-t from-[#3B2A89] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
                 <span className="text-white absolute bottom-4 left-8 font-saira-condensed text-[55px] font-bold leading-[125%]">
-                CU29 TECH
+                  {t("frameComponent4_card1_title")}
                 </span>
               </div>
             </div>
             <div className="grid grid-cols-2 h-[279px] max-xl:h-full gap-4 col-span-1">
               <span className="w-full h-full">
-                <img src="rock.png" alt="" className=" rounded-xl w-full h-full object-cover" />
+                <img
+                  src="rock.png"
+                  alt=""
+                  className=" rounded-xl w-full h-full object-cover"
+                />
               </span>
               <span className="w-full h-full">
-                <img src="machine.png" alt="" className="rounded-xl w-full h-full object-cover" />
+                <img
+                  src="machine.png"
+                  alt=""
+                  className="rounded-xl w-full h-full object-cover"
+                />
               </span>
             </div>
           </div>
         </div>
         <DropdownFaq
-          question="ZIELE DER KOOPERATION MIT GIGA FIBER"
-          answer={<div>
-             <div className="bg-white rounded-3xl m-2 p-[40px]">
-              <p>
-              Usbekistan verfügt über eine beeindruckende Vielfalt an mineralischen Metall- und Nichtmetallrohstoffen, die enorme Potenziale für Unternehmen bieten.  Die im Jahr 2024 abgeschlossene Partnerschaft mit der EU eröffnet vielfältige Möglichkeiten zur Kooperation im Bergbau. Diese strategische Allianz schafft eine solide Grundlage für nachhaltige Investitionen und technologische Innovationen im usbekischen Rohstoffsektor.​
-              </p>
+          question={t("frameComponent5_q1_question")}
+          answer={
+            <div className="bg-white rounded-3xl m-2 p-[40px]">
+              <p>{t("frameComponent5_q1_answer")}</p>
               <div className="flex flex-wrap justify-between mt-5">
-              {imagedesData.map((data, index) => (
-                <Imagewithdiscription  key={index}  imageSrc={data.img} applyBg={index == "7" ? false : true}  text={data.text} />
-              ))}
+                {imagedesData.map((data, index) => (
+                  <Imagewithdiscription
+                    key={index}
+                    imageSrc={data.img}
+                    applyBg={index === 7 ? false : true}
+                    text={data.text}
+                  />
+                ))}
               </div>
             </div>
-          </div>}
+          }
         />
       </div>
     </>

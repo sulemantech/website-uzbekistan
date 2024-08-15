@@ -1,74 +1,97 @@
 {
-    "frameComponent4_card1_number": "01",
-    "frameComponent4_card1_title": "CU29 TECH",
-    "frameComponent4_card1_description": "WIE STEIGERN WIR DIE REGIONALE WIRTSCHAFTSKRAFT?",
-    "frameComponent4_card1_buttonText": "Mehr Erfahren",
-    
-    "frameComponent4_card2_number": "02",
-    "frameComponent4_card2_title": "GIGA DRIVE HUB",
-    "frameComponent4_card2_description": "WIE UNTERSTÜTZEN WIR DIE AUTOMOBILINDUSTRIE?",
-    "frameComponent4_card2_buttonText": "Details Ansehen",
-    
-    "frameComponent4_card3_number": "03",
-    "frameComponent4_card3_title": "GIGA FUTURE",
-    "frameComponent4_card3_description": "WIE FÖRDERN WIR WACHSTUM UND DIGITALE INTEGRATION?",
-    "frameComponent4_card3_buttonText": "Details Ansehen",
-    
-    "frameComponent5_title": "WIE STEIGERN WIR DIE REGIONALE WIRTSCHAFTSKRAFT?",
-    "frameComponent5_intro": "Moderne Bergbautechnologien und fortschrittliche Methoden bei der Gewinnung, Digitalisierung, Energieeffizienz und Arbeitssicherheit sind wesentliche Bestandteile des Projekts. Auch die Ausbildung und Schulung von Fachkräften im Bergbau wird betont.",
-    "frameComponent5_potential": "POTENZIAL FÜR DIE REGION",
-    
-    "frameComponent5_q1_question": "Wie ist Ihre Rückgaberechtsregelung?",
-    "frameComponent5_q1_answer": "Wir bieten eine Rückgabefrist von 30 Tagen für alle Artikel an. Bitte stellen Sie sicher, dass die Artikel in ihrer Originalverpackung und -zustand sind. Weitere Details finden Sie auf unserer Rückgabeseite.",
-    
-    "frameComponent5_q2_question": "Wie lange dauert der Versand?",
-    "frameComponent5_q2_answer": "Die Versandzeiten variieren je nach Ihrem Standort. In der Regel dauern Inlandsbestellungen 3-5 Werktage, während internationale Bestellungen 7-14 Werktage in Anspruch nehmen können.",
-    
-    "frameComponent5_q3_question": "Bieten Sie internationalen Versand an?",
-    "frameComponent5_q3_answer": "Ja, wir bieten internationalen Versand in die meisten Länder an. Die Versandkosten und Lieferzeiten werden an der Kasse basierend auf Ihrem Standort berechnet.",
-    
-    "frameComponent5_q4_question": "Kann ich meine Bestellung nach der Aufgabe ändern?",
-    "frameComponent5_q4_answer": "Wenn Sie Änderungen an Ihrer Bestellung vornehmen müssen, kontaktieren Sie uns bitte so schnell wie möglich. Wir können nur Änderungen vornehmen, wenn die Bestellung noch nicht bearbeitet oder versandt wurde.",
-    
-    "frameComponent5_q5_question": "Wie kann ich meine Bestellung verfolgen?",
-    "frameComponent5_q5_answer": "Sobald Ihre Bestellung versandt wurde, erhalten Sie eine Sendungsnummer per E-Mail. Sie können diese Nummer verwenden, um den Status Ihrer Bestellung auf der Website unseres Versandpartners zu überprüfen.",
-    
-    "frameComponent6_title": "WIE UNTERSTÜTZEN WIR DIE AUTOMOBILINDUSTRIE?",
-    "frameComponent6_intro": "Autonomes Fahren zielt darauf ab, Fahrzeuge zu entwickeln, die ohne menschliches Eingreifen fahren können. GIGA FIBER bietet die Technologie für autonome Fahrversuche. Wir bieten internationalen Automobilmärkten Zugang zu Technologie und Infrastruktur, um autonome Fahrzeuge weiterzuentwickeln und zu testen.",
-    "frameComponent6_highlight": "5G/6G-Basisstationen von GIGA FIBER haben extrem niedrige Latenzzeiten und hohe Bandbreiten von mehr als 1 Bit/s. Umfassende und zuverlässige Netzabdeckung gewährleistet eine stabile Verbindung.",
-    
-    "frameComponent6_img1_description": "Einsatz von 5G- und 6G-Basisstationen, die für die Echtzeitkommunikation zwischen autonomen Fahrzeugen und Infrastruktur (V2X) entscheidend sind.",
-    "frameComponent6_img2_description": "Hochsichere Datenübertragungen ermöglichen die Nutzung der Teststrecke durch zahlreiche Automobilhersteller und maximieren das Potenzial inländischer Automobilhersteller.",
-    "frameComponent6_img3_description": "5G- und 6G-Internet-Infrastruktur eignet sich für die Erstellung zahlreicher Simulationsumgebungen, die zusätzlich zu echten Testfahrten repliziert werden müssen.",
-    "frameComponent6_img4_description": "Die Teststrecke fördert Forschungsprojekte in der Automobilindustrie, unabhängig von Produktionsaktivitäten. Die Teststrecke befindet sich in der Region Karakalpakstan.",
-    "frameComponent6_img5_description": "Ausbau einer resilienten und redundanten Glasfaserinfrastruktur in der Region, die Forschungsergebnisse über hochsichere Verbindungen überträgt.",
-    "frameComponent6_img6_description": "Hoßes Interesse von etablierten chinesischen Herstellern.",
-    
-    "frameComponent7_title": "WIE FÖRDERN WIR WACHSTUM UND DIGITALE INTEGRATION?",
-    "frameComponent7_intro": "Frühere Projekte – Kupfer- und Lithiumabbau sowie der Bau einer autonomen Teststrecke – haben bedeutende wirtschaftliche Impulse in Usbekistan gesetzt. Sie schaffen nicht nur Arbeitsplätze, sondern tragen auch zur gesellschaftlichen Entwicklung bei und legen die Grundlage für eine nachhaltige wirtschaftliche Entwicklung. Diese Fortschritte ebnen den Weg für unser neues Vorhaben: GIGA FIBER Connectivity. Mithilfe der in den Minen gewonnenen Kupfer- und Lithiumressourcen sowie der bestehenden 5G/6G-Infrastruktur zielt dieses Projekt darauf ab, die digitale Transformation des Landes weiter zu fördern.",
-    
-    "frameComponent7_sectionData_1_title": "Hospitality & Hotels",
-    "frameComponent7_sectionData_1_imageSrc": "tree.png",
-    "frameComponent7_sectionData_1_points_1": "Umsatzsteigerung durch gezielte Ansprache spezifischer Zielgruppen.",
-    "frameComponent7_sectionData_1_points_2": "WIFI und kontextsensitive Kundeninteraktionen, lokal-basiert",
-    "frameComponent7_sectionData_1_points_3": "Erhöhung der Buchungsraten aufgrund von positivem Kundenerlebnis",
-    
-    "frameComponent7_sectionData_2_title": "Discounter & Malls",
-    "frameComponent7_sectionData_2_imageSrc": "Dhouse.png",
-    "frameComponent7_sectionData_2_points_1": "Schaffung neuer Wirtschaftszweige im Technologie-Bereich, was zu erhöhter Innovation führt.",
-    "frameComponent7_sectionData_2_points_2": "Transparenz des Konsumentenverhaltens dank lokal-basierter Technologie und Indoor GPS.",
-    "frameComponent7_sectionData_2_points_3": "Umsatzsteigerung durch gezielte Ansprache spezifischer Zielgruppen.",
-    
-    "frameComponent7_sectionDataDropdown_1_title2": "Optimierung der Kundenerfahrung",
-    "frameComponent7_sectionDataDropdown_1_imageSrc": "Rectangle 16.png",
-    "frameComponent7_sectionDataDropdown_1_points_1": "Unterstützung lokaler Unternehmen durch Zugang zu nationalen und internationalen Märkten.",
-    "frameComponent7_sectionDataDropdown_1_points_2": "Förderung der wirtschaftlichen Diversifikation und Exportsteigerung durch neue Partnerschaften.",
-    "frameComponent7_sectionDataDropdown_1_points_3": "Schaffung neuer Wirtschaftszweige im Technologie-Bereich, was zu erhöhter Innovationskraft führt.",
-    
-    "frameComponent7_sectionDataDropdown_2_title2": "Discounter & Malls",
-    "frameComponent7_sectionDataDropdown_2_imageSrc": "rectangle17.png",
-    "frameComponent7_sectionDataDropdown_2_points_1": "Durch Geräteunabhängigkeit und Datenschutz verbessert GIGA FIBER Connectivity das Nutzererlebnis.",
-    "frameComponent7_sectionDataDropdown_2_points_2": "Ziel ist die direkte Datenerfassung und Analyse des Konsum- und Besucherverhaltens mit Hilfe von lokal-basierter Technologie und Indoor GPS.",
-    "frameComponent7_sectionDataDropdown_2_points_3": "Erhöht die Umsätze"
-  }
+  "header_transforming_infrastructure": "TRANSFORMIERENDE INFRASTRUKTUR.",
+  "header_driving_regional_growth": "REGIONALE WACHSTUM FÖRDERN.",
+  "header_learn_more": "MEHR ERFAHREN →",
+  "frameComponent4_card1_number": "01",
+  "frameComponent4_card1_title": "CU29 TECH",
+ "frameComponent4_card1_description": "WIE STÄRKEN WIR DIE REGIONALE WIRTSCHAFTSKRAFT?",
+  "frameComponent4_card1_buttonText": "Mehr Erfahren",
   
+  "frameComponent4_card2_number": "02",
+  "frameComponent4_card2_title": "GIGA DRIVE HUB",
+  "frameComponent4_card2_description": "HOW DO WE SUPPORT THE AUTOMOTIVE INDUSTRY?",
+  "frameComponent4_card2_buttonText": "View Details",
+  
+  "frameComponent4_card3_number": "03",
+  "frameComponent4_card3_title": "GIGA ZUKUNFT",
+  "frameComponent4_card3_description": "WIE FÖRDERN WIR WACHSTUM UND DIGITALE INTEGRATION?",
+  "frameComponent4_card3_buttonText": "Details Anzeigen",
+  
+  "frameComponent5_title": "WIE STÄRKEN WIR DIE REGIONALE WIRTSCHAFTSKRAFT?",
+  "frameComponent5_intro": "Moderne Bergbautechnologien und fortschrittliche Methoden in den Bereichen Gewinnung, Digitalisierung, Energieeffizienz und Arbeitssicherheit sind wesentliche Bestandteile des Projekts. Auch die Ausbildung und Weiterbildung von Fachkräften im Bergbau wird besonders betont.",
+  "frameComponent5_potential": "POTENTIAL FÜR DIE REGION",
+  
+  "frameComponent5_q1_question": "What is your return policy?",
+  "frameComponent5_q1_answer": "We offer a 30-day return policy on all items. Please ensure that the items are in their original packaging and condition. For more details, visit our returns page.",
+  
+  "frameComponent5_q2_question": "How long does shipping take?",
+  "frameComponent5_q2_answer": "Shipping times vary depending on your location. Typically, domestic orders take 3-5 business days, while international orders can take 7-14 business days.",
+  
+  "frameComponent5_q3_question": "Do you offer international shipping?",
+  "frameComponent5_q3_answer": "Yes, we offer international shipping to most countries. Shipping costs and delivery times will be calculated at checkout based on your location.",
+  
+  "frameComponent5_q4_question": "Can I change my order after placing it?",
+  "frameComponent5_q4_answer": "If you need to make changes to your order, please contact us as soon as possible. We can only make changes if the order has not yet been processed or shipped.",
+  
+  "frameComponent5_q5_question": "How can I track my order?",
+  "frameComponent5_q5_answer": "Once your order has shipped, you will receive a tracking number via email. You can use this tracking number to check the status of your order on our shipping partner's website.",
+  
+  "frameComponent6_title": "WIE UNTERSTÜTZEN WIR  DIE AUTOMOBILINDUSTRIE?",
+  
+  "frameComponent6_intro_part1": "Autonomes Fahren zielt auf die Entwicklung von Fahrzeugen ab, die ohne menschliches Eingreifen fahren können. GIGA FIBER liefert die Technologie für Teststrecken für autonomes Fahren. Wir liefern dem internationalen Automobilmarkt Zugang zu Technik und Infrastruktur, um die Entwicklung autonomer Fahrzeuge weiter zu entwickeln und zu testen.",
+  "frameComponent6_intro_part2": "Forschung in diesem Themengebiet bietet nachhaltige Wettbewerbsvorteile und die Ausweitung der eigenen Automobilproduktion. Es entsteht eine 100 km Teststrecke für die Erforschung autonomer Fahrzeugsysteme.",
+  "frameComponent6_intro_part3": "Die Technologie verspricht äußerst geringe Latenzzeiten und hohe Datenübertragungsraten, wodurch es möglich ist, Fahrdaten nahezu in Echtzeit zu übertragen. Dies ist von besonderer Bedeutung für die Kommunikation zwischen Fahrzeugen und der Infrastruktur.",
+  "frameComponent6_intro_part4": "Zudem kann die Latenz durch die Verarbeitung von Daten in der Nähe des Fahrzeugs, also am sogenannten „Edge“ des Netzwerks, weiter reduziert werden, da die Daten nicht erst an entfernte Rechenzentren gesendet werden müssen.",
+
+  "frameComponent6_highlight": "5G/6G FUNKMASTEN VON GIGA FIBER HABEN EXTREM NIEDRIGE LATENZZEITEN UND HOHE BANDBREITEN GRÖSSER 1BIT/S. FLÄCHENDECKENDE UND ZUVERLÄSSIGE NETZABDECKUNG SOWIE EINE HOHE NETZWERKDICHTE, GEWÄHRLEISTET EINE STABILE VERBINDUNG.",
+  
+  "frameComponent6_infrastructure_title": "TOWER-INFRASTRUKTUR & Lithiumbatterieherstellung",
+  "frameComponent6_infrastructure_paragraph": "Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40% des Wertes) und Conenctivität für die Kommunikation sowohl beim Fahren als auch beim Tanken. GIGA FIBER Technologies plant, eine Lithiummine zu erwerben und eine Fabrik zur Herstellung von Batterien und Funktürmen zu errichten. Diese Fabrik wird Batterien produzieren, die für die Stromversorgung von Funktürmen benötigt werden.",
+  "frameComponent6_infrastructure_bullet1": "Besonderes Interesse für europäische E-Auto Hersteller aufgrund kostengünstiger Herstellungskosten für ein Batteriewerk.",
+  "frameComponent6_infrastructure_bullet2":"Entstehung von ca. 1000 neuer Arbeitsplätze in den Werken.",
+  "frameComponent6_title2": "CU29 TECH",
+  "frameComponent6_faq_question": "Technologie & Infrastruktur Ziele der Zusammenarbeit mit GIGA FIBER",
+
+  "frameComponent6_img1_description": "Use of 5G and 6G base stations crucial for real-time communication between autonomous vehicles and infrastructure (V2X).",
+  "frameComponent6_img2_description": "Highly secure data transmissions allow the test track to be used by numerous automotive manufacturers, maximizing the potential of domestic automotive manufacturers.",
+  "frameComponent6_img3_description": "5G and 6G internet infrastructure is suitable for creating numerous simulation environments that need to be replicated apart from real test drives.",
+  "frameComponent6_img4_description": "The test area promotes research projects in the automotive industry, independent of production activities. The test area is the Karakalpakstan region.",
+  "frameComponent6_img5_description": "Expansion of a resilient and redundant fiber optic infrastructure in the region, which transmits research results over highly secure connections.",
+  "frameComponent6_img6_description": "High interest from established Chinese manufacturers.",
+  
+  "frameComponent7_title": "WIE FÖRDERN WIR WACHSTUM  UND DIGITALE INTEGRATION?​",
+  "frameComponent7_intro": "Die bisherigen Projekte – der Abbau von Kupfer und Lithium sowie der Bau einer autonomen Teststrecke – setzen bedeutende wirtschaftliche Impulse in Usbekistan. Sie schaffen nicht nur Arbeitsplätze, sondern tragen auch zur gesellschaftlichen Entwicklung bei und bilden die Grundlage für eine nachhaltige wirtschaftliche Entwicklung. Diese Fortschritte legen das Fundament für unser neues Vorhaben: GIGA FIBER Connectivity. Mithilfe der in den Minen gewonnenen Kupfer- und Lithiumressourcen sowie der bestehenden 5G/6G-Infrastruktur zielt dieses Projekt darauf ab, die digitale Transformation des Landes weiter zu fördern.",
+
+  "frameComponent7_title2": "GIGA FIBER CONNECTIVITY​",
+  "frameComponent7_intro2_part1": "GIGA FIBER Connectivity ist ein umfassendes Projekt, welches auf den Aufbau und die Erweiterung digitaler Infrastrukturen abzielt. Es schafft Schnittstellen für den Einzelhandel, die kontextsensitive Werbung, digitale Zahlungen und optimierte Kommunikation ermöglichen, um den Konsum und die wirtschaftliche Aktivität in Usbekistan zu steigern.",
+
+  "frameComponent7_dropdown_title": "VORTEILE & ZIELE",
+"frameComponent7_dropdown_intro_part1": "Dieses Projekt trägt maßgeblich zur digitalen Transformation Usbekistans bei und stellt sicher, dass der Wohlstandszuwachs aus den Rohstoffprojekten nachhaltig in den Aufbau einer modernen und vernetzten Wirtschaft investiert wird.",
+
+"frameComponent7_dropdown_intro_part2": "Durch die vorherigen Projekte gewonnene Kaufkraft wird landesweit unterstützt. GIGA FIBER Connectivity schafft eine Plattform für gezielte Marketingstrategien und stärkt die finanzielle Inklusion durch digitale Zahlungen.",
+
+
+  "frameComponent7_sectionData_1_title": "Hospitality & Hotels",
+  "frameComponent7_sectionData_1_imageSrc": "tree.png",
+  "frameComponent7_sectionData_1_points_1": "Increased revenue through targeted addressing of specific target groups.",
+  "frameComponent7_sectionData_1_points_2": "WIFI and context-sensitive customer interactions, local-based",
+  "frameComponent7_sectionData_1_points_3": "Increased booking rates due to positive customer experience",
+  
+  "frameComponent7_sectionData_2_title": "Discounter & Malls",
+  "frameComponent7_sectionData_2_imageSrc": "Dhouse.png",
+  "frameComponent7_sectionData_2_points_1": "Creation of new economic sectors in technology, leading to increased innovation.",
+  "frameComponent7_sectionData_2_points_2": "Transparency of consumer behavior thanks to local-based technology and indoor GPS.",
+  "frameComponent7_sectionData_2_points_3": "Increased revenue through targeted addressing of specific target groups.",
+  
+  "frameComponent7_sectionDataDropdown_1_title2": "Optimierung der Kundenerfahrung",
+  "frameComponent7_sectionDataDropdown_1_imageSrc": "Rectangle 16.png",
+  "frameComponent7_sectionDataDropdown_1_points_1": "Unterstützung lokaler Unternehmen durch Zugang zu nationalen und internationalen Märkten.",
+  "frameComponent7_sectionDataDropdown_1_points_2": "Förderung der wirtschaftlichen Diversifizierung und Steigerung der Exporte durch neue Partnerschaften.",
+  "frameComponent7_sectionDataDropdown_1_points_3": "Schaffung neuer Wirtschaftssektoren im Bereich Technologie, was zu erhöhter Innovation führt.",
+  
+  "frameComponent7_sectionDataDropdown_2_title2": "Discounter & Einkaufszentren",
+  "frameComponent7_sectionDataDropdown_2_imageSrc": "rectangle17.png",
+  "frameComponent7_sectionDataDropdown_2_points_1": "Durch Geräteunabhängigkeit und Datenschutz verbessert GIGA FIBER Connectivity das Benutzererlebnis.",
+  "frameComponent7_sectionDataDropdown_2_points_2": "Ziel ist die direkte Datenerhebung und Analyse des Konsum- und Besucher-Verhaltens mittels ortsbasierter Technologie und Indoor-GPS.",
+  "frameComponent7_sectionDataDropdown_2_points_3": "Steigerung der Umsätze"
+}
