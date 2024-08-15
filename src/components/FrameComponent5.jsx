@@ -170,7 +170,7 @@ const FrameComponent5 = forwardRef((props, ref) => {
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
                 className="rounded-xl w-full h-full object-cover"
-                src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/c1e9/7c07/-88e2-41b5-bd00-31430518b95d?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ERo3ruKVOh13Ag~mmS4bN9mTVc7RABHbAb~fdz9t7s5UhQ2ORPVFJpFDrBxcNkoDOglL33IGwGooAQ~t9nQYYKjZ~dnKyHzlYvZfym2-PtWJQizb1XIwgOm~zKRxzLceJSADgsfKylxEAgtgbKAzROULUd~eWx4WJQyGrCCFVOjDMVxscu4pMJuBa2iHOz-xAvLPdKMh8icK2utrhDrfBXhY-KsoCpUyw~vGftR~is8OV4U9Cr3IlSCO8gneMoa0whDoeFGpdQS0RxO2SsllTAvSAxmHLnd0x-a53SBHcdj13NvhY9RzEfnt3n5yWUZ5FR0MBWGkX1EfEy5shFx92A__"
+                src="01screenvid.mp4"
                 autoPlay
                 loop
                 muted
