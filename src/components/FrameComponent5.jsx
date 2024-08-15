@@ -8,36 +8,31 @@ const FrameComponent5 = forwardRef((props, ref) => {
   const { t } = useTranslation(); // Initialize the translation function
   const [activeIndex, setActiveIndex] = useState(null);
 
-  console.log("frameComponent5_q1_question:", t("frameComponent5_q1_question"));
-  console.log("frameComponent5_q1_answer:", t("frameComponent5_q1_answer"));
-  console.log("frameComponent5_title:", t("frameComponent5_title"));
-  console.log("frameComponent5_intro:", t("frameComponent5_intro"));
-  console.log("frameComponent5_potential:", t("frameComponent5_potential"));
-  
+ 
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
   const listItems = [
-    "Regionale geologische Forschung und Bodenanalyse durch Privatinvestition GIGA FIBERs,",
-    "Zulieferung von Expertise und Ausrüstung für die Bodenanalysen,",
-    "Errichtung eigener Minen für den Kupfer- und Lithiumabbau,",
-    "Produktion von Kupfererzeugnissen und Belieferung der Automobilindustrie mit Lithiumbatterien,",
-    "Einsatz von abgebautem Lithium für Funkmastinfrastruktur auf der Teststrecke für Autonomes Fahren in der Region Karakalpakstan,",
+    t("frameComponent5_answers_investment_listItems_0"),
+    t("frameComponent5_answers_investment_listItems_1"),
+    t("frameComponent5_answers_investment_listItems_2"),
+    t("frameComponent5_answers_investment_listItems_3"),
+    t("frameComponent5_answers_investment_listItems_4")
   ];
   const listItems2 = [
-    "Neue Arbeitsplätze steigern den Bedarf an Wohnraum, was die Attraktivität für Investoren im Wohnungsbau steigert.",
-    "Die Errichtung neuer Minen fördert das Wirtschaftswachstum und die Ansiedlung von Arbeitskräften in abgelegenen Regionen.",
-    "Die Mine ermöglicht den Abbau unterschiedlicher Erze, die Deckung des eigenen Bedarfs für die Kabelherstellung und Belieferung nationaler Automobilindustrie.",
-    "Der Abbau als auch die Belieferung nationaler Unternehmen beeinflussen die Produktion und die Exportrate der Region und des Landes.",
+    t("frameComponent5_answers_economicImpact_listItems2_0"),
+    t("frameComponent5_answers_economicImpact_listItems2_1"),
+    t("frameComponent5_answers_economicImpact_listItems2_2"),
+    t("frameComponent5_answers_economicImpact_listItems2_3")
   ];
   const listItems3 = [
-    "Einführung europäischer Bergbaupraktiken und Standards zur Steigerung der Wettbewerbsfähigkeit.",
-    "Aufbau einer effektiven Wertschöpfungskette in der Kupfer- und Lithiumindustrie, die auf den Export ausgelegt ist.",
+    t('frameComponent5_answers_internationalStandards_listItems3_0'),
+    t("frameComponent5_answers_internationalStandards_listItems3_1"),
   ];
   const listItems4 = [
-    "Der Bergbau erfordert zahlreiche Arbeitskräfte sowie Zusammenarbeit mit nationalen, internationalen und lokalen Subunternehmen.",
-    "Bestehende Infrastruktur wird eingebunden und das Wirtschaftswachstum in der Region gefördert.",
-    "Firmen aus der Automobilindustrie / E-Mobilität schaffen Standorte für Arbeitskräfte und Know-How Austausch.",
+    t("frameComponent5_answers_jobCreation_listItems4_0"),
+    t("frameComponent5_answers_jobCreation_listItems4_1"),
+    t("frameComponent5_answers_jobCreation_listItems4_2")
   ];
 
   const ListComponent = ({ items }) => (
@@ -55,20 +50,20 @@ const FrameComponent5 = forwardRef((props, ref) => {
 
   const questionsAndAnswers = [
     {
-      question: "Regional geological research and soil analysis",
-      answer: <ListComponent items={listItems} />,
+      question: t('frameComponent5_questions_investment'),
+      answer: <ListComponent items={listItems} />, 
     },
     {
-      question: "Impact of new jobs on housing demand",
-      answer: <ListComponent items={listItems2} />,
+      question: t('frameComponent5_questions_economicImpact'),
+      answer: <ListComponent items={listItems2} />, 
     },
     {
-      question: "European mining practices and standards",
-      answer: <ListComponent items={listItems3} />,
+      question: t('frameComponent5_questions_internationalStandards'),
+      answer: <ListComponent items={listItems3} />, 
     },
     {
-      question: "Requirements and benefits of mining",
-      answer: <ListComponent items={listItems4} />,
+      question: t('frameComponent5_questions_jobCreation'),
+      answer: <ListComponent items={listItems4} />, 
     },
   ];
 

@@ -20,6 +20,32 @@
   "frameComponent5_title": "WIE STÄRKEN WIR DIE REGIONALE WIRTSCHAFTSKRAFT?",
   "frameComponent5_intro": "Moderne Bergbautechnologien und fortschrittliche Methoden in den Bereichen Gewinnung, Digitalisierung, Energieeffizienz und Arbeitssicherheit sind wesentliche Bestandteile des Projekts. Auch die Ausbildung und Weiterbildung von Fachkräften im Bergbau wird besonders betont.",
   "frameComponent5_potential": "POTENTIAL FÜR DIE REGION",
+
+  "frameComponent5_questions_investment": "Investitionen in Dokumentation und Modernisierung",
+  "frameComponent5_questions_economicImpact": "Wirtschaftliche Auswirkungen und Infrastruktur",
+  "frameComponent5_questions_internationalStandards": "Internationale Standards und Wettbewerbsfähigkeit",
+  "frameComponent5_questions_jobCreation": "Schaffung von Arbeitsplätzen",
+  
+  "frameComponent5_answers_investment_listItems": "Liste der Investitionen",
+  "frameComponent5_answers_investment_listItems2": "Weitere Investitionen",
+  "frameComponent5_answers_economicImpact_listItems2": "Wirtschaftliche Auswirkungen Liste",
+  "frameComponent5_answers_internationalStandards_listItems3": "Internationale Standards Liste",
+  "frameComponent5_answers_jobCreation_listItems4": "Liste der Arbeitsplätze",
+
+  "frameComponent5_answers_investment_listItems_0": "Regionale geologische Forschung und Bodenanalyse durch Privatinvestition GIGA FIBERs,",
+  "frameComponent5_answers_investment_listItems_1": "Zulieferung von Expertise und Ausrüstung für die Bodenanalysen,",
+  "frameComponent5_answers_investment_listItems_2": "Errichtung eigener Minen für den Kupfer- und Lithiumabbau,",
+  "frameComponent5_answers_investment_listItems_3": "Produktion von Kupfererzeugnissen und Belieferung der Automobilindustrie mit Lithiumbatterien,",
+  "frameComponent5_answers_investment_listItems_4": "Einsatz von abgebautem Lithium für Funkmastinfrastruktur auf der Teststrecke für Autonomes Fahren in der Region Karakalpakstan,",
+  "frameComponent5_answers_economicImpact_listItems2_0": "Neue Arbeitsplätze steigern den Bedarf an Wohnraum, was die Attraktivität für Investoren im Wohnungsbau steigert.",
+  "frameComponent5_answers_economicImpact_listItems2_1": "Die Errichtung neuer Minen fördert das Wirtschaftswachstum und die Ansiedlung von Arbeitskräften in abgelegenen Regionen.",
+  "frameComponent5_answers_economicImpact_listItems2_2": "Die Mine ermöglicht den Abbau unterschiedlicher Erze, die Deckung des eigenen Bedarfs für die Kabelherstellung und Belieferung nationaler Automobilindustrie.",
+  "frameComponent5_answers_economicImpact_listItems2_3": "Der Abbau als auch die Belieferung nationaler Unternehmen beeinflussen die Produktion und die Exportrate der Region und des Landes.",
+  "frameComponent5_answers_internationalStandards_listItems3_0": "Einführung europäischer Bergbaupraktiken und Standards zur Steigerung der Wettbewerbsfähigkeit.",
+  "frameComponent5_answers_internationalStandards_listItems3_1": "Aufbau einer effektiven Wertschöpfungskette in der Kupfer- und Lithiumindustrie, die auf den Export ausgelegt ist.",
+  "frameComponent5_answers_jobCreation_listItems4_0": "Der Bergbau erfordert zahlreiche Arbeitskräfte sowie Zusammenarbeit mit nationalen, internationalen und lokalen Subunternehmen.",
+  "frameComponent5_answers_jobCreation_listItems4_1": "Bestehende Infrastruktur wird eingebunden und das Wirtschaftswachstum in der Region gefördert.",
+  "frameComponent5_answers_jobCreation_listItems4_2": "Firmen aus der Automobilindustrie / E-Mobilität schaffen Standorte für Arbeitskräfte und Know-How Austausch.",
   
   "frameComponent5_q1_question": "What is your return policy?",
   "frameComponent5_q1_answer": "We offer a 30-day return policy on all items. Please ensure that the items are in their original packaging and condition. For more details, visit our returns page.",
@@ -64,34 +90,36 @@
 
   "frameComponent7_title2": "GIGA FIBER CONNECTIVITY​",
   "frameComponent7_intro2_part1": "GIGA FIBER Connectivity ist ein umfassendes Projekt, welches auf den Aufbau und die Erweiterung digitaler Infrastrukturen abzielt. Es schafft Schnittstellen für den Einzelhandel, die kontextsensitive Werbung, digitale Zahlungen und optimierte Kommunikation ermöglichen, um den Konsum und die wirtschaftliche Aktivität in Usbekistan zu steigern.",
-
-  "frameComponent7_dropdown_title": "VORTEILE & ZIELE",
-"frameComponent7_dropdown_intro_part1": "Dieses Projekt trägt maßgeblich zur digitalen Transformation Usbekistans bei und stellt sicher, dass der Wohlstandszuwachs aus den Rohstoffprojekten nachhaltig in den Aufbau einer modernen und vernetzten Wirtschaft investiert wird.",
-
-"frameComponent7_dropdown_intro_part2": "Durch die vorherigen Projekte gewonnene Kaufkraft wird landesweit unterstützt. GIGA FIBER Connectivity schafft eine Plattform für gezielte Marketingstrategien und stärkt die finanzielle Inklusion durch digitale Zahlungen.",
-
-
+  "frameComponent7_intro2_part2": "Die Geschäftsidee von GIGA FIBER Connectivity hat sich bereits in verschiedenen Projekten in der EU erfolgreich bewährt. Beispiele dafür sind:",
+  
   "frameComponent7_sectionData_1_title": "Hospitality & Hotels",
   "frameComponent7_sectionData_1_imageSrc": "tree.png",
-  "frameComponent7_sectionData_1_points_1": "Increased revenue through targeted addressing of specific target groups.",
-  "frameComponent7_sectionData_1_points_2": "WIFI and context-sensitive customer interactions, local-based",
-  "frameComponent7_sectionData_1_points_3": "Increased booking rates due to positive customer experience",
+  "frameComponent7_sectionData_1_points_1": "Umsatzsteigerung durch gezielte Ansprache spezifischer Zielgruppen.",
+  "frameComponent7_sectionData_1_points_2": "WIFI und Kontextintensive Ansprachen der Kunden, local-based",
+  "frameComponent7_sectionData_1_points_3": "Erhöhung der Buchungsraten aufgrund von positivem Kundenerlebnis",
   
   "frameComponent7_sectionData_2_title": "Discounter & Malls",
   "frameComponent7_sectionData_2_imageSrc": "Dhouse.png",
-  "frameComponent7_sectionData_2_points_1": "Creation of new economic sectors in technology, leading to increased innovation.",
-  "frameComponent7_sectionData_2_points_2": "Transparency of consumer behavior thanks to local-based technology and indoor GPS.",
-  "frameComponent7_sectionData_2_points_3": "Increased revenue through targeted addressing of specific target groups.",
+  "frameComponent7_sectionData_2_points_1": "Schaffung neuer Wirtschaftszweige im Technologie-Bereich, was zu erhöhter Innovation führt.",
+  "frameComponent7_sectionData_2_points_2": "Transparenz des Konsumentenverhaltens dank local-based Technologie und Indoor GPS.",
+  "frameComponent7_sectionData_2_points_3": "Umsatzsteigerung durch gezielte Ansprache spezifischer Zielgruppen.",
+  "frameComponent7_sectionData_2_ending_para": "Diese Erfolge demonstrieren das Potenzial von GIGA FIBER Connectivity, wirtschaftliche Vorteile zu erzielen und die Kundenzufriedenheit in verschiedenen Branchen zu steigern. Die Technologie ist vielseitig einsetzbar und trägt maßgeblich zur Effizienzsteigerung und Umsatzverbesserung bei.",
   
-  "frameComponent7_sectionDataDropdown_1_title2": "Optimierung der Kundenerfahrung",
+  "frameComponent7_dropdown_title": "VORTEILE & ZIELE",
+  "frameComponent7_dropdown_intro_part1": "Dieses Projekt trägt maßgeblich zur digitalen Transformation Usbekistans bei und stellt sicher, dass der Wohlstandszuwachs aus den Rohstoffprojekten nachhaltig in den Aufbau einer modernen und vernetzten Wirtschaft investiert wird.",
+  
+  "frameComponent7_dropdown_intro_part2": "Durch die vorherigen Projekte gewonnene Kaufkraft wird landesweit unterstützt. GIGA FIBER Connectivity schafft eine Plattform für gezielte Marketingstrategien und stärkt die finanzielle Inklusion durch digitale Zahlungen.",
+  
+
+  "frameComponent7_sectionDataDropdown_1_title2": "Förderung des E-Commerce",
   "frameComponent7_sectionDataDropdown_1_imageSrc": "Rectangle 16.png",
   "frameComponent7_sectionDataDropdown_1_points_1": "Unterstützung lokaler Unternehmen durch Zugang zu nationalen und internationalen Märkten.",
   "frameComponent7_sectionDataDropdown_1_points_2": "Förderung der wirtschaftlichen Diversifizierung und Steigerung der Exporte durch neue Partnerschaften.",
   "frameComponent7_sectionDataDropdown_1_points_3": "Schaffung neuer Wirtschaftssektoren im Bereich Technologie, was zu erhöhter Innovation führt.",
   
-  "frameComponent7_sectionDataDropdown_2_title2": "Discounter & Einkaufszentren",
+  "frameComponent7_sectionDataDropdown_2_title2": "Optimierung der Kundenerfahrung",
   "frameComponent7_sectionDataDropdown_2_imageSrc": "rectangle17.png",
-  "frameComponent7_sectionDataDropdown_2_points_1": "Durch Geräteunabhängigkeit und Datenschutz verbessert GIGA FIBER Connectivity das Benutzererlebnis.",
-  "frameComponent7_sectionDataDropdown_2_points_2": "Ziel ist die direkte Datenerhebung und Analyse des Konsum- und Besucher-Verhaltens mittels ortsbasierter Technologie und Indoor-GPS.",
-  "frameComponent7_sectionDataDropdown_2_points_3": "Steigerung der Umsätze"
+  "frameComponent7_sectionDataDropdown_2_points_1": "Durch die Geräte-unabhängigkeit und den Schutz der Privatsphäre verbessert GIGA FIBER Connectivity das Nutzererlebnis.",
+  "frameComponent7_sectionDataDropdown_2_points_2": "Ziel ist die direkte Datenerfassung und Analyse des Konsum- und Besucherverhaltens mit Hilfe von local-based Technologie und Indoor GPS",
+  "frameComponent7_sectionDataDropdown_2_points_3": "Erhöht die Umsätze"
 }
