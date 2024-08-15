@@ -21,7 +21,7 @@ const Footer = ({ className = "" }) => {
       src="/ebene-11.svg"
     />
     <div className="absolute bottom-4 max-md:bottom-1/2 max-md:right-1/3 right-4 flex flex-row items-center justify-start gap-4 text-sm sm:text-base">
-      <div onClick={() => handleClick("/impressum")} className="cursor-pointer">
+      <div onClick={() => handleClick("/impersum")} className="cursor-pointer">
         Impressum
       </div>
       <div onClick={() => handleClick("/datenschutz")} className="cursor-pointer">
