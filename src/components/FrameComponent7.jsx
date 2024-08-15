@@ -71,7 +71,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
         ref={ref}
         className="bg-white  flex flex-col items-center rounded-2xl p-10 m-5 "
       >
-        <div className="flex space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
+        <div className="flex justify-between w-full space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">
             <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 px-3 border-[#903fff]">03</p>{" "}

@@ -32,7 +32,7 @@ const FrameComponent4 = forwardRef(({ scrollToFrame5, scrollToFrame6, scrollToFr
   ];
 
   return (
-    <div ref={ref} className="flex justify-center flex-wrap mt-4 gap-3 p-2">
+    <div ref={ref} className="flex justify-center flex-wrap mt-4 gap-3 p-2 max-md:px-0">
       {cardData.map((card, index) => (
         <div
           onClick={card.scrollTo}
