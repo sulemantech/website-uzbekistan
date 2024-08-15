@@ -53,7 +53,7 @@ const FrameComponent3 = ({ className = "" }) => {
           onClick={toggleMute}
           className=" text-white p-2 rounded-full"
         >
-          {isMuted ? <img src="Sound on off.svg" alt="" srcset="" /> : "Mute"}
+          {isMuted ? <img src="Sound on off.svg" alt="" srcset="" /> : <img src="sound-on.svg" alt="" srcset="" />}
         </button>
       </div>
       </div>
