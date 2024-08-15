@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState ,forwardRef } from "react";
 import DropdownFaq from "./SingleDropDown";
-const FrameComponent7 = () => {
+const FrameComponent7 = forwardRef((props, ref) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
@@ -61,7 +61,7 @@ const FrameComponent7 = () => {
   ];
   return (
     <>
-      <div className="bg-white  flex flex-col items-center rounded-2xl p-10 m-5 ">
+      <div ref={ref} className="bg-white  flex flex-col items-center rounded-2xl p-10 m-5 ">
         <div className="flex space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">
             <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
@@ -218,7 +218,7 @@ const FrameComponent7 = () => {
       </div>
     </>
   );
-};
+});
 
 export default FrameComponent7;
 

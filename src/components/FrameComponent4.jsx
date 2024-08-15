@@ -1,7 +1,7 @@
 import { number } from "prop-types";
-import React from "react";
+import React , {forwardRef} from "react";
 
-const FrameComponent4 = () => {
+const FrameComponent4 = forwardRef(({ scrollToFrame5, scrollToFrame6, scrollToFrame7 }, ref) => {
   const cardData = [
     {
       number:"01",
@@ -9,6 +9,7 @@ const FrameComponent4 = () => {
       description: "WIE STEIGERN ​WIR DIE REGIONALE WIRTSCHAFTSKRAFT",
       imgSrc: "01.png",
       buttonText: "Learn More",
+      scrollTo: scrollToFrame5,
     },
     {
       number:"02",
@@ -16,6 +17,7 @@ const FrameComponent4 = () => {
       description: "WIE UNTERSTÜTZEN WIR DIE AUTOMOBILINDUSTRIE?​",
       imgSrc: "02.png",
       buttonText: "View Details",
+      scrollTo: scrollToFrame6,
     },
     {
       number:"03",
@@ -23,14 +25,15 @@ const FrameComponent4 = () => {
       description: "WIE FÖRDERN WIR WACHSTUM UND DIGITALE INTEGRATION?​",
       imgSrc: "03.png",
       buttonText: "View Details",
+      scrollTo: scrollToFrame7,
     },
-    // Add more card objects as needed
   ];
 
   return (
-    <div className="flex  justify-center flex-wrap mt-4 gap-3 p-2 ">
+    <div ref={ref} className="flex  justify-center flex-wrap mt-4 gap-3 p-2 ">
       {cardData.map((card, index) => (
         <div
+        onClick={card.scrollTo}
           key={index}
           className="relative group cursor-pointer w-[445px] h-[582px] max-lg:w-full max-lg:mx-4 rounded-lg overflow-hidden"
         >
@@ -52,6 +55,6 @@ const FrameComponent4 = () => {
       ))}
     </div>
   );
-};
+});
 
 export default FrameComponent4;

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState ,forwardRef } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
 
-const FrameComponent6 = () => {
+const FrameComponent6 = forwardRef((props, ref) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -64,7 +64,7 @@ const FrameComponent6 = () => {
   ];
   return (
     <>
-      <div className="bg-white rounded-2xl p-10 m-5">
+      <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
         <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="grid grid-cols-1 gap-4 h-[580px]  max-xl:w-full  overflow-hidden">
             <div className="relative col-span-1 h-[264px] w-[658px] max-xl:w-full rounded-xl overflow-hidden">
@@ -214,7 +214,7 @@ const FrameComponent6 = () => {
       </div>
     </>
   );
-};
+});
 
 export default FrameComponent6;
 
