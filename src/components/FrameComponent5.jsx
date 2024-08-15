@@ -1,4 +1,4 @@
-import React, { useState ,forwardRef } from "react";
+import React, { useState, forwardRef } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
 import { Imagewithdiscription } from "./FrameComponent6";
@@ -9,31 +9,58 @@ const FrameComponent5 = forwardRef((props, ref) => {
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+  const listItems = [
+    "Regionale geologische Forschung und Bodenanalyse durch Privatinvestition GIGA FIBERs,",
+    "Zulieferung von Expertise und Ausrüstung für die Bodenanalysen,",
+    "Errichtung eigener Minen für den Kupfer- und Lithiumabbau,",
+    "Produktion von Kupfererzeugnissen und Belieferung der Automobilindustrie mit Lithiumbatterien,",
+    "Einsatz von abgebautem Lithium für Funkmastinfrastruktur auf der Teststrecke für Autonomes Fahren in der Region Karakalpakstan,",
+  ];
+  const listItems2 = [
+    "Neue Arbeitsplätze steigern den Bedarf an Wohnraum, was die Attraktivität für Investoren im Wohnungsbau steigert.",
+    "Die Errichtung neuer Minen fördert das Wirtschaftswachstum und die Ansiedlung von Arbeitskräften in abgelegenen Regionen.",
+    "Die Mine ermöglicht den Abbau unterschiedlicher Erze, die Deckung des eigenen Bedarfs für die Kabelherstellung und Belieferung nationaler Automobilindustrie.",
+    "Der Abbau als auch die Belieferung nationaler Unternehmen beeinflussen die Produktion und die Exportrate der Region und des Landes.",
+  ];
+  const listItems3 = [
+    "Einführung europäischer Bergbaupraktiken und Standards zur Steigerung der Wettbewerbsfähigkeit.",
+    "Aufbau einer effektiven Wertschöpfungskette in der Kupfer- und Lithiumindustrie, die auf den Export ausgelegt ist.",
+  ];
+  const listItems4 = [
+    "Der Bergbau erfordert zahlreiche Arbeitskräfte sowie Zusammenarbeit mit nationalen, internationalen und lokalen Subunternehmen.",
+    "Bestehende Infrastruktur wird eingebunden und das Wirtschaftswachstum in der Region gefördert.",
+    "Firmen aus der Automobilindustrie / E-Mobilität schaffen Standorte für Arbeitskräfte und Know-How Austausch.",
+  ];
+
+  const ListComponent = ({ items }) => (
+    <ul className="list-none">
+      {items.map((item, index) => (
+        <li
+          key={index}
+          className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full"
+        >
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+
   const questionsAndAnswers = [
     {
-      question: "What is your return policy?",
-      answer:
-        "We offer a 30-day return policy on all items. Please ensure that the items are in their original packaging and condition. For more details, visit our returns page.",
+      question: "Regional geological research and soil analysis",
+      answer: <ListComponent items={listItems} />,
     },
     {
-      question: "How long does shipping take?",
-      answer:
-        "Shipping times vary depending on your location. Typically, domestic orders take 3-5 business days, while international orders can take 7-14 business days.",
+      question: "Impact of new jobs on housing demand",
+      answer: <ListComponent items={listItems2} />,
     },
     {
-      question: "Do you offer international shipping?",
-      answer:
-        "Yes, we offer international shipping to most countries. Shipping costs and delivery times will be calculated at checkout based on your location.",
+      question: "European mining practices and standards",
+      answer: <ListComponent items={listItems3} />,
     },
     {
-      question: "Can I change my order after placing it?",
-      answer:
-        "If you need to make changes to your order, please contact us as soon as possible. We can only make changes if the order has not yet been processed or shipped.",
-    },
-    {
-      question: "How can I track my order?",
-      answer:
-        "Once your order has shipped, you will receive a tracking number via email. You can use this tracking number to check the status of your order on our shipping partner's website.",
+      question: "Requirements and benefits of mining",
+      answer: <ListComponent items={listItems4} />,
     },
   ];
 
@@ -48,7 +75,6 @@ const FrameComponent5 = forwardRef((props, ref) => {
       </div>
     );
   };
-
 
   const imagedesData = [
     {
@@ -103,16 +129,19 @@ const FrameComponent5 = forwardRef((props, ref) => {
     {
       img: "R18.png",
       text: divcontainer(
-        (<div className="text-[34px] text-white">50%</div>),
-        (<div className="text-white">des erwirtschafteten Profits werden in die Teststrecke autonomes Fahren investiert.</div>)
+        <div className="text-[34px] text-white">50%</div>,
+        <div className="text-white">
+          des erwirtschafteten Profits werden in die Teststrecke autonomes
+          Fahren investiert.
+        </div>
       ),
     },
   ];
-  
+
   return (
     <>
       <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
-        <div className="flex justify-between items-center max-w-[1500px] mx-auto space-x-10 rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
+        <div className="flex justify-between max-w-[1500px] mx-auto space-x-10 rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-7">
             <span className="flex space-x-6 text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="border-r-2 pr-3 border-[#903fff]">01</p>{" "}
@@ -133,27 +162,24 @@ const FrameComponent5 = forwardRef((props, ref) => {
               <p className="text-3xl font-bold text-[#903fff] mb-3">
                 POTENZIAL FÜR DIE REGION
               </p>{" "}
-              <div className="accordion w-[518px] max-xl:w-full">
+              <div className="accordion font-saira w-[518px] max-xl:w-full">
                 {questionsAndAnswers.map((item, index) => (
                   <div key={index} className="mb-2 p-1">
                     <div
                       className=" bg-white cursor-pointer border-b-2 border-[#903fff] text-lg font-medium relative overflow-hidden"
                       onClick={() => toggleAccordion(index)}
                     >
-                      <div className="flex justify-between items-center text-[#3d3a3a]">
+                      <div className="flex justify-between text-base  items-center text-[#3d3a3a]">
                         <div>{item.question}</div>
-                        <div>
-                          {activeIndex === index ? (
+                        <div className={`transition-transform ${activeIndex === index ? "rotate-0" : "-rotate-180"}`}>
                             <IconChevronUp color="#903fff" />
-                          ) : (
-                            <IconChevronDown />
-                          )}
+                         
                         </div>
                       </div>
                       <div
-                        className={` text-gray-400 ${
+                        className={`font-normal text-sm text-gray-400 ${
                           activeIndex === index
-                            ? "max-h-[500px] opacity-100 p-2"
+                            ? " opacity-100 p-2"
                             : "max-h-0 opacity-0"
                         }`}
                       >
@@ -178,34 +204,56 @@ const FrameComponent5 = forwardRef((props, ref) => {
               ></video>
               <div className="absolute w-full bg-gradient-to-t from-[#3B2A89] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
                 <span className="text-white absolute bottom-4 left-8 font-saira-condensed text-[55px] font-bold leading-[125%]">
-                CU29 TECH
+                  CU29 TECH
                 </span>
               </div>
             </div>
             <div className="grid grid-cols-2 h-[279px] max-xl:h-full gap-4 col-span-1">
               <span className="w-full h-full">
-                <img src="rock.png" alt="" className=" rounded-xl w-full h-full object-cover" />
+                <img
+                  src="rock.png"
+                  alt=""
+                  className=" rounded-xl w-full h-full object-cover"
+                />
               </span>
               <span className="w-full h-full">
-                <img src="machine.png" alt="" className="rounded-xl w-full h-full object-cover" />
+                <img
+                  src="machine.png"
+                  alt=""
+                  className="rounded-xl w-full h-full object-cover"
+                />
               </span>
             </div>
           </div>
         </div>
         <DropdownFaq
           question="ZIELE DER KOOPERATION MIT GIGA FIBER"
-          answer={<div>
-             <div className="bg-white rounded-3xl m-2 p-[40px]">
-              <p>
-              Usbekistan verfügt über eine beeindruckende Vielfalt an mineralischen Metall- und Nichtmetallrohstoffen, die enorme Potenziale für Unternehmen bieten.  Die im Jahr 2024 abgeschlossene Partnerschaft mit der EU eröffnet vielfältige Möglichkeiten zur Kooperation im Bergbau. Diese strategische Allianz schafft eine solide Grundlage für nachhaltige Investitionen und technologische Innovationen im usbekischen Rohstoffsektor.​
-              </p>
-              <div className="flex flex-wrap justify-between mt-5">
-              {imagedesData.map((data, index) => (
-                <Imagewithdiscription  key={index}  imageSrc={data.img} applyBg={index == "7" ? false : true}  text={data.text} />
-              ))}
+          answer={
+            <div>
+              <div className="bg-white rounded-3xl m-2 p-[40px]">
+                <p>
+                  Usbekistan verfügt über eine beeindruckende Vielfalt an
+                  mineralischen Metall- und Nichtmetallrohstoffen, die enorme
+                  Potenziale für Unternehmen bieten.  Die im Jahr 2024
+                  abgeschlossene Partnerschaft mit der EU eröffnet vielfältige
+                  Möglichkeiten zur Kooperation im Bergbau. Diese strategische
+                  Allianz schafft eine solide Grundlage für nachhaltige
+                  Investitionen und technologische Innovationen im usbekischen
+                  Rohstoffsektor.​
+                </p>
+                <div className="flex flex-wrap justify-between mt-5">
+                  {imagedesData.map((data, index) => (
+                    <Imagewithdiscription
+                      key={index}
+                      imageSrc={data.img}
+                      applyBg={index == "7" ? false : true}
+                      text={data.text}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
-          </div>}
+          }
         />
       </div>
     </>

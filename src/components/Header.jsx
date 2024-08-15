@@ -23,8 +23,8 @@ const Header = ({scrollToFrame4}) => {
         <p className="font-bold text-8xl text-[#903fff] leading-2">
           DRIVING REGIONAL GROWTH.​
         </p>
-        <p onClick={scrollToFrame4} className="font-bold text-[20px] text-white mt-4">
-          MEHR ERFAHREN →​
+        <p onClick={scrollToFrame4} className="font-bold text-[20px] group text-white mt-4 ml-2 cursor-pointer flex space-x-3 items-center">
+          <span>MEHR ERFAHREN</span> <span><img  className="w-[20px] group-hover:rotate-90 transition-transform" src="objects2.svg" alt="" /></span>
         </p>
       </div>
     </div>

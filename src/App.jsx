@@ -7,6 +7,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import Gigafibertechcom from "./pages/Gigafibertechcom";
+import Impressum from './components/Impressum';
+import Datenschutz from './components/Datenschutz';
 
 function App() {
   const action = useNavigationType();
@@ -47,6 +49,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Gigafibertechcom />} />
+      <Route path="/impersum" element={<Impressum/>}/>
+      <Route path="/datenschutz" element={<Datenschutz/>}/>
     </Routes>
   );
 }

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const FrameComponent3 = ({ className = "" }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   const togglePlayPause = () => {
     if (videoRef.current.paused) {
