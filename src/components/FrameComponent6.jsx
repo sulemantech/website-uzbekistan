@@ -124,7 +124,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
               </p>
             </span>
             <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
-              <span>
+              <span>  
                 {t("frameComponent6_infrastructure_paragraph")}
               </span>
               <ul className="list-none">
@@ -169,7 +169,10 @@ const FrameComponent6 = forwardRef((props, ref) => {
           answer={
             <div className="bg-white rounded-3xl m-2 p-[40px]">
               <p>
-              {t('frameComponent6_faq_description')}
+              {t('frameComponent6_faq_ans_part1')}
+              <br/>
+              <br/>
+              {t('frameComponent6_faq_ans_part2')}
               </p>
               <div className="flex flex-wrap justify-between mt-5">
               {imagedesData.map((data, index) => (
