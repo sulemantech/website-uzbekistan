@@ -287,7 +287,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
           question={t("frameComponent5_faq_question_gigaFiberPartnership")}
           answer={
             <div>
-              <div className="bg-white max-md:bg-[#F5EEFF] rounded-3xl m-3 max-md:m-0 p-[40px]">
+              <div className="bg-white max-md:bg-[#F5EEFF] rounded-3xl m-3 max-md:m-0 p-[40px] max-md:px-5">
                 <p>{t("frameComponent5_faq_answer_gigaFiberPartnership")}</p>
                 <div className="flex flex-wrap max-md:hidden justify-between mt-5">
                   {isMobile &&
@@ -302,7 +302,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                 </div>
                 <div className="flex flex-wrap md:hidden justify-between mt-5">
                   <div>
-                    <img className="w-full mb-3" src="R11.png" alt="Description" />
+                    <img className="w-full mb-3 mt-3" src="R11.png" alt="Description" />
                     <div>
                       {imagedesData.slice(0, 4).map((data, index) => (
                         <Imagewithdiscription2 key={index} text={data.text} />
@@ -310,7 +310,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                     </div>
                   </div>
                   <div className="">
-                    <img className="w-full mb-3" src="R16.png" alt="Description" />
+                    <img className="w-full mb-3 mt-3" src="R16.png" alt="Description" />
                     <div>
                       {imagedesData.slice(4, 7).map((data, index) => (
                         <Imagewithdiscription2 key={index} text={data.text} />

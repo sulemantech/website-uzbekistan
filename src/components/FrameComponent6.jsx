@@ -143,8 +143,8 @@ const FrameComponent6 = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] max-md:h-auto p-2 flex justify-center items-center text-white  text-[30px] max-md:text-[3.4vw] max-lg:text-[2.8vw] font-bold leading-[107%] uppercase">
-          <span className="w-[96%]  mx-auto">
+        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] max-md:h-auto p-2 flex justify-center items-center text-white text-[30px] max-md:text-[4vw] max-lg:text-[2.8vw] font-bold leading-[107%] uppercase">
+          <span className=" my-5 max-md:mx-[30px] mx-auto">
             {t("frameComponent6_highlight")}
           </span>
         </div>
@@ -171,16 +171,16 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </div>
           <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full max-md:h-full overflow-hidden">
             <div className="col-span-1  rounded-xl relative overflow-hidden">
-              {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
+              <img src="carmobile.png" alt="" className="w-full h-auto md:hidden" />
               <video
-                className="rounded-xl w-full h-full object-cover"
+                className="rounded-xl w-full h-full max-md:hidden object-cover"
                 src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/f65a/b9b6/-80f2-48c1-ae3d-f36ba02b30d2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P7FiNGSjyvDg2rXuKRBJOApt9A0Z1HONjxuZyrw1J3hdvcm01hKebkKRHNKM5RLI21OGAd8~uhn13tzhKwn9s~hhXYvo8qV7IcjkWhlsSVLnQ4qaWdgbFNbFY~zXCcFF47gRgjW2ArnqVXw45jFFwlthYSZCKerNuKFT4RE4nftRg9ejJeeCR-e4UFS1S31mDfvQYh6zmEvQ~ZylgzK5afLseAQ-3IJZNpAYtjV7fuezlqQLZyuAux7~pJMZ2hMbp51F9vYPOPO6~VqCF-wmR5lWEGjyWvn2gKiMfrPDbk0PFckCIgJhC~KnPEoS8FetKWnDlPQbfiFwjJgzyog0Og__"
                 autoPlay
                 loop
                 muted
                 playsInline
               ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
+              <div className="absolute max-md:hidden w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
                 <span className="text-white max-md:hidden absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
                   {t("frameComponent6_title2")}
                 </span>
@@ -220,7 +220,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
         <DropdownFaq
           question={t("frameComponent6_faq_question")}
           answer={
-            <div className="bg-white rounded-3xl m-2 p-[40px]">
+            <div className="bg-white rounded-3xl m-2 p-[40px] max-md:px-3">
               <p>
                 {t("frameComponent6_faq_ans_part1")}
                 <br />
