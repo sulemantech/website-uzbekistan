@@ -69,7 +69,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
     <>
       <div
         ref={ref}
-        className="bg-white flex flex-col items-center rounded-2xl p-5 sm:p-10 m-0 -translate-y-10 z-0"
+        className="bg-white flex flex-col items-center rounded-2xl p-5 sm:p-10 m-0"
       >
         <div className="flex justify-between w-full space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">
@@ -169,7 +169,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap space-y-10 md:space-x-10 max-w-[1500px] justify-between w-full my-6">
+        <div className="flex flex-wrap md:flex-nowrap space-y-10 md:space-y-0 md:space-x-10 max-w-[1500px] justify-between w-full my-6">
           {sectionData.map((data, index) => (
             <Section
               key={index}
@@ -183,12 +183,12 @@ const FrameComponent7 = forwardRef((props, ref) => {
         <DropdownFaq
           question={t("frameComponent7_dropdown_title")}
           answer={
-            <div className="bg-white rounded-3xl m-2 p-[30px] md:p-[40px]">
+            <div className="bg-white rounded-3xl m-2 p-[25px] md:p-[40px]">
               <p>
                 {t("frameComponent7_dropdown_intro_part1")} <br /><br /> Durch die
                 {t("frameComponent7_dropdown_intro_part2")}
               </p>
-              <p className="flex flex-wrap space-y-5 md:space-x-10 max-w-[1500px] justify-between w-full my-6">
+              <p className="flex flex-wrap md:flex-nowrap md:space-x-10 max-w-[1500px] justify-between w-full my-6">
                 {sectionDataDropdown.map((data, index) => (
                   <Section
                     key={index}
@@ -211,10 +211,10 @@ export default FrameComponent7;
 const Section = ({ title, title2 = null, imageSrc, points }) => {
   return (
     <div className="w-[100%] md:w-[50%] rounded-xl z-50 bg-gradient-to-t bg-white sm:from-[#903fff30] to-transparent space-y-3">
-      <span className="text-[#903FFF] hidden max-md:block h-[28px] font-saira-condensed text-[22px] font-bold leading-[125%]">
+      <span className="text-[#903FFF] hidden max-sm:block h-[28px] font-saira-condensed text-[22px] font-bold leading-[125%]">
             {title}
           </span>
-      <div className="col-span-1 h-[165px] :h-[264px] rounded-xl relative overflow-hidden">
+      <div className="col-span-1 h-[165px] sm:h-[264px] rounded-xl relative overflow-hidden">
         <img src={imageSrc} alt="" className="w-full h-full object-cover" />
         <div className={`absolute w-full ${title ? "bg-gradient-to-t from-[#271C5BAA] to-transparent" : ""} z-50 h-[264px] top-0 rounded-xl overflow-hidden`}>
           <span className="text-white absolute bottom-5 left-8 font-saira-condensed text-[30px] font-bold leading-[125%]">
@@ -223,7 +223,7 @@ const Section = ({ title, title2 = null, imageSrc, points }) => {
         </div>
       </div>
       {title2 && (
-        <div className="mt-4 md:ml-[39px]">
+        <div className="mt-4 sm:ml-[39px]">
           <span className="flex justify-start w-full text-[#903fff] font-saira text-base font-bold">
             {title2}
           </span>
@@ -232,7 +232,7 @@ const Section = ({ title, title2 = null, imageSrc, points }) => {
       <ul
         className={`list-none w-[90%] ${
           !title2 && "mt-4"
-        } ml-[0px]`}
+        } sm:ml-[20px]`}
       >
         {points.map((point, index) => (
           <li

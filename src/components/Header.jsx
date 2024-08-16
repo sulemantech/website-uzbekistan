@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const Header = ({ isMobile, scrollToFrame4}) => {
+const Header = ({ isMobile, scrollToFrame4 }) => {
   const { t } = useTranslation(); // Call useTranslation here
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -25,8 +30,28 @@ const Header = ({ isMobile, scrollToFrame4}) => {
         playsInline
       ></video>
 
-      <span className="absolute top-5 left-5 z-10">
+      <span className="absolute flex justify-between w-full top-5 left-5 z-10">
         <img src="gigafibertoplogo.svg" alt="Gigafiber Logo" />
+        <div className="relative mr-14 inline-block text-left">
+          <span className=" cursor-pointer" onClick={toggleDropdown}>
+            <img src="lang.png" alt="Language" />
+          </span>
+          {isOpen && (
+            <div className="absolute right-0 mt-2 bg-white border border-gray-300 shadow-lg rounded-lg z-10">
+              <ul className="">
+                <li className=" hover:bg-gray-100 cursor-pointer">
+                  Option 1
+                </li>
+                <li className=" hover:bg-gray-100 cursor-pointer">
+                  Option 2
+                </li>
+                <li className=" hover:bg-gray-100 cursor-pointer">
+                  Option 3
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
       </span>
 
       <div className="absolute bottom-5 left-5 z-10">

@@ -22,31 +22,34 @@ const Datenschutz = () => {
       </p>
     );
   };
-  const paragraph=(text)=>{
-    return(<p className="text-[#000] font-saira-condensed text-sm font-normal leading-[20px]">{text}</p>);
+  const paragraph = (text) => {
+    return (
+      <p className="text-[#000] font-saira-condensed text-sm font-normal leading-[20px]">
+        {text}
+      </p>
+    );
   };
   const link = (text, href) => {
     return (
-      <a href={href} className="text-black font-saira-condensed text-sm font-normal leading-[20px] underline">
+      <a
+        href={href}
+        className="text-black font-saira-condensed text-sm font-normal leading-[20px] underline"
+      >
         {text}
       </a>
     );
   };
   const link2 = (text, href) => {
     return (
-      <a href={href} className="text-[#903fff] font-saira-condensed text-sm font-normal leading-[20px] underline">
+      <a
+        href={href}
+        className="text-[#903fff] font-saira-condensed text-sm font-normal leading-[20px] underline"
+      >
         {text}
       </a>
     );
   };
 
-  // const listItems = [
-  //   t("frameComponent5_answers_investment_listItems_0"),
-  //   t("frameComponent5_answers_investment_listItems_1"),
-  //   t("frameComponent5_answers_investment_listItems_2"),
-  //   t("frameComponent5_answers_investment_listItems_3"),
-  //   t("frameComponent5_answers_investment_listItems_4")
-  // ];
   const ListComponent = ({ items }) => (
     <ul className="list-none">
       {items.map((item, index) => (
@@ -59,11 +62,28 @@ const Datenschutz = () => {
       ))}
     </ul>
   );
-  
+
   return (
-  <>
-  <Footer/>
-  </>
+<div className="w-full h-full overflow-hidden relative">
+  <video
+    className="absolute top-0 left-0 w-full h-full object-cover -z-40"
+    src="headerbgvideo.mov"
+    autoPlay
+    loop
+    muted
+    playsInline
+  ></video>
+  <div className="bg-gradient-to-b from-[#281D57] to-[#1E1A2E] w-full z-20 h-[70px] py-[21px] px-[49px]">
+    <img src="gigafibertoplogo.svg" alt="Gigafiber Logo" />
+  </div>
+  <div className="w-[95.5vw] flex flex-col items-center gap-[40px] mx-auto bg-white z-[999]">
+    lorem*800
+  </div>
+  <div className="flex items-center">
+    <Footer />
+  </div>
+</div>
+
   );
 };
 

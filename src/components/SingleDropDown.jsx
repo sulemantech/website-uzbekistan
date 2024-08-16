@@ -27,7 +27,7 @@ const DropdownFaq = ({ question, answer }) => {
         </div>
       </div>
       {isOpen && (
-        <div className="bg-[#8643f5] text-base font-normal leading-[125%] text-black p-4">
+        <div className="bg-[#8643f5] text-base font-normal leading-[125%] text-black p-2">
           <p>{answer}</p>
         </div>
       )}
