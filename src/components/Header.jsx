@@ -23,6 +23,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
     i18n.changeLanguage(lng);
     setIsOpen(false); // Close the dropdown after changing the language
   };
+  
 
   return (
     <div className="relative h-screen max-md:w-[100%] mx-auto overflow-hidden">
@@ -72,7 +73,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
         <p className="font-bold text-8xl max-md:text-[46px] max-md:leading-[100%] text-white">
           {t("header_transforming_infrastructure")}
         </p>
-        <p className="font-bold text-8xl max-md:text-[46px] text-[#903fff] max-md:leading-[100%] leading-2">
+        <p className="font-bold text-8xl max-md:text-[46px] text-[#8643F5] max-md:leading-[100%] leading-2">
           {t("header_driving_regional_growth")}
         </p>
         <p
@@ -106,10 +107,10 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col items-center mt-10 space-y-6 text-[#903fff]">
+        <div className="flex flex-col items-center mt-10 space-y-6 text-[#8643F5]">
           <button
             onClick={() => navigateToPage()}
-            className="text-[22px] flex justify-between space-x-3 items-center font-bold leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
+            className="text-[22px] flex justify-between space-x-3 items-center font-bold leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
             <span> {t("CU29 TECH")}</span>
             <span>
@@ -122,7 +123,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           </button>
           <button
             onClick={() => navigateToPage()}
-            className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
+            className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
             <span> {t("GIGA DRIVE HUB")}</span>
             <span>
@@ -135,7 +136,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           </button>
           <button
             onClick={() => navigateToPage()}
-            className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
+            className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
             <span> {t("GIGA FUTURE")} </span>
             <span>
@@ -151,7 +152,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           href="mailto:info@gigafiber.group"
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute flex justify-center items-center bottom-4 left-1/2 transform -translate-x-1/2 w-[145px] h-[49px] px-[52px] py-[10px] text-center text-white bg-[#903fff] rounded-22xl leading-[125%] text-[22px] font-bold"
+          className="absolute flex justify-center items-center bottom-4 left-1/2 transform -translate-x-1/2 w-[145px] h-[49px] px-[52px] py-[10px] text-center text-white bg-[#8643F5] rounded-22xl leading-[125%] text-[22px] font-bold"
         >
           <span>KONTAKT</span>
         </a>

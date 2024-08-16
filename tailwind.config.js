@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         white: "#fff",
-        "giga-fiber-lila": "#903fff",
+        "giga-fiber-lila": "#8643F5",
         blueviolet: "#8643f5",
         black: "#000",
         lavender: "#f5eeff",

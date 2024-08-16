@@ -39,7 +39,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
       {items.map((item, index) => (
         <li
           key={index}
-          className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full"
+          className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full"
         >
           {item}
         </li>
@@ -69,7 +69,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
   const divcontainer = (question, answer) => {
     return (
       <div>
-        <span className="text-[#903fff] font-bold text-[16px] leading-[114%]">
+        <span className="text-[#8643F5] font-bold text-[16px] leading-[114%]">
           {question}
         </span>
         <br />
@@ -204,8 +204,8 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
       <div ref={ref} className="bg-white rounded-2xl p-10 m-5 max-md:m-1">
         <div className="flex justify-between max-w-[1500px] mx-auto space-x-10 rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-7">
-            <span className="flex space-x-6 text-5xl font-medium leading-[68px] text-[#903fff]">
-              <p className="border-r-2 pr-3 border-[#903fff]">01</p>{" "}
+            <span className="flex max-md:hidden space-x-6 text-5xl font-medium leading-[68px] text-[#8643F5]">
+              <p className="border-r-2 pr-3 border-[#8643F5]">01</p>{" "}
               <p className="text-3xl w-[518px] max-xl:w-full font-bold">
                 {t("frameComponent5_title")}
               </p>
@@ -214,14 +214,14 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
               {t("frameComponent5_intro")}
             </div>
             <div>
-              <p className="text-3xl font-bold text-[#903fff] mb-3">
+              <p className="text-3xl font-bold text-[#8643F5] mb-3">
                 {t("frameComponent5_potential")}
               </p>{" "}
               <div className="accordion font-saira w-[518px] max-xl:w-full">
                 {questionsAndAnswers.map((item, index) => (
                   <div key={index} className="mb-2 p-1">
                     <div
-                      className=" bg-white cursor-pointer border-b-2 border-[#903fff] text-lg font-medium relative overflow-hidden"
+                      className=" bg-white cursor-pointer border-b-2 border-[#8643F5] text-lg font-medium relative overflow-hidden"
                       onClick={() => toggleAccordion(index)}
                     >
                       <div className="flex justify-between text-base  items-center text-[#3d3a3a]">
@@ -231,7 +231,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                             activeIndex === index ? "rotate-0" : "-rotate-180"
                           }`}
                         >
-                          <IconChevronUp color="#903fff" />
+                          <IconChevronUp color="#8643F5" />
                         </div>
                       </div>
                       <div
@@ -249,7 +249,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full overflow-hidden">
+          <div className="grid grid-cols-1 max-md:hidden gap-4 w-[658px] max-xl:w-full overflow-hidden">
             <div className="col-span-1  rounded-xl relative overflow-hidden">
               <video
                 className="rounded-xl w-full h-full object-cover"
@@ -287,7 +287,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
           question={t("frameComponent5_faq_question_gigaFiberPartnership")}
           answer={
             <div>
-              <div className="bg-white max-md:bg-[#F5EEFF] rounded-3xl m-2 p-[40px]">
+              <div className="bg-white max-md:bg-[#F5EEFF] rounded-3xl m-0 p-[40px]">
                 <p>{t("frameComponent5_faq_answer_gigaFiberPartnership")}</p>
                 <div className="flex flex-wrap max-md:hidden justify-between mt-5">
                   {isMobile &&
@@ -302,15 +302,15 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                 </div>
                 <div className="flex flex-wrap md:hidden justify-between mt-5">
                   <div>
-                    <img className="w-full" src="R11.png" alt="Description" />
+                    <img className="w-full mb-3" src="R11.png" alt="Description" />
                     <div>
                       {imagedesData.slice(0, 4).map((data, index) => (
                         <Imagewithdiscription2 key={index} text={data.text} />
                       ))}
                     </div>
                   </div>
-                  <div>
-                    <img className="w-full" src="R16.png" alt="Description" />
+                  <div className="">
+                    <img className="w-full mb-3" src="R16.png" alt="Description" />
                     <div>
                       {imagedesData.slice(4, 7).map((data, index) => (
                         <Imagewithdiscription2 key={index} text={data.text} />
@@ -321,8 +321,8 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                     >
                       <p className="w-full flex justify-center items-center">
                         <span className="w-[90%]">
-                          <div className="text-[34px] text-[#903fff] w-[50%] mb-4 border-t-2 border-[#903fff]"></div>
-                          <div className="text-[34px] font-extrabold text-[#903fff] mb-5">
+                          <div className="text-[34px] text-[#8643F5] w-[50%] mb-4 border-t-2 border-[#8643F5]"></div>
+                          <div className="text-[34px] font-extrabold text-[#8643F5] mb-5">
                             50%
                           </div>
                           <div className="text-black">

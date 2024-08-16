@@ -26,7 +26,7 @@ const DropdownFaq = ({ question, answer }) => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:bg-[#8643f5]  max-md:bg-transparent text-base font-normal leading-[125%] text-black p-2">
+        <div className="md:bg-[#8643f5]  max-md:bg-transparent text-base font-normal leading-[125%] text-black pt-1">
           <p>{answer}</p>
         </div>
       )}
