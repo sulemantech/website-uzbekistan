@@ -301,39 +301,39 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                     ))}
                 </div>
                 <div className="flex flex-wrap md:hidden justify-between mt-5">
+                  <div>
+                    <img className="w-full" src="R11.png" alt="Description" />
                     <div>
-                      <img className="w-full" src="R11.png" alt="Description" />
-                      <div>
-                        {imagedesData.slice(0, 4).map((data, index) => (
-                          <Imagewithdiscription2 key={index} text={data.text} />
-                        ))}
-                      </div>
+                      {imagedesData.slice(0, 4).map((data, index) => (
+                        <Imagewithdiscription2 key={index} text={data.text} />
+                      ))}
                     </div>
+                  </div>
+                  <div>
+                    <img className="w-full" src="R16.png" alt="Description" />
                     <div>
-                      <img className="w-full" src="R16.png" alt="Description" />
-                      <div>
-                        {imagedesData.slice(4, 7).map((data, index) => (
-                          <Imagewithdiscription2 key={index} text={data.text} />
-                        ))}
-                      </div>
-                      <div
-                        className={`w-[520px] max-xl:w-full h-[152px]  mt-3 rounded-3xl flex space-x-1`}
-                      >
-                        <p className="w-full flex justify-center items-center">
-                          <span className="w-[90%]">
-                            <div className="text-[34px] text-[#903fff] w-[50%] mb-4 border-t-2 border-[#903fff]"></div>
-                            <div className="text-[34px] font-extrabold text-[#903fff] mb-5">
-                              50%
-                            </div>
-                            <div className="text-black">
-                              {t(
-                                "des erwirtschafteten Profits werden in die Teststrecke autonomes Fahren investiert."
-                              )}
-                            </div>
-                          </span>
-                        </p>
-                      </div>
+                      {imagedesData.slice(4, 7).map((data, index) => (
+                        <Imagewithdiscription2 key={index} text={data.text} />
+                      ))}
                     </div>
+                    <div
+                      className={`w-[520px] max-xl:w-full h-[152px]  mt-3 rounded-3xl flex space-x-1`}
+                    >
+                      <p className="w-full flex justify-center items-center">
+                        <span className="w-[90%]">
+                          <div className="text-[34px] text-[#903fff] w-[50%] mb-4 border-t-2 border-[#903fff]"></div>
+                          <div className="text-[34px] font-extrabold text-[#903fff] mb-5">
+                            50%
+                          </div>
+                          <div className="text-black">
+                            {t(
+                              "des erwirtschafteten Profits werden in die Teststrecke autonomes Fahren investiert."
+                            )}
+                          </div>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

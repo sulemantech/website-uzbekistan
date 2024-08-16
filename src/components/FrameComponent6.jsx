@@ -67,8 +67,8 @@ const FrameComponent6 = forwardRef((props, ref) => {
     <>
       <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
         <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
-          <div className="grid grid-cols-1 max-md:hidden gap-4 h-[580px] w-full max-w-[658px] overflow-hidden">
-            <div className="relative col-span-1 h-[264px] rounded-xl overflow-hidden">
+          <div className="grid grid-cols-1 max-md:hidden gap-4 h-auto w-full overflow-hidden">
+            <div className="relative col-span-1 h-[264px] max-xl:h-auto rounded-xl overflow-hidden">
               <video
                 className="rounded-xl w-full h-full object-cover"
                 src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/03b2/cfbd/-a72d-4de6-a877-0bf1f5ef7225?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z9PZZLlQYOajJcnfUGH7yH0pNUZXYkJP5gjVEyk4-OHMA~4IXSICksHwcN9bnPklfwQytAvZlhACPspybDzMys~TnoCNvfpFr9zks1bPzlE01GOtFLwJ0u9OHu0CbTp-Tq6j7-DVNi1UE4LQ7kcD3qagYsY2pr~lM--7emzg48i3QeCpcohAiVxAC2qXmntIxFL4ZW2sBGfWOU6EviLObvQaEzPz2W8MsRwF56Br7hG-uZXRjTTIEVroAInOogc-CWAzeOGiJRfW0n6uwe8wR-f-aoah2hIyBs2rNLoeXasM95EO582XetHYD9J~nnbx4gFF7WSQzKo4i0dx0jDxNA__"
@@ -83,7 +83,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 h-[279px] gap-4 col-span-1 max-lg:h-auto max-md:grid-cols-1">
+            <div className="grid grid-cols-2 h-auto gap-4 col-span-1 max-lg:h-auto max-md:grid-cols-1">
               <span className="w-full">
                 <img
                   src="d9.png"
@@ -110,7 +110,17 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 {t("frameComponent6_title")}
               </p>
             </span>
-            <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
+            <div className="w-[518px] max-md:hidden max-xl:w-full text-[16px] font-normal text-left">
+              {t("frameComponent6_intro_part1")}
+              <br />
+              {t("frameComponent6_intro_part2")}
+              <br />
+              <br />
+              {t("frameComponent6_intro_part3")}
+              <br />
+              {t("frameComponent6_intro_part4")}
+            </div>
+            <div className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
               {t("frameComponent6_intro_part1")}
               <br />
               {t("frameComponent6_intro_part2")}
@@ -131,10 +141,9 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 {showMore ? "Mehr lesen" : "Weniger lesen"}
               </button>
             </div>
-            <div></div>
           </div>
         </div>
-        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white  text-[30px] font-bold leading-[107%] uppercase">
+        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] max-md:h-auto p-2 flex justify-center items-center text-white  text-[30px] max-md:text-[3.4vw] max-lg:text-[2.8vw] font-bold leading-[107%] uppercase">
           <span className="w-[96%]  mx-auto">
             {t("frameComponent6_highlight")}
           </span>
@@ -160,8 +169,8 @@ const FrameComponent6 = forwardRef((props, ref) => {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 h-[580px] w-[658px] max-xl:w-full max-md:h-full overflow-hidden">
-            <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
+          <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full max-md:h-full overflow-hidden">
+            <div className="col-span-1  rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
                 className="rounded-xl w-full h-full object-cover"
@@ -172,12 +181,12 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 playsInline
               ></video>
               <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
-                <span className="text-white absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
+                <span className="text-white max-md:hidden absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
                   {t("frameComponent6_title2")}
                 </span>
               </div>
             </div>
-            <span className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
+            <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
               Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40%
               des Wertes) und Conenctivität für die Kommunikation sowohl beim
               Fahren als auch beim Tanken. GIGA FIBER Technologies plant, eine
@@ -186,12 +195,24 @@ const FrameComponent6 = forwardRef((props, ref) => {
               produzieren, die für die Stromversorgung von Funktürmen benötigt
               werden.
             </span>
-            <div className="grid grid-cols-2 max-md:grid-cols-1 h-[279px] gap-4 col-span-1">
-              <span className="w-full">
+            <div className="grid grid-cols-2 max-md:grid-cols-1  gap-4 col-span-1">
+              <span className="w-full max-md:hidden">
                 <img src="weather.png" alt="" className="w-full h-auto" />
               </span>
               <span className="w-full">
-                <img src="jars.png" alt="" className="w-full h-auto" />
+                <img src="jars.png" alt="" className="w-full h-full rounded-lg" />
+              </span>
+              <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
+                <ul className="list-none">
+                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
+                    Besonderes Interesse für europäische E-Auto Hersteller
+                    aufgrund kostengünstiger Herstellungskosten für ein
+                    Batteriewerk.
+                  </li>
+                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
+                    Entstehung von ca. 1000 neuer Arbeitsplätze in den Werken.
+                  </li>
+                </ul>
               </span>
             </div>
           </div>
@@ -206,7 +227,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 <br />
                 {t("frameComponent6_faq_ans_part2")}
               </p>
-              <div className="flex flex-wrap justify-between mt-5">
+              <div className="flex max-md:hidden flex-wrap justify-between mt-5">
                 {imagedesData.map((data, index) => (
                   <Imagewithdiscription
                     key={index}
@@ -214,6 +235,37 @@ const FrameComponent6 = forwardRef((props, ref) => {
                     text={data.text}
                   />
                 ))}
+              </div>
+              <div className="flex flex-wrap md:hidden justify-between mt-5">
+                <div>
+                  <img className="w-full" src="R1.png" alt="Description" />
+                  <div>
+                    {imagedesData
+                      .filter((_, index) => index % 2 === 0)
+                      .map((data, index) => (
+                        <div
+                          key={index}
+                          className="flex justify-center items-baseline mt-3 mb-3"
+                        >
+                          <span className="w-2.5 h-2.5 bg-purple-600 rounded-full mr-2"></span>
+                          <Imagewithdiscription2 text={data.text} />
+                        </div>
+                      ))}
+                  </div>
+                </div>
+                <div>
+                  <img className="w-full" src="R6.png" alt="Description" />
+                  <div>
+                    {imagedesData
+                      .filter((_, index) => index % 2 !== 0)
+                      .map((data, index) => (
+                        <div key={index} className="flex justify-center items-baseline mt-3">
+                          <span className="w-2.5 h-2.5 bg-purple-600 rounded-full mr-2"></span>
+                          <Imagewithdiscription2 text={data.text} />
+                        </div>
+                      ))}
+                  </div>
+                </div>
               </div>
             </div>
           }
@@ -251,7 +303,7 @@ export const Imagewithdiscription2 = ({ text }) => {
   return (
     <>
       <div
-        className={`w-[520px] max-xl:w-full h-[90px]  mt-1 rounded-3xl flex space-x-1`}
+        className={`w-[520px] max-xl:w-full mt-1 rounded-3xl flex space-x-1`}
       >
         <p className="w-full flex justify-center items-center">
           <span className="w-[90%]">{text}</span>

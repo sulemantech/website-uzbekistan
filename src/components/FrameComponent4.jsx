@@ -58,7 +58,7 @@ const FrameComponent4 = forwardRef(
                 handleCardClick(index);
                 card.scrollTo();
               }}
-              className="relative group cursor-pointer w-full h-[582px] rounded-lg overflow-hidden"
+              className="relative group cursor-pointer w-full h-[582px] max-md:h-[400px] rounded-lg overflow-hidden"
             >
               <p className="absolute top-[74px] left-[40px] text-5xl text-white z-50">
                 {card.number}
@@ -78,7 +78,7 @@ const FrameComponent4 = forwardRef(
                     alt=""
                   />
                 </div>
-                <div className="text-3xl font-bold text-white">
+                <div className="text-3xl max-md:text-4xl font-bold text-white">
                   <p className="m-0">{card.description}</p>
                 </div>
               </div>
