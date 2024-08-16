@@ -10,9 +10,8 @@ const FrameComponent6 = forwardRef((props, ref) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
-
   const handleShowMore = () => {
-    setShowMore(prevState => !prevState);
+    setShowMore((prevState) => !prevState);
   };
 
   const questionsAndAnswers = [
@@ -119,8 +118,8 @@ const FrameComponent6 = forwardRef((props, ref) => {
               <br />
               {showMore && (
                 <>
-              {t("frameComponent6_intro_part3")}
-              <br />
+                  {t("frameComponent6_intro_part3")}
+                  <br />
                   {t("frameComponent6_intro_part4")}
                   <br />
                 </>
@@ -178,7 +177,15 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 </span>
               </div>
             </div>
-              <span className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40% des Wertes) und Conenctivität für die Kommunikation sowohl beim Fahren als auch beim Tanken. GIGA FIBER Technologies plant, eine Lithiummine zu erwerben und eine Fabrik zur Herstellung von Batterien und Funktürmen zu errichten. Diese Fabrik wird Batterien produzieren, die für die Stromversorgung von Funktürmen benötigt werden.</span>
+            <span className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
+              Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40%
+              des Wertes) und Conenctivität für die Kommunikation sowohl beim
+              Fahren als auch beim Tanken. GIGA FIBER Technologies plant, eine
+              Lithiummine zu erwerben und eine Fabrik zur Herstellung von
+              Batterien und Funktürmen zu errichten. Diese Fabrik wird Batterien
+              produzieren, die für die Stromversorgung von Funktürmen benötigt
+              werden.
+            </span>
             <div className="grid grid-cols-2 max-md:grid-cols-1 h-[279px] gap-4 col-span-1">
               <span className="w-full">
                 <img src="weather.png" alt="" className="w-full h-auto" />
@@ -234,6 +241,19 @@ export const Imagewithdiscription = ({ imageSrc, text, applyBg = true }) => {
           />
         </div>
         <p className="w-[365px] flex justify-center items-center">
+          <span className="w-[90%]">{text}</span>
+        </p>
+      </div>
+    </>
+  );
+};
+export const Imagewithdiscription2 = ({ text }) => {
+  return (
+    <>
+      <div
+        className={`w-[520px] max-xl:w-full h-[90px]  mt-1 rounded-3xl flex space-x-1`}
+      >
+        <p className="w-full flex justify-center items-center">
           <span className="w-[90%]">{text}</span>
         </p>
       </div>

@@ -66,7 +66,7 @@ const Gigafibertechcom = () => {
       />
       {!isMobile && (
         <>
-          <FrameComponent5 ref={frame5Ref} />
+          <FrameComponent5 isMobile={isMobile} ref={frame5Ref} />
           <FrameComponent6 ref={frame6Ref} />
           <FrameComponent7 ref={frame7Ref} />
         </>
