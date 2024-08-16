@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const Header = ({ isMobile, scrollToFrame4 }) => {
-  const { t, i18n } = useTranslation(); // Call useTranslation here
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null); // Reference to the menu
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -21,9 +22,23 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setIsOpen(false); // Close the dropdown after changing the language
+    setIsOpen(false);
   };
-  
+
+  // Close the menu if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // If the menuRef is defined and the clicked element is not within the menuRef
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false); // Close the menu
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="relative h-screen max-md:w-[100%] mx-auto overflow-hidden">
@@ -43,23 +58,23 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             <img className="" src="lang.png" alt="Language" />
           </span>
           {isOpen && (
-            <div className="absolute cursor-pointer right-0 mt-0 bg-transparent rounded-[10px] z-10 text-white  text-[22px] leading-6 font-bold">
+            <div className="absolute cursor-pointer right-0 mt-0 bg-transparent rounded-[10px] z-10 text-white text-[22px] leading-6 font-bold">
               <ul className="flex flex-col items-center justify-center">
                 <li
                   className="w-8 text-center hover:border-white hover:border-b-[2px]"
-                  onClick={() => changeLanguage('en')}
+                  onClick={() => changeLanguage("en")}
                 >
                   EN
                 </li>
                 <li
                   className="w-8 text-center hover:border-white hover:border-b-[2px]"
-                  onClick={() => changeLanguage('ru')}
+                  onClick={() => changeLanguage("ru")}
                 >
                   RUS
                 </li>
                 <li
                   className="w-8 text-center hover:border-white hover:border-b-[2px]"
-                  onClick={() => changeLanguage('de')}
+                  onClick={() => changeLanguage("de")}
                 >
                   DE
                 </li>
@@ -103,6 +118,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
       )}
 
       <div
+        ref={menuRef} // Attach ref to the menu div
         className={`fixed z-50 top-0 right-0 w-[70vw] rounded-l-3xl h-[70%] bg-white transition-transform transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}

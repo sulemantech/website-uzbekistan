@@ -287,7 +287,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
           question={t("frameComponent5_faq_question_gigaFiberPartnership")}
           answer={
             <div>
-              <div className="bg-white max-md:bg-[#F5EEFF] rounded-3xl m-0 p-[40px]">
+              <div className="bg-white max-md:bg-[#F5EEFF] rounded-3xl m-3 max-md:m-0 p-[40px]">
                 <p>{t("frameComponent5_faq_answer_gigaFiberPartnership")}</p>
                 <div className="flex flex-wrap max-md:hidden justify-between mt-5">
                   {isMobile &&
