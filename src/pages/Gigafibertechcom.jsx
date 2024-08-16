@@ -46,7 +46,7 @@ const Gigafibertechcom = () => {
   };
 
   return (
-    <div className="w-full [background:linear-gradient(180deg,_#281d57,_#1e1a2e)] font-saira-condensed">
+    <div className="w-full md:[background:linear-gradient(180deg,_#281d57,_#1e1a2e)] max-md:bg-[#f5f5f5] font-saira-condensed">
       <Header
         isMobile={isMobile}
         scrollToFrame4={() => scrollToRef(frame4Ref)}

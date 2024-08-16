@@ -9,16 +9,16 @@ const DropdownFaq = ({ question, answer }) => {
   };
 
   return (
-    <div className="w-full max-w-[1500px] font-saira mx-auto bg-[#8643F5] mt-[61px] rounded-lg overflow-hidden">
+    <div className="w-full max-w-[1500px] font-saira mx-auto bg-[#8643F5] mt-[21px] md:mt-[61px] rounded-lg overflow-hidden">
       <div
         className="flex justify-between items-center mx-4 p-4 cursor-pointer"
         onClick={toggleDropdown}
       >
-        <div className="text-white font-bold text-[30px] font-SairaCondensed">{question}</div>
+        <div className="text-white font-bold text-[20px] sm:text-[30px] font-SairaCondensed">{question}</div>
         <div>
           <img
-            className={`${
-              isOpen ? "-rotate-90" : "rotate-90"
+            className={`w-[23px] h-[20px] ${
+              isOpen ? "-rotate-90" : "rotate-0"
             } transition-transform`}
             src="objects3.svg"
             alt=""

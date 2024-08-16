@@ -69,7 +69,7 @@ const FrameComponent4 = forwardRef(({ isMobile, scrollToFrame5 , scrollToFrame6 
             </div>
           </div>
           {isMobile && activeCard === index && (
-            <div className="mt-4">
+            <div className="-mt-8">
               {card.component}
             </div>
           )}
