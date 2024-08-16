@@ -84,7 +84,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
         </div>
       </span>
 
-      <div className="absolute bottom-5 pointer-events-none w-[96%] left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-10 pointer-events-none w-[96%] max-md:w-[88%] break-words left-1/2 transform -translate-x-1/2 z-10">
         <p className="font-bold text-8xl max-md:text-[46px] max-md:leading-[100%] text-white">
           {t("header_transforming_infrastructure")}
         </p>

@@ -144,7 +144,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </div>
         </div>
         <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] max-md:h-auto p-2 flex justify-center items-center text-white text-[30px] max-md:text-[4vw] max-lg:text-[2.8vw] font-bold leading-[107%] uppercase">
-          <span className=" my-5 max-md:mx-[30px] mx-auto">
+          <span className=" my-5 max-md:mx-[30px] md:px-5 mx-auto">
             {t("frameComponent6_highlight")}
           </span>
         </div>
