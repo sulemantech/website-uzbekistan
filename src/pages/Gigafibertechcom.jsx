@@ -41,12 +41,12 @@ const Gigafibertechcom = () => {
     }
   };
 
-  const handleComponentClick = () => {
-    // Implement the logic for handling component clicks here
+  const handleComponentClick = (component) => {
+    setActiveComponent(component);
   };
 
   return (
-    <div className="w-full [background:linear-gradient(180deg,_#281d57,_#1e1a2e)] font-saira-condensed">
+    <div className="w-full md:[background:linear-gradient(180deg,_#281d57,_#1e1a2e)] max-md:bg-[#f5f5f5] font-saira-condensed">
       <Header
         isMobile={isMobile}
         scrollToFrame4={() => scrollToRef(frame4Ref)}
@@ -55,9 +55,9 @@ const Gigafibertechcom = () => {
       <FrameComponent4
         isMobile={isMobile}
         ref={frame4Ref}
-        scrollToFrame5={() => handleComponentClick()}
-        scrollToFrame6={() => handleComponentClick()}
-        scrollToFrame7={() => handleComponentClick()}
+        scrollToFrame5={() => scrollToRef(frame5Ref)}
+        scrollToFrame6={() => scrollToRef(frame6Ref)}
+        scrollToFrame7={() => scrollToRef(frame7Ref)}
       />
       {!isMobile && (
         <>

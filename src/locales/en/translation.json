@@ -2,9 +2,10 @@
   "header_transforming_infrastructure": "TRANSFORMING INFRASTRUCTURE.",
   "header_driving_regional_growth": "DRIVING REGIONAL GROWTH.",
   "header_learn_more": "LEARN MORE",
+  
   "frameComponent4_card1_number": "01",
   "frameComponent4_card1_title": "CU29 TECH",
-  "frameComponent4_card1_description": "HOW DO WE STRENGTHEN THE REGIONAL ECONOMIC POWER?",
+  "frameComponent4_card1_description": "HOW DO WE STRENGTHEN REGIONAL ECONOMIC POWER?",
   "frameComponent4_card1_buttonText": "Learn More",
   
   "frameComponent4_card2_number": "02",
@@ -17,11 +18,11 @@
   "frameComponent4_card3_description": "HOW DO WE PROMOTE GROWTH AND DIGITAL INTEGRATION?",
   "frameComponent4_card3_buttonText": "View Details",
   
-  "frameComponent5_title": "HOW DO WE STRENGTHEN THE REGIONAL ECONOMIC POWER?",
-  "frameComponent5_intro": "Modern mining technologies and advanced methods in extraction, digitization, energy efficiency, and occupational safety are essential components of the project. Training and further education of mining professionals are also emphasized.",
-  "frameComponent5_potential": "POTENTIAL FOR THE REGION",
+  "frameComponent5_title": "HOW DO WE STRENGTHEN REGIONAL ECONOMIC POWER?",
+  "frameComponent5_intro": "Modern mining technologies and advanced methods in extraction, digitization, energy efficiency, and work safety are essential components of the project. The training and further education of professionals in mining is also particularly emphasized.",
+  "frameComponent5_potential": "REGIONAL POTENTIAL",
   
-  "frameComponent5_questions_investment": "Investments in Documentation and Modernization",
+  "frameComponent5_questions_investment": "Investment in Documentation and Modernization",
   "frameComponent5_questions_economicImpact": "Economic Impact and Infrastructure",
   "frameComponent5_questions_internationalStandards": "International Standards and Competitiveness",
   "frameComponent5_questions_jobCreation": "Job Creation",
@@ -30,77 +31,128 @@
   "frameComponent5_answers_investment_listItems2": "Additional Investments",
   "frameComponent5_answers_economicImpact_listItems2": "Economic Impact List",
   "frameComponent5_answers_internationalStandards_listItems3": "International Standards List",
-  "frameComponent5_answers_jobCreation_listItems4": "List of Jobs",
+  "frameComponent5_answers_jobCreation_listItems4": "Job Creation List",
   
-  "frameComponent5_answers_investment_listItems_0": "Regional geological research and soil analysis through private investment in GIGA FIBER,",
-  "frameComponent5_answers_investment_listItems_1": "Provision of expertise and equipment for soil analysis,",
-  "frameComponent5_answers_investment_listItems_2": "Establishment of own mines for copper and lithium extraction,",
+  "frameComponent5_answers_investment_listItems_0": "Regional geological research and soil analysis by GIGA FIBER's private investment,",
+  "frameComponent5_answers_investment_listItems_1": "Supply of expertise and equipment for soil analysis,",
+  "frameComponent5_answers_investment_listItems_2": "Construction of own mines for copper and lithium extraction,",
   "frameComponent5_answers_investment_listItems_3": "Production of copper products and supply of lithium batteries to the automotive industry,",
-  "frameComponent5_answers_investment_listItems_4": "Use of extracted lithium for radio mast infrastructure on the test track for autonomous driving in the Karakalpakstan region,",
-  "frameComponent5_answers_economicImpact_listItems2_0": "New jobs increase the demand for housing, boosting attractiveness for residential investors.",
-  "frameComponent5_answers_economicImpact_listItems2_1": "The establishment of new mines promotes economic growth and settlement of workers in remote areas.",
-  "frameComponent5_answers_economicImpact_listItems2_2": "The mine allows for the extraction of various ores, meeting the demand for cable production and supplying the national automotive industry.",
-  "frameComponent5_answers_economicImpact_listItems2_3": "Mining and supplying national companies influence the production and export rate of the region and country.",
+  "frameComponent5_answers_investment_listItems_4": "Use of extracted lithium for radio mast infrastructure on the autonomous driving test track in the Karakalpakstan region,",
+  
+  "frameComponent5_answers_economicImpact_listItems2_0": "New jobs increase the demand for housing, enhancing attractiveness for investors in residential construction.",
+  "frameComponent5_answers_economicImpact_listItems2_1": "The construction of new mines fosters economic growth and settlement of labor in remote regions.",
+  "frameComponent5_answers_economicImpact_listItems2_2": "The mine enables the extraction of various ores, meeting internal demand for cable production and supplying the national automotive industry.",
+  "frameComponent5_answers_economicImpact_listItems2_3": "Both extraction and supply to national companies impact the region’s and the country’s production and export rates.",
+  
   "frameComponent5_answers_internationalStandards_listItems3_0": "Introduction of European mining practices and standards to increase competitiveness.",
   "frameComponent5_answers_internationalStandards_listItems3_1": "Building an effective value chain in the copper and lithium industry focused on export.",
+  
   "frameComponent5_answers_jobCreation_listItems4_0": "Mining requires numerous workers and collaboration with national, international, and local subcontractors.",
-  "frameComponent5_answers_jobCreation_listItems4_1": "Existing infrastructure is utilized and economic growth in the region is promoted.",
-  "frameComponent5_answers_jobCreation_listItems4_2": "Companies from the automotive industry / e-mobility create sites for workforce and knowledge exchange.",
+  "frameComponent5_answers_jobCreation_listItems4_1": "Existing infrastructure is incorporated, fostering economic growth in the region.",
+  "frameComponent5_answers_jobCreation_listItems4_2": "Companies from the automotive industry / e-mobility establish locations for workforce and knowledge exchange.",
   
-  "frameComponent5_q1_question": "What is your return policy?",
-  "frameComponent5_q1_answer": "We offer a 30-day return policy on all items. Please ensure that the items are in their original packaging and condition. For more details, visit our returns page.",
   
-  "frameComponent5_q2_question": "How long does shipping take?",
-  "frameComponent5_q2_answer": "Shipping times vary depending on your location. Typically, domestic orders take 3-5 business days, while international orders can take 7-14 business days.",
   
-  "frameComponent5_q3_question": "Do you offer international shipping?",
-  "frameComponent5_q3_answer": "Yes, we offer international shipping to most countries. Shipping costs and delivery times will be calculated at checkout based on your location.",
-  
-  "frameComponent5_q4_question": "Can I change my order after placing it?",
-  "frameComponent5_q4_answer": "If you need to make changes to your order, please contact us as soon as possible. We can only make changes if the order has not yet been processed or shipped.",
-  
-  "frameComponent5_q5_question": "How can I track my order?",
-  "frameComponent5_q5_answer": "Once your order has shipped, you will receive a tracking number via email. You can use this tracking number to check the status of your order on our shipping partner's website.",
-  
+  "frameComponent5_imageDescriptions_1_title": "Development of a Copper Mine",
+  "frameComponent5_imageDescriptions_1_text": "Training young workers and creating new jobs according to European standards",
+  "frameComponent5_imageDescriptions_2_title": "Development of a Lithium Mine",
+  "frameComponent5_imageDescriptions_2_text": "Active political strengthening of Germany as a business location, supplying companies in Uzbekistan",
+  "frameComponent5_imageDescriptions_3_title": "Promotion of Uzbek Mining",
+  "frameComponent5_imageDescriptions_3_text": "Export of copper products to Europe and supplying the international automotive industry with lithium",
+  "frameComponent5_imageDescriptions_4_title": "Construction of a Battery Factory",
+  "frameComponent5_imageDescriptions_4_text": "Supplying lithium for cell tower power supply and for the autonomous test track",
+  "frameComponent5_imageDescriptions_5_title": "Diversification of Economic Sectors",
+  "frameComponent5_imageDescriptions_5_text": "Promotion of industrial development in Uzbekistan by attracting European companies",
+  "frameComponent5_imageDescriptions_6_title": "Increasing Location Attractiveness",
+  "frameComponent5_imageDescriptions_6_text": "Growth of the automotive industry and infrastructure",
+  "frameComponent5_imageDescriptions_7_title": "Cooperation with Regional Companies",
+  "frameComponent5_imageDescriptions_7_text": "Creating sustainable business relationships",
+  "frameComponent5_imageDescriptions_8_text": "of the generated profit will be invested in the autonomous driving test track.",
+  "frameComponent5_faq_question_gigaFiberPartnership": "OBJECTIVES OF THE COOPERATION WITH GIGA FIBER",
+  "frameComponent5_faq_answer_gigaFiberPartnership": "Uzbekistan has an impressive diversity of mineral metal and non-metal raw materials, offering enormous potential for companies. The partnership concluded with the EU in 2024 opens up diverse opportunities for cooperation in mining. This strategic alliance creates a solid foundation for sustainable investments and technological innovations in Uzbekistan's raw materials sector.",
+
+
+
   "frameComponent6_title": "HOW DO WE SUPPORT THE AUTOMOTIVE INDUSTRY?",
   
-  "frameComponent6_intro_part1": "Autonomous driving aims at developing vehicles that can operate without human intervention. GIGA FIBER provides the technology for test tracks for autonomous driving. We provide the international automotive market with access to technology and infrastructure to further develop and test autonomous vehicles.",
-  "frameComponent6_intro_part2": "Research in this field offers sustainable competitive advantages and expands domestic automotive production. A 100 km test track will be created to research autonomous vehicle systems.",
-  "frameComponent6_intro_part3": "The technology promises extremely low latency and high data transfer rates, making it possible to transmit driving data almost in real-time. This is particularly important for communication between vehicles and infrastructure.",
-  "frameComponent6_intro_part4": "Additionally, latency can be further reduced by processing data close to the vehicle, i.e., at the so-called 'edge' of the network, as data do not need to be sent to distant data centers.",
+  "frameComponent6_intro_part1": "Autonomous driving aims at developing vehicles that can drive without human intervention. GIGA FIBER provides the technology for autonomous driving test tracks. We offer the international automotive market access to technology and infrastructure to further develop and test autonomous vehicles.",
+  "frameComponent6_intro_part2": "Research in this field provides sustainable competitive advantages and the expansion of own automotive production. A 100 km test track is created for the research of autonomous vehicle systems.",
+  "frameComponent6_intro_part3": "The technology promises extremely low latency and high data transfer rates, making it possible to transmit driving data almost in real-time. This is especially important for communication between vehicles and infrastructure.",
+  "frameComponent6_intro_part4": "Latency can also be further reduced by processing data near the vehicle, at the so-called 'edge' of the network, as data does not need to be sent to distant data centers first.",
   
-  "frameComponent6_highlight": "5G/6G BASE STATIONS FROM GIGA FIBER HAVE EXTREMELY LOW LATENCY AND HIGH BANDWIDTHS ABOVE 1BIT/S. AREA-WIDE AND RELIABLE NETWORK COVERAGE AS WELL AS HIGH NETWORK DENSITY ENSURE A STABLE CONNECTION.",
+  "frameComponent6_highlight": "5G/6G TOWERS FROM GIGA FIBER HAVE EXTREMELY LOW LATENCY AND HIGH BANDWIDTH GREATER THAN 1BIT/S. RELIABLE NETWORK COVERAGE AND HIGH NETWORK DENSITY ENSURE A STABLE CONNECTION.",
   
   "frameComponent6_infrastructure_title": "TOWER INFRASTRUCTURE & Lithium Battery Production",
-  "frameComponent6_infrastructure_paragraph": "An e-mobility vehicle primarily consists of a battery (40% of the value) and connectivity for communication both during driving and charging. GIGA FIBER Technologies plans to acquire a lithium mine and establish a factory for the production of batteries and base stations. This factory will produce batteries needed for powering base stations.",
-  "frameComponent6_infrastructure_bullet1": "Special interest for European EV manufacturers due to cost-effective production for a battery plant.",
-  "frameComponent6_infrastructure_bullet2": "Creation of approx. 1000 new jobs in the factories.",
+  "frameComponent6_infrastructure_paragraph": "An e-mobility vehicle consists mainly of the battery (40% of the value) and connectivity for communication during driving and charging. GIGA FIBER Technologies plans to acquire a lithium mine and build a factory for battery and radio tower production. This factory will produce batteries needed to power radio towers.",
+  "frameComponent6_infrastructure_bullet1": "Particularly interesting for European e-car manufacturers due to low manufacturing costs for a battery plant.",
+  "frameComponent6_infrastructure_bullet2": "Creation of approximately 1,000 new jobs in the factories.",
+  
   "frameComponent6_title2": "CU29 TECH",
   "frameComponent6_faq_question": "Technology & Infrastructure Goals of Collaboration with GIGA FIBER",
   
-  "frameComponent6_img1_description": "Use of 5G and 6G base stations is crucial for real-time communication between autonomous vehicles and infrastructure (V2X).",
-  "frameComponent6_img2_description": "Highly secure data transmissions allow the test track to be used by numerous automotive manufacturers, maximizing the potential of domestic automotive manufacturers.",
-  "frameComponent6_img3_description": "5G and 6G internet infrastructure is suitable for creating numerous simulation environments that need to be replicated apart from real test drives.",
+  "frameComponent6_faq_ans_part1": "Collaboration with GIGA FIBER grants access to advanced technology and infrastructure.",
+  "frameComponent6_faq_ans_part2": "Local automotive productions are given the opportunity to modernize their production and catch up with the technical standards of international automotive manufacturers.",
+  
+  "frameComponent6_img1_description": "Use of 5G and 6G radio towers, crucial for real-time communication between autonomous vehicles and infrastructure (V2X).",
+  "frameComponent6_img2_description": "The highly secure data transmissions enable the test track to be used by numerous car manufacturers; the potential of local car manufacturers can be fully exploited.",
+  "frameComponent6_img3_description": "The 5G and 6G internet infrastructure is suitable for creating numerous simulation environments that can be replicated outside of real test drives.",
   "frameComponent6_img4_description": "The test area promotes research projects in the automotive industry, independent of production activities. The test area is the Karakalpakstan region.",
-  "frameComponent6_img5_description": "Expansion of a resilient and redundant fiber optic infrastructure in the region, which transmits research results over highly secure connections.",
+  "frameComponent6_img5_description": "Expansion of a resilient and redundant fiber-optic infrastructure in the region, transmitting research results through highly secure connections.",
   "frameComponent6_img6_description": "High interest from established Chinese manufacturers.",
   
   "frameComponent7_title": "HOW DO WE PROMOTE GROWTH AND DIGITAL INTEGRATION?",
-  "frameComponent7_intro": "The previous projects – the extraction of copper and lithium and the construction of an autonomous test track – provide significant economic impulses in Uzbekistan. They not only create jobs but also contribute to social development and lay the foundation for sustainable economic development. These advancements lay the groundwork for our new venture: GIGA FIBER Connectivity. Using the copper and lithium resources from the mines and the existing 5G/6G infrastructure, this project aims to further advance the digital transformation of the country.",
   
-  "frameComponent7_title2": "GIGA FUTURE",
-  "frameComponent7_title3": "GIGA FUTURE",
-  "frameComponent7_title4": "DEVELOPMENT OF DIGITAL INFRASTRUCTURE",
-  "frameComponent7_intro2": "The continuous expansion of network infrastructure in the country provides the basis for future digital transformation. This includes the establishment of fiber optic networks, the introduction of innovative technologies, and the expansion of digital services. GIGA FIBER’s goal is to create a comprehensive digital infrastructure that meets international standards and supports the development of digital services and technologies.",
+  "frameComponent7_intro": "The previous projects – copper and lithium mining and the construction of an autonomous test track – are setting significant economic impulses in Uzbekistan. They not only create jobs but also contribute to social development and lay the foundation for sustainable economic development. These advances lay the groundwork for our new venture: GIGA FIBER Connectivity. Using the copper and lithium resources mined from the mines, as well as the existing 5G/6G infrastructure, this project aims to further promote the country's digital transformation.",
   
-  "frameComponent7_title5": "GIGA FIBER IS AN INNOVATIVE TELECOMMUNICATIONS COMPANY FOCUSING ON THE DEVELOPMENT OF FUTURE-ORIENTED NETWORK INFRASTRUCTURE.",
-  "frameComponent7_intro3": "Our expertise lies in the planning, implementation, and operation of state-of-the-art telecommunications networks, including fiber optic and wireless technologies. We work closely with partners from various industries to promote technological innovations and support the digital transformation of businesses and societies.",
+  "frameComponent7_title2": "GIGA FIBER CONNECTIVITY",
+  "frameComponent7_intro2_part1": "GIGA FIBER Connectivity is a comprehensive project aimed at building and expanding digital infrastructures. It creates interfaces for retail, enabling context-sensitive advertising, digital payments, and optimized communication to increase consumption and economic activity in Uzbekistan.",
+  "frameComponent7_intro2_part2": "The business idea of GIGA FIBER Connectivity has already proven successful in various projects in the EU. Examples include:",
   
-  "frameComponent7_intro4": "Through strategic partnerships and investments, we aim to drive digital integration and contribute to the long-term economic development of the region.",
+  "frameComponent7_sectionData_1_title": "Hospitality & Hotels",
+  "frameComponent7_sectionData_1_imageSrc": "tree.png",
+  "frameComponent7_sectionData_1_points_1": "Increase in revenue through targeted addressing of specific audiences.",
+  "frameComponent7_sectionData_1_points_2": "WIFI and context-intensive customer engagement, location-based.",
+  "frameComponent7_sectionData_1_points_3": "Increase in booking rates due to positive customer experience.",
   
-  "footer_privacy_policy": "Privacy Policy",
-  "footer_terms_of_service": "Terms of Service",
-  "footer_contact_us": "Contact Us",
-  "footer_follow_us": "Follow Us",
-  "footer_copyright": "© 2024 GIGA FIBER. All rights reserved."
+  "frameComponent7_sectionData_2_title": "Discount Stores & Malls",
+  "frameComponent7_sectionData_2_imageSrc": "Dhouse.png",
+  "frameComponent7_sectionData_2_points_1": "Contactless payment, secure, faster, better acceptance.",
+  "frameComponent7_sectionData_2_points_2": "Targeted advertisements for products via smartphones at the POS.",
+  "frameComponent7_sectionData_2_points_3": "Interactive communication that increases consumption.",
+  "frameComponent7_sectionData_2_ending_para": "These successes demonstrate the potential of GIGA FIBER Connectivity to achieve economic benefits and increase customer satisfaction across various industries. The technology is versatile and significantly contributes to enhancing efficiency and boosting revenue.",
+
+  "frameComponent7_dropdown_title": "BENEFITS & GOALS",
+  "frameComponent7_dropdown_intro_part1": "This project significantly contributes to the digital transformation of Uzbekistan, ensuring that the wealth generated from raw material projects is sustainably invested in building a modern and connected economy.",
+  
+  "frameComponent7_dropdown_intro_part2": "The purchasing power gained from previous projects is supported nationwide. GIGA FIBER Connectivity creates a platform for targeted marketing strategies and strengthens financial inclusion through digital payments.",
+  
+  "frameComponent7_sectionDataDropdown_1_title2": "Promotion of E-Commerce",
+  "frameComponent7_sectionDataDropdown_1_imageSrc": "Rectangle 16.png",
+  "frameComponent7_sectionDataDropdown_1_points_1": "Supporting local businesses by providing access to national and international markets.",
+  "frameComponent7_sectionDataDropdown_1_points_2": "Promoting economic diversification and increasing exports through new partnerships.",
+  "frameComponent7_sectionDataDropdown_1_points_3": "Creating new economic sectors in the technology field, leading to increased innovation.",
+
+  "frameComponent7_sectionDataDropdown_2_title2": "Optimization of Customer Experience",
+  "frameComponent7_sectionDataDropdown_2_imageSrc": "rectangle17.png",
+  "frameComponent7_sectionDataDropdown_2_points_1": "GIGA FIBER Connectivity enhances the user experience through device independence and privacy protection.",
+  "frameComponent7_sectionDataDropdown_2_points_2": "The goal is direct data collection and analysis of consumer and visitor behavior using local-based technology and indoor GPS.",
+  "frameComponent7_sectionDataDropdown_2_points_3": "Increases revenues.",
+
+  "frameComponent7_sectionData_3_title": "Retail",
+  "frameComponent7_sectionData_3_imageSrc": "finance2.png",
+  "frameComponent7_sectionData_3_points_1": "Digital signage, location-based offers.",
+  "frameComponent7_sectionData_3_points_2": "Seamless and automated inventory.",
+  "frameComponent7_sectionData_3_points_3": "Real-time analysis and customer insights.",
+  
+  "frameComponent7_sectionData_4_title": "Business Offices",
+  "frameComponent7_sectionData_4_imageSrc": "twoleaf.png",
+  "frameComponent7_sectionData_4_points_1": "Increased productivity through digitization.",
+  "frameComponent7_sectionData_4_points_2": "Secure communication and data exchange.",
+  "frameComponent7_sectionData_4_points_3": "Energy-efficient building management.",
+  
+  "frameComponent7_sectionData_5_title": "Financial Services",
+  "frameComponent7_sectionData_5_imageSrc": "Moneybag.png",
+  "frameComponent7_sectionData_5_points_1": "Innovative banking services tailored to individual needs.",
+  "frameComponent7_sectionData_5_points_2": "Optimized communication between banks and customers.",
+  "frameComponent7_sectionData_5_points_3": "Secure and efficient transaction processing."
 }

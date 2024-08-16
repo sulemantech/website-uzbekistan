@@ -3,10 +3,16 @@ import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
 import { useTranslation } from "react-i18next";
 const FrameComponent6 = forwardRef((props, ref) => {
+  const [showMore, setShowMore] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
   const { t } = useTranslation(); // Call useTranslation here
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+
+  const handleShowMore = () => {
+    setShowMore(prevState => !prevState);
   };
 
   const questionsAndAnswers = [
@@ -62,7 +68,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
     <>
       <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
         <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
-          <div className="grid grid-cols-1 gap-4 h-[580px] w-full max-w-[658px] overflow-hidden">
+          <div className="grid grid-cols-1 max-md:hidden gap-4 h-[580px] w-full max-w-[658px] overflow-hidden">
             <div className="relative col-span-1 h-[264px] rounded-xl overflow-hidden">
               <video
                 className="rounded-xl w-full h-full object-cover"
@@ -96,10 +102,12 @@ const FrameComponent6 = forwardRef((props, ref) => {
             </div>
           </div>
 
-          <div className="flex flex-col space-y-7">
+          <div className="flex flex-col space-y-7 ">
             <span className="flex space-x-7 text-5xl font-medium leading-[68px] text-[#903fff]">
-              <p className="border-r-2 pr-3  border-[#903fff]">02</p>{" "}
-              <p className="text-3xl w-[518px] max-xl:w-full font-bold">
+              <p className="border-r-2 pr-3 max-md:hidden  border-[#903fff]">
+                02
+              </p>{" "}
+              <p className="text-3xl max-md:hidden w-[518px] max-xl:w-full font-bold">
                 {t("frameComponent6_title")}
               </p>
             </span>
@@ -109,21 +117,32 @@ const FrameComponent6 = forwardRef((props, ref) => {
               {t("frameComponent6_intro_part2")}
               <br />
               <br />
+              {showMore && (
+                <>
               {t("frameComponent6_intro_part3")}
               <br />
-              {t("frameComponent6_intro_part4")}
+                  {t("frameComponent6_intro_part4")}
+                  <br />
+                </>
+              )}
+              <button
+                onClick={handleShowMore}
+                className="text-[#903fff] underline"
+              >
+                {showMore ? "Mehr lesen" : "Weniger lesen"}
+              </button>
             </div>
             <div></div>
           </div>
         </div>
-        <div className=" max-w-[1500px] mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white font-saira-condensed text-[30px] font-bold leading-[107%] uppercase">
-          <span className="w-[96%] mx-auto">
+        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white font-saira-condensed text-[30px] font-bold leading-[107%] uppercase">
+          <span className="w-[96%]  mx-auto">
             {t("frameComponent6_highlight")}
           </span>
         </div>
 
         <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
-          <div className="flex flex-col space-y-7">
+          <div className="flex flex-col space-y-7 max-md:hidden">
             <span className=" text-5xl font-medium leading-[68px] text-[#903fff]">
               <p className="text-3xl font-bold">
                 {t("frameComponent6_infrastructure_title")}
@@ -131,9 +150,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
             </span>
             <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
-              <span>  
-                {t("frameComponent6_infrastructure_paragraph")}
-              </span>
+              <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <ul className="list-none">
                 <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet1")}
@@ -144,11 +161,11 @@ const FrameComponent6 = forwardRef((props, ref) => {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 h-[580px] w-[658px] max-xl:w-full overflow-hidden">
+          <div className="grid grid-cols-1 gap-4 h-[580px] w-[658px] max-xl:w-full max-md:h-full overflow-hidden">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
-                className="rounded-xl"
+                className="rounded-xl w-full h-full object-cover"
                 src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/f65a/b9b6/-80f2-48c1-ae3d-f36ba02b30d2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P7FiNGSjyvDg2rXuKRBJOApt9A0Z1HONjxuZyrw1J3hdvcm01hKebkKRHNKM5RLI21OGAd8~uhn13tzhKwn9s~hhXYvo8qV7IcjkWhlsSVLnQ4qaWdgbFNbFY~zXCcFF47gRgjW2ArnqVXw45jFFwlthYSZCKerNuKFT4RE4nftRg9ejJeeCR-e4UFS1S31mDfvQYh6zmEvQ~ZylgzK5afLseAQ-3IJZNpAYtjV7fuezlqQLZyuAux7~pJMZ2hMbp51F9vYPOPO6~VqCF-wmR5lWEGjyWvn2gKiMfrPDbk0PFckCIgJhC~KnPEoS8FetKWnDlPQbfiFwjJgzyog0Og__"
                 autoPlay
                 loop
@@ -161,7 +178,8 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 h-[279px] gap-4 col-span-1">
+              <span className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40% des Wertes) und Conenctivität für die Kommunikation sowohl beim Fahren als auch beim Tanken. GIGA FIBER Technologies plant, eine Lithiummine zu erwerben und eine Fabrik zur Herstellung von Batterien und Funktürmen zu errichten. Diese Fabrik wird Batterien produzieren, die für die Stromversorgung von Funktürmen benötigt werden.</span>
+            <div className="grid grid-cols-2 max-md:grid-cols-1 h-[279px] gap-4 col-span-1">
               <span className="w-full">
                 <img src="weather.png" alt="" className="w-full h-auto" />
               </span>
@@ -175,12 +193,11 @@ const FrameComponent6 = forwardRef((props, ref) => {
           question={t("frameComponent6_faq_question")}
           answer={
             <div className="bg-white rounded-3xl m-2 p-[40px]">
-              <p>{t("frameComponent6_faq_description")}</p>
               <p>
-              {t('frameComponent6_faq_ans_part1')}
-              <br/>
-              <br/>
-              {t('frameComponent6_faq_ans_part2')}
+                {t("frameComponent6_faq_ans_part1")}
+                <br />
+                <br />
+                {t("frameComponent6_faq_ans_part2")}
               </p>
               <div className="flex flex-wrap justify-between mt-5">
                 {imagedesData.map((data, index) => (

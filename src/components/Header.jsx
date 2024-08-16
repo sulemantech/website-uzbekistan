@@ -51,7 +51,7 @@ const Header = ({ isMobile, scrollToFrame4}) => {
         </p>
       </div>
 
-      {!isMobile && (
+      {isMobile && (
         <button
           onClick={toggleMenu}
           className="absolute top-5 right-5 z-20 flex flex-col items-center justify-center w-12 h-12 rounded-full"

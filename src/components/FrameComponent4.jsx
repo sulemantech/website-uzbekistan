@@ -1,11 +1,12 @@
-import React, { forwardRef } from "react";
+import React, { useState, forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import FrameComponent5 from "./FrameComponent5";
 import FrameComponent6 from "./FrameComponent6";
 import FrameComponent7 from "./FrameComponent7";
 
-const FrameComponent4 = forwardRef(({ isMobile, scrollToFrame5, scrollToFrame6, scrollToFrame7 }, ref) => {
+const FrameComponent4 = forwardRef(({ isMobile, scrollToFrame5 , scrollToFrame6 , scrollToFrame7 }, ref) => {
   const { t } = useTranslation();
+  const [activeCard, setActiveCard] = useState(null);
 
   const cardData = [
     {
@@ -15,7 +16,7 @@ const FrameComponent4 = forwardRef(({ isMobile, scrollToFrame5, scrollToFrame6, 
       imgSrc: "01.png",
       buttonText: t("frameComponent4_card1_buttonText"),
       scrollTo: scrollToFrame5,
-      frameComponent: <FrameComponent5 />,
+      component: <FrameComponent5 />
     },
     {
       number: "02",
@@ -24,7 +25,7 @@ const FrameComponent4 = forwardRef(({ isMobile, scrollToFrame5, scrollToFrame6, 
       imgSrc: "02.png",
       buttonText: t("frameComponent4_card2_buttonText"),
       scrollTo: scrollToFrame6,
-      frameComponent: <FrameComponent6 />,
+      component: <FrameComponent6 />
     },
     {
       number: "03",
@@ -33,16 +34,23 @@ const FrameComponent4 = forwardRef(({ isMobile, scrollToFrame5, scrollToFrame6, 
       imgSrc: "03.png",
       buttonText: t("frameComponent4_card3_buttonText"),
       scrollTo: scrollToFrame7,
-      frameComponent: <FrameComponent7 />,
+      component: <FrameComponent7 />
     },
   ];
 
+  const handleCardClick = (index) => {
+    setActiveCard(index === activeCard ? null : index);
+  };
+
   return (
-    <div ref={ref} className="flex justify-center flex-wrap mt-4 gap-3 p-2 max-md:px-0">
+    <div ref={ref} className="flex flex-col lg:flex-row justify-center flex-wrap mt-4 gap-3 p-2 max-md:px-0">
       {cardData.map((card, index) => (
-        <div key={index} className="relative w-[445px] h-auto max-lg:w-full max-lg:mx-4 rounded-lg overflow-hidden">
+        <div key={index} className="w-full lg:w-[30%] max-lg:w-full max-lg:mx-4">
           <div
-            onClick={card.scrollTo}
+             onClick={() => {
+              handleCardClick(index);
+              card.scrollTo();
+            }}
             className="relative group cursor-pointer w-full h-[582px] rounded-lg overflow-hidden"
           >
             <p className="absolute top-[74px] left-[40px] text-5xl text-white z-50">{card.number}</p>
@@ -54,17 +62,17 @@ const FrameComponent4 = forwardRef(({ isMobile, scrollToFrame5, scrollToFrame6, 
             <div className="absolute bottom-0 left-0 bg-gradient-to-t from-[#3B2A89] to-transparent w-full h-[8.438rem]" />
             <div className="w-[85%] absolute bottom-[62.5px] left-[40px] text-[#903fff] text-lg flex justify-between">
               <b className="font-bold text-5xl">{card.title}</b>
-              <img
-                className="group-hover:rotate-90 transition-transform"
-                src="objects1.svg"
-                alt=""
-              />
+              <img className="group-hover:rotate-90 transition-transform" src="objects1.svg" alt="" />
             </div>
             <div className="absolute bottom-[128px] left-[40px] text-3xl font-bold text-white">
               <p className="m-0">{card.description}</p>
             </div>
           </div>
-          {isMobile && card.frameComponent}
+          {isMobile && activeCard === index && (
+            <div className="-mt-8">
+              {card.component}
+            </div>
+          )}
         </div>
       ))}
     </div>
