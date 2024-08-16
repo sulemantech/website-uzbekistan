@@ -41,8 +41,8 @@ const Gigafibertechcom = () => {
     }
   };
 
-  const handleComponentClick = () => {
-    // Implement the logic for handling component clicks here
+  const handleComponentClick = (component) => {
+    setActiveComponent(component);
   };
 
   return (
@@ -55,9 +55,9 @@ const Gigafibertechcom = () => {
       <FrameComponent4
         isMobile={isMobile}
         ref={frame4Ref}
-        scrollToFrame5={() => handleComponentClick()}
-        scrollToFrame6={() => handleComponentClick()}
-        scrollToFrame7={() => handleComponentClick()}
+        scrollToFrame5={() => scrollToRef(frame5Ref)}
+        scrollToFrame6={() => scrollToRef(frame6Ref)}
+        scrollToFrame7={() => scrollToRef(frame7Ref)}
       />
       {!isMobile && (
         <>
