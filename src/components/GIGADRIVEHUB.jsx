@@ -82,7 +82,7 @@ const GIGADRIVEHUB = ({
 
   return (
     <div
-      className={`w-[445px] relative max-w-full h-[582px] text-left text-36xl text-white font-saira-condensed ${className}`}
+      className={`w-[445px] relative max-w-full h-[582px] text-left text-36xl text-white  ${className}`}
       style={gIGADRIVEHUBStyle}
       onClick={onGIGADRIVEHUBClick}
     >

@@ -9,7 +9,7 @@ const FrameComponent = ({
 }) => {
   return (
     <div
-      className={`flex flex-row items-center justify-center gap-[1.75rem] text-left text-[3.438rem] text-giga-fiber-lila font-saira-condensed ${className}`}
+      className={`flex flex-row items-center justify-center gap-[1.75rem] text-left text-[3.438rem] text-giga-fiber-lila  ${className}`}
     >
       <div className="flex flex-row items-center justify-start gap-[0.75rem]">
         <div className="relative leading-[125%] font-medium">{prop}</div>

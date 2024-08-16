@@ -279,7 +279,7 @@ const Property1Default = ({
 
   return (
     <div
-      className={`w-[518px] relative max-w-full flex flex-col items-start justify-start gap-7 text-left text-11xl text-giga-fiber-lila font-saira-condensed ${className}`}
+      className={`w-[518px] relative max-w-full flex flex-col items-start justify-start gap-7 text-left text-11xl text-giga-fiber-lila  ${className}`}
       style={property1DefaultStyle}
     >
       <b

@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import FrameComponent3 from "../components/FrameComponent3";
 import FrameComponent4 from "../components/FrameComponent4";
@@ -25,6 +26,7 @@ const useIsMobile = () => {
 };
 
 const Gigafibertechcom = () => {
+  const { i18n } = useTranslation();
   const isMobile = useIsMobile();
   const frame4Ref = useRef(null);
   const frame5Ref = useRef(null);
@@ -45,8 +47,11 @@ const Gigafibertechcom = () => {
     setActiveComponent(component);
   };
 
+  // Determine font family class based on the current language
+  const fontClass = i18n.language === 'ru' ? 'font-mono' : 'font-SairaCondensed';
+
   return (
-    <div className="w-full md:[background:linear-gradient(180deg,_#281d57,_#1e1a2e)] max-md:bg-[#f5f5f5] font-saira-condensed">
+    <div className={`w-full ${fontClass} md:[background:linear-gradient(180deg,_#281d57,_#1e1a2e)] max-md:bg-[#f5f5f5]`}>
       <Header
         isMobile={isMobile}
         scrollToFrame4={() => scrollToRef(frame4Ref)}

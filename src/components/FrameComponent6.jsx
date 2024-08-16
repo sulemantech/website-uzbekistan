@@ -79,7 +79,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 playsInline
               ></video>
               <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-full top-0 rounded-xl overflow-hidden">
-                <span className="text-white absolute bottom-4 left-8 font-saira-condensed text-[55px] max-lg:text-[36px] max-md:text-[28px] font-bold leading-[125%]">
+                <span className="text-white absolute bottom-4 left-8  text-[55px] max-lg:text-[36px] max-md:text-[28px] font-bold leading-[125%]">
                   GIGA DRIVE HUB
                 </span>
               </div>
@@ -135,7 +135,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
             <div></div>
           </div>
         </div>
-        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white font-saira-condensed text-[30px] font-bold leading-[107%] uppercase">
+        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] flex justify-center items-center text-white  text-[30px] font-bold leading-[107%] uppercase">
           <span className="w-[96%]  mx-auto">
             {t("frameComponent6_highlight")}
           </span>
@@ -173,7 +173,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 playsInline
               ></video>
               <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
-                <span className="text-white absolute bottom-4 left-8 font-saira-condensed text-[55px] font-bold leading-[125%]">
+                <span className="text-white absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
                   {t("frameComponent6_title2")}
                 </span>
               </div>

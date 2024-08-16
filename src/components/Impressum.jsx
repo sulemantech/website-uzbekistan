@@ -11,7 +11,7 @@ const Impressum = () => {
 
   return (
     <>
-    <div className="w-full relative  overflow-hidden flex flex-col items-center justify-start pt-[0rem] px-[2.187rem] pb-[2.5rem] box-border text-left text-[3.75rem] text-giga-fiber-lila font-saira-condensed">
+    <div className="w-full relative  overflow-hidden flex flex-col items-center justify-start pt-[0rem] px-[2.187rem] pb-[2.5rem] box-border text-left text-[3.75rem] text-giga-fiber-lila ">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="headerbgvideo.mov"

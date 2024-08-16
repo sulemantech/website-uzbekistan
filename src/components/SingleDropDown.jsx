@@ -14,7 +14,7 @@ const DropdownFaq = ({ question, answer }) => {
         className="flex justify-between items-center mx-4 p-4 cursor-pointer"
         onClick={toggleDropdown}
       >
-        <div className="text-white font-bold text-[20px] sm:text-[30px] font-SairaCondensed">{question}</div>
+        <div className="text-white font-bold text-[20px] sm:text-[30px]">{question}</div>
         <div>
           <img
             className={`w-[23px] h-[20px] ${
