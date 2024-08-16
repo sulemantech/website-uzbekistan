@@ -14,8 +14,8 @@ i18n
       ru: { translation: esTranslations },
       de: { translation: deTranslations },
     },
-    lng: 'de', // Default language
-    fallbackLng: 'de',
+    lng: 'ru', // Default language
+    fallbackLng: 'ru',
     interpolation: {
       escapeValue: false,
     },

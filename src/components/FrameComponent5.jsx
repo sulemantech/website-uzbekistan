@@ -145,50 +145,50 @@ const FrameComponent5 = forwardRef((props, ref) => {
     {
       img: "R11.png",
       text: divcontainer(
-        "Erschließung einer Kupfermine",
-        "Ausbildung von jungen Arbeitskräften und Schaffung neuer Arbeitsplätze gemäß europäischer Standards"
+        t("frameComponent5_imageDescriptions_1_title"),
+        t("frameComponent5_imageDescriptions_1_text")
       ),
     },
     {
       img: "R15.png",
       text: divcontainer(
-        "Erschließung einer Lithiummine",
-        "Aktive politische Stärkung zum Wirtschaftsstandort Deutschland, Belieferung von Unternehmen in Usbekistan"
+        t("frameComponent5_imageDescriptions_2_title"),
+        t("frameComponent5_imageDescriptions_2_text")
       ),
     },
     {
       img: "R12.png",
       text: divcontainer(
-        "Förderung des usbekischen Bergbaus",
-        "Export von Kupfererzeugnissen nach Europa und Belieferung internationaler Automobilindustrie mit Lithium"
+        t("frameComponent5_imageDescriptions_3_title"),
+        t("frameComponent5_imageDescriptions_3_text")
       ),
     },
     {
       img: "R16.png",
       text: divcontainer(
-        "Bau einer Batteriefabrik",
-        "Lithiumlieferung für die Funkmastversorgung und für die autonome Teststrecke"
+        t("frameComponent5_imageDescriptions_4_title"),
+        t("frameComponent5_imageDescriptions_4_text")
       ),
     },
     {
       img: "R13.png",
       text: divcontainer(
-        "Diversifizierung der Wirtschaftssektoren",
-        "Förderung der industriellen Entwicklung Usbekistans durch Ansiedlung europäischer Unternehmen"
+        t("frameComponent5_imageDescriptions_5_title"),
+        t("frameComponent5_imageDescriptions_5_text")
       ),
     },
     {
       img: "R17.png",
       text: divcontainer(
-        "Steigerung der Standortattraktivität",
-        "Zuwachs an Automobilindustrie und Infrastruktur"
+        t("frameComponent5_imageDescriptions_6_title"),
+        t("frameComponent5_imageDescriptions_6_text")
       ),
     },
     {
       img: "R14.png",
       text: divcontainer(
-        "Kooperationen mit regionalen Unternehmen",
-        "Schaffung nachhaltiger Geschäftsbeziehungen"
+        t("frameComponent5_imageDescriptions_7_title"),
+        t("frameComponent5_imageDescriptions_7_text")
       ),
     },
     {
@@ -196,8 +196,7 @@ const FrameComponent5 = forwardRef((props, ref) => {
       text: divcontainer(
         <div className="text-[34px] text-white">50%</div>,
         <div className="text-white">
-          des erwirtschafteten Profits werden in die Teststrecke autonomes
-          Fahren investiert.
+          {t("frameComponent5_imageDescriptions_8_text")}
         </div>
       ),
     },
@@ -288,19 +287,12 @@ const FrameComponent5 = forwardRef((props, ref) => {
           </div>
         </div>
         <DropdownFaq
-          question="ZIELE DER KOOPERATION MIT GIGA FIBER"
+          question={t("frameComponent5_faq_question_gigaFiberPartnership")}
           answer={
             <div>
               <div className="bg-white rounded-3xl m-2 p-[40px]">
                 <p>
-                  Usbekistan verfügt über eine beeindruckende Vielfalt an
-                  mineralischen Metall- und Nichtmetallrohstoffen, die enorme
-                  Potenziale für Unternehmen bieten.  Die im Jahr 2024
-                  abgeschlossene Partnerschaft mit der EU eröffnet vielfältige
-                  Möglichkeiten zur Kooperation im Bergbau. Diese strategische
-                  Allianz schafft eine solide Grundlage für nachhaltige
-                  Investitionen und technologische Innovationen im usbekischen
-                  Rohstoffsektor.​
+                  {t("frameComponent5_faq_answer_gigaFiberPartnership")}
                 </p>
                 <div className="flex flex-wrap justify-between mt-5">
                   {imagedesData.map((data, index) => (

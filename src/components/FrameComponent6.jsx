@@ -175,8 +175,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
           question={t("frameComponent6_faq_question")}
           answer={
             <div className="bg-white rounded-3xl m-2 p-[40px]">
-              <p>{t("frameComponent6_faq_description")}</p>
-              <p>
+             <p>
               {t('frameComponent6_faq_ans_part1')}
               <br/>
               <br/>
