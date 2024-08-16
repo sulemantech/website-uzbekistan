@@ -51,7 +51,7 @@ const Gigafibertechcom = () => {
   const fontClass = i18n.language === 'ru' ? 'font-mono' : 'font-SairaCondensed';
 
   return (
-    <div className={`w-full ${fontClass} md:[background:linear-gradient(180deg,_#281d57,_#1e1a2e)] max-md:bg-[#f5f5f5]`}>
+    <div className={`w-full ${fontClass} [background:linear-gradient(180deg,_#281d57,_#1e1a2e)] max-md:bg-[#f5f5f5]`}>
       <Header
         isMobile={isMobile}
         scrollToFrame4={() => scrollToRef(frame4Ref)}

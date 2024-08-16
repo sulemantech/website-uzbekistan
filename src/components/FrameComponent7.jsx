@@ -69,12 +69,12 @@ const FrameComponent7 = forwardRef((props, ref) => {
     <>
       <div
         ref={ref}
-        className="bg-white w-[95vw] mx-auto mb-2 flex flex-col items-center rounded-2xl p-5 md:p-10 m-0"
+        className="bg-white w-[95vw] mx-auto mb-2 flex flex-col items-center rounded-2xl p-5 md:p-10 m-5 max-md:w-[88vw]"
       >
         <div className="flex justify-between w-full space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">
-            <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]  max-md:hidden">
-              <p className="border-r-2 px-3 border-[#903fff]">03</p>{" "}
+            <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#8643F5]  max-md:hidden">
+              <p className="border-r-2 px-3 border-[#8643F5]">03</p>{" "}
               <p className="text-3xl font-bold">
                 {t("frameComponent7_title")}
               </p>
@@ -95,7 +95,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
                 muted
                 playsInline
               ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0 rounded-xl overflow-hidden">
+              <div className="absolute w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-[264px] top-0 rounded-xl overflow-hidden">
                 <span className="text-white absolute  bottom-2 md:bottom-4 left-6 md:left-8  text-[35px] md:text-[55px] font-bold leading-[125%]">
                   GIGA FUTURE
                 </span>
@@ -104,7 +104,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
           </div>
         </div>
         <div>
-          <p className="text-3xl mt-10  my-2 font-bold text-[#903fff] border-[#903fff] uppercase">
+          <p className="text-3xl mt-10  my-2 font-bold text-[#8643F5] border-[#8643F5] uppercase">
             {t("frameComponent7_title2")}
           </p>
           <p className="text-black max-w-[1500px]  mt-6 mb-2 text-[16px] font-normal leading-[1.25]">
@@ -210,8 +210,8 @@ export default FrameComponent7;
 
 const Section = ({ title, title2 = null, imageSrc, points }) => {
   return (
-    <div className="w-[100%] md:w-[50%] rounded-xl z-50 bg-gradient-to-t bg-white md:from-[#903fff30] to-transparent space-y-3">
-      <span className="text-[#903FFF] hidden max-md:block  text-[22px] font-bold leading-[125%]">
+    <div className="w-[100%] md:w-[50%] rounded-xl z-50 bg-gradient-to-t bg-white md:from-[#8643F530] to-transparent space-y-3">
+      <span className="text-[#8643F5] hidden max-md:block  text-[22px] font-bold leading-[125%]">
             {title}
           </span>
       <div className="col-span-1 h-[165px] md:h-[264px] rounded-xl relative overflow-hidden">
@@ -224,7 +224,7 @@ const Section = ({ title, title2 = null, imageSrc, points }) => {
       </div>
       {title2 && (
         <div className="mt-4 md:ml-[39px]">
-          <span className="flex justify-start w-full text-[#903fff] font-saira text-base font-bold">
+          <span className="flex justify-start w-full text-[#8643F5] font-saira text-base font-bold">
             {title2}
           </span>
         </div>
@@ -237,7 +237,7 @@ const Section = ({ title, title2 = null, imageSrc, points }) => {
         {points.map((point, index) => (
           <li
             key={index}
-            className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full"
+            className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full"
           >
             {point}
           </li>

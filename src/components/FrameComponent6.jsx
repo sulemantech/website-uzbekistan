@@ -65,7 +65,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
   ];
   return (
     <>
-      <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
+      <div ref={ref} className="bg-white rounded-2xl p-10 m-5 max-md:m-1">
         <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="grid grid-cols-1 max-md:hidden gap-4 h-auto w-full overflow-hidden">
             <div className="relative col-span-1 h-[264px] max-xl:h-auto rounded-xl overflow-hidden">
@@ -77,7 +77,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 muted
                 playsInline
               ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-full top-0 rounded-xl overflow-hidden">
+              <div className="absolute w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-full top-0 rounded-xl overflow-hidden">
                 <span className="text-white absolute bottom-4 left-8  text-[55px] max-lg:text-[36px] max-md:text-[28px] font-bold leading-[125%]">
                   GIGA DRIVE HUB
                 </span>
@@ -102,8 +102,8 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </div>
 
           <div className="flex flex-col space-y-7 ">
-            <span className="flex space-x-7 text-5xl font-medium leading-[68px] text-[#903fff]">
-              <p className="border-r-2 pr-3 max-md:hidden  border-[#903fff]">
+            <span className="flex space-x-7 text-5xl font-medium leading-[68px] text-[#8643F5]">
+              <p className="border-r-2 pr-3 max-md:hidden  border-[#8643F5]">
                 02
               </p>{" "}
               <p className="text-3xl max-md:hidden w-[518px] max-xl:w-full font-bold">
@@ -136,22 +136,22 @@ const FrameComponent6 = forwardRef((props, ref) => {
               )}
               <button
                 onClick={handleShowMore}
-                className="text-[#903fff] underline"
+                className="text-[#8643F5] underline"
               >
                 {showMore ? "Mehr lesen" : "Weniger lesen"}
               </button>
             </div>
           </div>
         </div>
-        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] max-md:h-auto p-2 flex justify-center items-center text-white  text-[30px] max-md:text-[3.4vw] max-lg:text-[2.8vw] font-bold leading-[107%] uppercase">
-          <span className="w-[96%]  mx-auto">
+        <div className=" max-w-[1500px]  mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] max-md:h-auto p-2 flex justify-center items-center text-white text-[30px] max-md:text-[4vw] max-lg:text-[2.8vw] font-bold leading-[107%] uppercase">
+          <span className=" my-5 max-md:mx-[30px] mx-auto">
             {t("frameComponent6_highlight")}
           </span>
         </div>
 
         <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
           <div className="flex flex-col space-y-7 max-md:hidden">
-            <span className=" text-5xl font-medium leading-[68px] text-[#903fff]">
+            <span className=" text-5xl font-medium leading-[68px] text-[#8643F5]">
               <p className="text-3xl font-bold">
                 {t("frameComponent6_infrastructure_title")}
               </p>
@@ -160,10 +160,10 @@ const FrameComponent6 = forwardRef((props, ref) => {
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <ul className="list-none">
-                <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
+                <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet1")}
                 </li>
-                <li className="relative pl-5 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
+                <li className="relative pl-5 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet2")}
                 </li>
               </ul>
@@ -171,16 +171,16 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </div>
           <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full max-md:h-full overflow-hidden">
             <div className="col-span-1  rounded-xl relative overflow-hidden">
-              {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
+              <img src="carmobile.png" alt="" className="w-full h-auto md:hidden" />
               <video
-                className="rounded-xl w-full h-full object-cover"
+                className="rounded-xl w-full h-full max-md:hidden object-cover"
                 src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/f65a/b9b6/-80f2-48c1-ae3d-f36ba02b30d2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P7FiNGSjyvDg2rXuKRBJOApt9A0Z1HONjxuZyrw1J3hdvcm01hKebkKRHNKM5RLI21OGAd8~uhn13tzhKwn9s~hhXYvo8qV7IcjkWhlsSVLnQ4qaWdgbFNbFY~zXCcFF47gRgjW2ArnqVXw45jFFwlthYSZCKerNuKFT4RE4nftRg9ejJeeCR-e4UFS1S31mDfvQYh6zmEvQ~ZylgzK5afLseAQ-3IJZNpAYtjV7fuezlqQLZyuAux7~pJMZ2hMbp51F9vYPOPO6~VqCF-wmR5lWEGjyWvn2gKiMfrPDbk0PFckCIgJhC~KnPEoS8FetKWnDlPQbfiFwjJgzyog0Og__"
                 autoPlay
                 loop
                 muted
                 playsInline
               ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
+              <div className="absolute max-md:hidden w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
                 <span className="text-white max-md:hidden absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
                   {t("frameComponent6_title2")}
                 </span>
@@ -204,12 +204,12 @@ const FrameComponent6 = forwardRef((props, ref) => {
               </span>
               <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
                 <ul className="list-none">
-                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
+                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
                     Besonderes Interesse für europäische E-Auto Hersteller
                     aufgrund kostengünstiger Herstellungskosten für ein
                     Batteriewerk.
                   </li>
-                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903fff] before:rounded-full">
+                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
                     Entstehung von ca. 1000 neuer Arbeitsplätze in den Werken.
                   </li>
                 </ul>
@@ -220,7 +220,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
         <DropdownFaq
           question={t("frameComponent6_faq_question")}
           answer={
-            <div className="bg-white rounded-3xl m-2 p-[40px]">
+            <div className="bg-white rounded-3xl m-2 p-[40px] max-md:px-3">
               <p>
                 {t("frameComponent6_faq_ans_part1")}
                 <br />
@@ -282,7 +282,7 @@ export const Imagewithdiscription = ({ imageSrc, text, applyBg = true }) => {
     <>
       <div
         className={`w-[520px] max-xl:w-full h-[152px]  ${
-          applyBg ? `bg-[#F5EEFF]` : "bg-[#903fff]"
+          applyBg ? `bg-[#F5EEFF]` : "bg-[#8643F5]"
         } mt-3 rounded-3xl flex space-x-1`}
       >
         <div className="w-[185px]">
@@ -293,7 +293,7 @@ export const Imagewithdiscription = ({ imageSrc, text, applyBg = true }) => {
           />
         </div>
         <p className="w-[365px] flex justify-center items-center">
-          <span className="w-[90%]">{text}</span>
+          <span className="w-[90%] max-md:w-[100%]">{text}</span>
         </p>
       </div>
     </>
@@ -306,7 +306,7 @@ export const Imagewithdiscription2 = ({ text }) => {
         className={`w-[520px] max-xl:w-full mt-1 rounded-3xl flex space-x-1`}
       >
         <p className="w-full flex justify-center items-center">
-          <span className="w-[90%]">{text}</span>
+          <span className="w-[100%]">{text}</span>
         </p>
       </div>
     </>

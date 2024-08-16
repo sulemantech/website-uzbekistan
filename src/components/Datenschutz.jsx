@@ -201,10 +201,15 @@ function Datenschutz() {
                           <p className="m-0">&nbsp;</p>
                           <p className="m-0">
                             Wir setzen folgenden Hoster ein:
+                            
                           </p>
                           <p className="m-0">&nbsp;</p>
                           <p className="m-0">
-                            STRATO AGPascalstraße 1010587 Berlin
+                          Amazon Web Services EMEA SARL (Germany Branch) <br />
+                          AWS Frankfurt Region <br />
+                          Regional Office Germany <br />
+                          Ankerstrasse 1 <br />
+                          10117 Berlin, Germany <br />
                           </p>
                           <p className="m-0">&nbsp;</p>
                           <p className="m-0 text-giga-fiber-lila">
@@ -236,9 +241,9 @@ function Datenschutz() {
                             anderes ergibt, erfolgt die Verarbeitung der Daten
                             auf eigenen Servern und ggf. Servern technischer
                             Dienstleister in der Europäischen Union, die
-                            hierzu durch uns beauftragt wurden. Zurzeit
-                            erfolgt das Hosting auf Servern der Strato AG. In
-                            Bezug auf unsere Webseite werden die Daten nur
+                            hierzu durch uns beauftragt wurden. Zurzeit erfolgt 
+                            das Hosting auf Servern der Amazon Web Services EMEA SARL. 
+                            In Bezug auf unsere Webseite werden die Daten nur
                             nach ausdrücklicher Weisung und unter
                             vertraglicher Verpflichtung zur Gewährleistung von
                             hinreichenden technischen und organisatorischen
