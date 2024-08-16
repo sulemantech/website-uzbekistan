@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const Header = ({ scrollToFrame4 , setActiveComponent }) => {
-  const { t } = useTranslation(); // Call useTranslation here  
+const Header = ({ isMobile, scrollToFrame4}) => {
+  const { t } = useTranslation(); // Call useTranslation here
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-  const navigateToPage = (page) => {
-    setActiveComponent(page);
+  const navigateToPage = () => {
+    scrollToFrame4();
     setIsMenuOpen(false);
   };
-
 
   return (
     <div className="relative h-screen overflow-hidden">
@@ -52,17 +51,17 @@ const Header = ({ scrollToFrame4 , setActiveComponent }) => {
         </p>
       </div>
 
-      {/* Burger Menu Button */}
-      <button
-        onClick={toggleMenu}
-        className="absolute top-5 right-5 z-20 flex flex-col items-center justify-center w-12 h-12 rounded-full"
-      >
-        <div className="w-6 h-0.5 bg-white mb-1"></div>
-        <div className="w-6 h-0.5 bg-white mb-1"></div>
-        <div className="w-6 h-0.5 bg-white"></div>
-      </button>
+      {!isMobile && (
+        <button
+          onClick={toggleMenu}
+          className="absolute top-5 right-5 z-20 flex flex-col items-center justify-center w-12 h-12 rounded-full"
+        >
+          <div className="w-6 h-0.5 bg-white mb-1"></div>
+          <div className="w-6 h-0.5 bg-white mb-1"></div>
+          <div className="w-6 h-0.5 bg-white"></div>
+        </button>
+      )}
 
-      {/* Burger Menu */}
       <div
         className={`fixed z-50 top-0 right-0 w-[70vw] rounded-l-3xl h-[70%] bg-white transition-transform transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -70,7 +69,7 @@ const Header = ({ scrollToFrame4 , setActiveComponent }) => {
       >
         <div className="flex flex-col items-center mt-10 space-y-6 text-[#903fff]">
           <button
-            onClick={() => navigateToPage("frame5")}
+            onClick={() => navigateToPage()}
             className="text-[22px] flex justify-between space-x-3 items-center font-bold leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
           >
             <span> {t("CU29 TECH")}</span>
@@ -83,7 +82,7 @@ const Header = ({ scrollToFrame4 , setActiveComponent }) => {
             </span>
           </button>
           <button
-            onClick={() => navigateToPage("frame6")}
+            onClick={() => navigateToPage()}
             className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
           >
             <span> {t("GIGA DRIVE HUB")}</span>
@@ -96,7 +95,7 @@ const Header = ({ scrollToFrame4 , setActiveComponent }) => {
             </span>
           </button>
           <button
-            onClick={() => navigateToPage("frame7")}
+            onClick={() => navigateToPage()}
             className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
           >
             <span> {t("GIGA FUTURE")} </span>

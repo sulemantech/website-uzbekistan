@@ -7,7 +7,6 @@ import FrameComponent6 from "../components/FrameComponent6";
 import FrameComponent7 from "../components/FrameComponent7";
 import Footer from "../components/Footer";
 
-// Custom hook to check if screen is mobile
 const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -42,30 +41,31 @@ const Gigafibertechcom = () => {
     }
   };
 
-  const handleComponentClick = (component) => {
-    setActiveComponent(component);
+  const handleComponentClick = () => {
+    // Implement the logic for handling component clicks here
   };
 
   return (
     <div className="w-full [background:linear-gradient(180deg,_#281d57,_#1e1a2e)] font-saira-condensed">
       <Header
+        isMobile={isMobile}
         scrollToFrame4={() => scrollToRef(frame4Ref)}
-        setActiveComponent={handleComponentClick}
       />
       <FrameComponent3 />
-
-      {isMobile && !activeComponent && (
-        <FrameComponent4
-          ref={frame4Ref}
-          scrollToFrame5={() => handleComponentClick("frame5")}
-          scrollToFrame6={() => handleComponentClick("frame6")}
-          scrollToFrame7={() => handleComponentClick("frame7")}
-        />
+      <FrameComponent4
+        isMobile={isMobile}
+        ref={frame4Ref}
+        scrollToFrame5={() => handleComponentClick()}
+        scrollToFrame6={() => handleComponentClick()}
+        scrollToFrame7={() => handleComponentClick()}
+      />
+      {!isMobile && (
+        <>
+          <FrameComponent5 ref={frame5Ref} />
+          <FrameComponent6 ref={frame6Ref} />
+          <FrameComponent7 ref={frame7Ref} />
+        </>
       )}
-
-      {(!isMobile || activeComponent === "frame5") && <FrameComponent5 ref={frame5Ref} />}
-      {(!isMobile || activeComponent === "frame6") && <FrameComponent6 ref={frame6Ref} />}
-      {(!isMobile || activeComponent === "frame7") && <FrameComponent7 ref={frame7Ref} />}
 
       <Footer />
     </div>
