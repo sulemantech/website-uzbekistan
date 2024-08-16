@@ -69,11 +69,11 @@ const FrameComponent7 = forwardRef((props, ref) => {
     <>
       <div
         ref={ref}
-        className="bg-white  flex flex-col items-center rounded-2xl p-10 m-5 "
+        className="bg-white flex flex-col items-center rounded-2xl p-5 sm:p-10 m-0 -translate-y-10 z-0"
       >
         <div className="flex justify-between w-full space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">
-            <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]">
+            <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#903fff]  max-md:hidden">
               <p className="border-r-2 px-3 border-[#903fff]">03</p>{" "}
               <p className="text-3xl font-bold">
                 {t("frameComponent7_title")}
@@ -95,8 +95,8 @@ const FrameComponent7 = forwardRef((props, ref) => {
                 muted
                 playsInline
               ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
-                <span className="text-white absolute  bottom-4 left-8 font-saira-condensed text-[55px] font-bold leading-[125%]">
+              <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0 rounded-xl overflow-hidden">
+                <span className="text-white absolute  bottom-2 sm:bottom-4 left-6 sm:left-8 font-saira-condensed text-[35px] sm:text-[55px] font-bold leading-[125%]">
                   GIGA FUTURE
                 </span>
               </div>
@@ -116,13 +116,13 @@ const FrameComponent7 = forwardRef((props, ref) => {
         </div>
 
         <div className="flex justify-between w-[90vw] max-xl:w-full max-xl:flex-col max-w-[1500px] items-center space-x-10 max-xl:space-x-0 relative">
-          <div className="flex items-end h-[450px] max-xl:h-fit justify-center bottom-0  space-x-2">
-            <img className="w-[71px] h-[49px]" src="db.png" alt="" />
-            <img className="w-[263px] h-[46px]" src="lufthansa.png" alt="" />
+          <div className="flex w-[100%] md:w-auto items-end h-[450px] max-xl:h-fit justify-start bottom-0  space-x-4 mt-2">
+            <img className="w-[38px] md:w-[71px] h-[25px] md:h-[49px]" src="db.png" alt="" />
+            <img className="w-[140px] md:w-[263px] h-[22px] md:h-[46px]" src="lufthansa.png" alt="" />
           </div>{" "}
           <div>
             {" "}
-            <div className="flex justify-center items-center mt-10">
+            <div className="flex justify-center items-center mt-5 md-mt-10">
               <div className="relative flex justify-center items-center">
                 <video
                   ref={videoRef}
@@ -169,7 +169,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        <div className="flex space-x-10 max-w-[1500px] justify-between w-full my-6">
+        <div className="flex flex-wrap space-y-10 md:space-x-10 max-w-[1500px] justify-between w-full my-6">
           {sectionData.map((data, index) => (
             <Section
               key={index}
@@ -183,12 +183,12 @@ const FrameComponent7 = forwardRef((props, ref) => {
         <DropdownFaq
           question={t("frameComponent7_dropdown_title")}
           answer={
-            <div className="bg-white rounded-3xl m-2 p-[40px]">
+            <div className="bg-white rounded-3xl m-2 p-[30px] md:p-[40px]">
               <p>
                 {t("frameComponent7_dropdown_intro_part1")} <br /><br /> Durch die
                 {t("frameComponent7_dropdown_intro_part2")}
               </p>
-              <p className="flex space-x-10 max-w-[1500px] justify-between w-full my-6">
+              <p className="flex flex-wrap space-y-5 md:space-x-10 max-w-[1500px] justify-between w-full my-6">
                 {sectionDataDropdown.map((data, index) => (
                   <Section
                     key={index}
@@ -210,8 +210,11 @@ export default FrameComponent7;
 
 const Section = ({ title, title2 = null, imageSrc, points }) => {
   return (
-    <div className="w-[50%] rounded-xl z-50 bg-gradient-to-t from-[#903fff30] to-transparent">
-      <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
+    <div className="w-[100%] md:w-[50%] rounded-xl z-50 bg-gradient-to-t bg-white sm:from-[#903fff30] to-transparent space-y-3">
+      <span className="text-[#903FFF] hidden max-md:block h-[28px] font-saira-condensed text-[22px] font-bold leading-[125%]">
+            {title}
+          </span>
+      <div className="col-span-1 h-[165px] :h-[264px] rounded-xl relative overflow-hidden">
         <img src={imageSrc} alt="" className="w-full h-full object-cover" />
         <div className={`absolute w-full ${title ? "bg-gradient-to-t from-[#271C5BAA] to-transparent" : ""} z-50 h-[264px] top-0 rounded-xl overflow-hidden`}>
           <span className="text-white absolute bottom-5 left-8 font-saira-condensed text-[30px] font-bold leading-[125%]">
@@ -220,16 +223,16 @@ const Section = ({ title, title2 = null, imageSrc, points }) => {
         </div>
       </div>
       {title2 && (
-        <div className="mt-4 ml-[39px]">
-          <span className="text-[#903fff] font-saira text-base font-bold">
+        <div className="mt-4 md:ml-[39px]">
+          <span className="flex justify-start w-full text-[#903fff] font-saira text-base font-bold">
             {title2}
           </span>
         </div>
       )}
       <ul
-        className={`list-none w-[70%] ${
+        className={`list-none w-[90%] ${
           !title2 && "mt-4"
-        } ml-[40px]  mx-3 my-3`}
+        } ml-[0px]`}
       >
         {points.map((point, index) => (
           <li
