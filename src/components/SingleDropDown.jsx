@@ -9,25 +9,24 @@ const DropdownFaq = ({ question, answer }) => {
   };
 
   return (
-    <div className="w-full max-w-[1500px] font-saira mx-auto bg-[#8643F5] mt-[21px] md:mt-[61px] rounded-lg overflow-hidden">
+    <div className="w-full max-w-[1500px] font-saira mx-auto max-md:bg-transparent md:bg-[#8643F5]  mt-[21px] md:mt-[61px] rounded-lg overflow-hidden">
       <div
-        className="flex justify-between items-center mx-4 p-4 cursor-pointer"
+        className="flex justify-between items-center mx-auto p-4 max-md:rounded-lg max-md:w-[100%] max-md:bg-[#8643F5] cursor-pointer"
         onClick={toggleDropdown}
       >
-        <div className="text-white font-bold text-[20px] sm:text-[30px]">{question}</div>
-        <div>
+        <div className="text-white font-bold text-[30px] bg-transparent max-md:text-sm">{question}</div>
+        <div className=" bg-transparent">
           <img
             className={`w-[23px] h-[20px] ${
               isOpen ? "-rotate-90" : "rotate-0"
             } transition-transform`}
             src="objects3.svg"
             alt=""
-            srcSet=""
           />
         </div>
       </div>
       {isOpen && (
-        <div className="bg-[#8643f5] text-base font-normal leading-[125%] text-black p-2">
+        <div className="md:bg-[#8643f5]  max-md:bg-transparent text-base font-normal leading-[125%] text-black p-2">
           <p>{answer}</p>
         </div>
       )}

@@ -1,14 +1,13 @@
 import React, { useState, forwardRef } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
-import { Imagewithdiscription } from "./FrameComponent6";
-import { useTranslation } from 'react-i18next';
+import { Imagewithdiscription, Imagewithdiscription2 } from "./FrameComponent6";
+import { useTranslation } from "react-i18next";
 
-const FrameComponent5 = forwardRef((props, ref) => {
+const FrameComponent5 = forwardRef((isMobile, ref) => {
   const { t } = useTranslation(); // Initialize the translation function
   const [activeIndex, setActiveIndex] = useState(null);
 
- 
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
@@ -17,22 +16,22 @@ const FrameComponent5 = forwardRef((props, ref) => {
     t("frameComponent5_answers_investment_listItems_1"),
     t("frameComponent5_answers_investment_listItems_2"),
     t("frameComponent5_answers_investment_listItems_3"),
-    t("frameComponent5_answers_investment_listItems_4")
+    t("frameComponent5_answers_investment_listItems_4"),
   ];
   const listItems2 = [
     t("frameComponent5_answers_economicImpact_listItems2_0"),
     t("frameComponent5_answers_economicImpact_listItems2_1"),
     t("frameComponent5_answers_economicImpact_listItems2_2"),
-    t("frameComponent5_answers_economicImpact_listItems2_3")
+    t("frameComponent5_answers_economicImpact_listItems2_3"),
   ];
   const listItems3 = [
-    t('frameComponent5_answers_internationalStandards_listItems3_0'),
+    t("frameComponent5_answers_internationalStandards_listItems3_0"),
     t("frameComponent5_answers_internationalStandards_listItems3_1"),
   ];
   const listItems4 = [
     t("frameComponent5_answers_jobCreation_listItems4_0"),
     t("frameComponent5_answers_jobCreation_listItems4_1"),
-    t("frameComponent5_answers_jobCreation_listItems4_2")
+    t("frameComponent5_answers_jobCreation_listItems4_2"),
   ];
 
   const ListComponent = ({ items }) => (
@@ -50,20 +49,20 @@ const FrameComponent5 = forwardRef((props, ref) => {
 
   const questionsAndAnswers = [
     {
-      question: t('frameComponent5_questions_investment'),
-      answer: <ListComponent items={listItems} />, 
+      question: t("frameComponent5_questions_investment"),
+      answer: <ListComponent items={listItems} />,
     },
     {
-      question: t('frameComponent5_questions_economicImpact'),
-      answer: <ListComponent items={listItems2} />, 
+      question: t("frameComponent5_questions_economicImpact"),
+      answer: <ListComponent items={listItems2} />,
     },
     {
-      question: t('frameComponent5_questions_internationalStandards'),
-      answer: <ListComponent items={listItems3} />, 
+      question: t("frameComponent5_questions_internationalStandards"),
+      answer: <ListComponent items={listItems3} />,
     },
     {
-      question: t('frameComponent5_questions_jobCreation'),
-      answer: <ListComponent items={listItems4} />, 
+      question: t("frameComponent5_questions_jobCreation"),
+      answer: <ListComponent items={listItems4} />,
     },
   ];
 
@@ -140,7 +139,6 @@ const FrameComponent5 = forwardRef((props, ref) => {
   //   },
   // ];
 
-
   const imagedesData = [
     {
       img: "R11.png",
@@ -203,7 +201,7 @@ const FrameComponent5 = forwardRef((props, ref) => {
   ];
   return (
     <>
-      <div ref={ref} className="bg-white rounded-2xl p-10 m-5">
+      <div ref={ref} className="bg-white rounded-2xl p-10 m-5 max-md:m-1">
         <div className="flex justify-between max-w-[1500px] mx-auto space-x-10 rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-7">
             <span className="flex space-x-6 text-5xl font-medium leading-[68px] text-[#903fff]">
@@ -228,9 +226,12 @@ const FrameComponent5 = forwardRef((props, ref) => {
                     >
                       <div className="flex justify-between text-base  items-center text-[#3d3a3a]">
                         <div>{item.question}</div>
-                        <div className={`transition-transform ${activeIndex === index ? "rotate-0" : "-rotate-180"}`}>
-                            <IconChevronUp color="#903fff" />
-                         
+                        <div
+                          className={`transition-transform ${
+                            activeIndex === index ? "rotate-0" : "-rotate-180"
+                          }`}
+                        >
+                          <IconChevronUp color="#903fff" />
                         </div>
                       </div>
                       <div
@@ -248,8 +249,8 @@ const FrameComponent5 = forwardRef((props, ref) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full h-[580px] overflow-hidden">
-            <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
+          <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full overflow-hidden">
+            <div className="col-span-1  rounded-xl relative overflow-hidden">
               <video
                 className="rounded-xl w-full h-full object-cover"
                 src="01screenvid.mp4"
@@ -258,22 +259,18 @@ const FrameComponent5 = forwardRef((props, ref) => {
                 muted
                 playsInline
               ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#3B2A89] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
+              <div className="absolute w-full bg-gradient-to-t from-[#3B2A89] to-transparent z-50 top-0  rounded-xl overflow-hidden">
                 <span className="text-white absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
-                    {t("frameComponent4_card1_title")}
+                  {t("frameComponent4_card1_title")}
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 h-[279px] max-xl:h-full gap-4 col-span-1">
+            <div className="grid grid-cols-2 max-xl:h-full gap-4 col-span-1">
               <span className="w-full h-full">
                 <img
-                 
                   src="rock.png"
-                 
                   alt=""
-                 
                   className=" rounded-xl w-full h-full object-cover"
-               
                 />
               </span>
               <span className="w-full h-full">
@@ -290,19 +287,53 @@ const FrameComponent5 = forwardRef((props, ref) => {
           question={t("frameComponent5_faq_question_gigaFiberPartnership")}
           answer={
             <div>
-              <div className="bg-white rounded-3xl m-2 p-[40px]">
-                <p>
-                  {t("frameComponent5_faq_answer_gigaFiberPartnership")}
-                </p>
-                <div className="flex flex-wrap justify-between mt-5">
-                  {imagedesData.map((data, index) => (
-                    <Imagewithdiscription
-                      key={index}
-                      imageSrc={data.img}
-                      applyBg={index == "7" ? false : true}
-                      text={data.text}
-                    />
-                  ))}
+              <div className="bg-white max-md:bg-[#F5EEFF] rounded-3xl m-2 p-[40px]">
+                <p>{t("frameComponent5_faq_answer_gigaFiberPartnership")}</p>
+                <div className="flex flex-wrap max-md:hidden justify-between mt-5">
+                  {isMobile &&
+                    imagedesData.map((data, index) => (
+                      <Imagewithdiscription
+                        key={index}
+                        imageSrc={data.img}
+                        applyBg={index == "7" ? false : true}
+                        text={data.text}
+                      />
+                    ))}
+                </div>
+                <div className="flex flex-wrap md:hidden justify-between mt-5">
+                    <div>
+                      <img className="w-full" src="R11.png" alt="Description" />
+                      <div>
+                        {imagedesData.slice(0, 4).map((data, index) => (
+                          <Imagewithdiscription2 key={index} text={data.text} />
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <img className="w-full" src="R16.png" alt="Description" />
+                      <div>
+                        {imagedesData.slice(4, 7).map((data, index) => (
+                          <Imagewithdiscription2 key={index} text={data.text} />
+                        ))}
+                      </div>
+                      <div
+                        className={`w-[520px] max-xl:w-full h-[152px]  mt-3 rounded-3xl flex space-x-1`}
+                      >
+                        <p className="w-full flex justify-center items-center">
+                          <span className="w-[90%]">
+                            <div className="text-[34px] text-[#903fff] w-[50%] mb-4 border-t-2 border-[#903fff]"></div>
+                            <div className="text-[34px] font-extrabold text-[#903fff] mb-5">
+                              50%
+                            </div>
+                            <div className="text-black">
+                              {t(
+                                "des erwirtschafteten Profits werden in die Teststrecke autonomes Fahren investiert."
+                              )}
+                            </div>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
