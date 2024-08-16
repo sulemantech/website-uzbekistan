@@ -36,7 +36,7 @@ const Button = ({
 
   return (
     <div
-      className={`relative flex flex-row items-center justify-start py-0 px-[5px] gap-4 text-left text-11xl text-white font-saira-condensed ${className}`}
+      className={`relative flex flex-row items-center justify-start py-0 px-[5px] gap-4 text-left text-11xl text-white  ${className}`}
       style={buttonStyle}
     >
       <div

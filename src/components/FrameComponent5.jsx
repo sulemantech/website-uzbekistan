@@ -259,7 +259,7 @@ const FrameComponent5 = forwardRef((props, ref) => {
                 playsInline
               ></video>
               <div className="absolute w-full bg-gradient-to-t from-[#3B2A89] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
-                <span className="text-white absolute bottom-4 left-8 font-saira-condensed text-[55px] font-bold leading-[125%]">
+                <span className="text-white absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
                     {t("frameComponent4_card1_title")}
                 </span>
               </div>

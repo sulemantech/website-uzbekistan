@@ -69,7 +69,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
     <>
       <div
         ref={ref}
-        className="bg-white flex flex-col items-center rounded-2xl p-5 sm:p-10 m-0"
+        className="bg-white w-[95vw] mx-auto mb-2 flex flex-col items-center rounded-2xl p-5 sm:p-10 m-0"
       >
         <div className="flex justify-between w-full space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">
@@ -96,7 +96,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
                 playsInline
               ></video>
               <div className="absolute w-full bg-gradient-to-t from-[#903fff60] to-transparent z-50 h-[264px] top-0 rounded-xl overflow-hidden">
-                <span className="text-white absolute  bottom-2 sm:bottom-4 left-6 sm:left-8 font-saira-condensed text-[35px] sm:text-[55px] font-bold leading-[125%]">
+                <span className="text-white absolute  bottom-2 sm:bottom-4 left-6 sm:left-8  text-[35px] sm:text-[55px] font-bold leading-[125%]">
                   GIGA FUTURE
                 </span>
               </div>
@@ -211,13 +211,13 @@ export default FrameComponent7;
 const Section = ({ title, title2 = null, imageSrc, points }) => {
   return (
     <div className="w-[100%] md:w-[50%] rounded-xl z-50 bg-gradient-to-t bg-white sm:from-[#903fff30] to-transparent space-y-3">
-      <span className="text-[#903FFF] hidden max-sm:block h-[28px] font-saira-condensed text-[22px] font-bold leading-[125%]">
+      <span className="text-[#903FFF] hidden max-sm:block h-[28px]  text-[22px] font-bold leading-[125%]">
             {title}
           </span>
       <div className="col-span-1 h-[165px] sm:h-[264px] rounded-xl relative overflow-hidden">
         <img src={imageSrc} alt="" className="w-full h-full object-cover" />
         <div className={`absolute w-full ${title ? "bg-gradient-to-t from-[#271C5BAA] to-transparent" : ""} z-50 h-[264px] top-0 rounded-xl overflow-hidden`}>
-          <span className="text-white absolute bottom-5 left-8 font-saira-condensed text-[30px] font-bold leading-[125%]">
+          <span className="text-white absolute bottom-5 left-8  text-[30px] font-bold leading-[125%]">
             {title}
           </span>
         </div>

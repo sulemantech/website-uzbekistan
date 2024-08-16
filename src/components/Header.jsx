@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Header = ({ isMobile, scrollToFrame4 }) => {
-  const { t } = useTranslation(); // Call useTranslation here
+  const { t, i18n } = useTranslation(); // Call useTranslation here
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,6 +19,11 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
     setIsMenuOpen(false);
   };
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setIsOpen(false); // Close the dropdown after changing the language
+  };
+
   return (
     <div className="relative h-screen overflow-hidden">
       <video
@@ -33,20 +38,29 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
       <span className="absolute flex justify-between w-full top-5 left-5 z-10">
         <img src="gigafibertoplogo.svg" alt="Gigafiber Logo" />
         <div className="relative mr-14 inline-block text-left">
-          <span className=" cursor-pointer" onClick={toggleDropdown}>
-            <img src="lang.png" alt="Language" />
+          <span className="cursor-pointer" onClick={toggleDropdown}>
+            <img className="" src="lang.png" alt="Language" />
           </span>
           {isOpen && (
-            <div className="absolute right-0 mt-2 bg-white border border-gray-300 shadow-lg rounded-lg z-10">
-              <ul className="">
-                <li className=" hover:bg-gray-100 cursor-pointer">
-                  Option 1
+            <div className="absolute cursor-pointer right-0 mt-0 bg-transparent rounded-[10px] z-10 text-white  text-[22px] leading-6 font-bold">
+              <ul className="flex flex-col items-center justify-center">
+                <li
+                  className="w-8 text-center hover:border-white hover:border-b-[2px]"
+                  onClick={() => changeLanguage('en')}
+                >
+                  EN
                 </li>
-                <li className=" hover:bg-gray-100 cursor-pointer">
-                  Option 2
+                <li
+                  className="w-8 text-center hover:border-white hover:border-b-[2px]"
+                  onClick={() => changeLanguage('ru')}
+                >
+                  RUS
                 </li>
-                <li className=" hover:bg-gray-100 cursor-pointer">
-                  Option 3
+                <li
+                  className="w-8 text-center hover:border-white hover:border-b-[2px]"
+                  onClick={() => changeLanguage('de')}
+                >
+                  DE
                 </li>
               </ul>
             </div>
@@ -54,7 +68,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
         </div>
       </span>
 
-      <div className="absolute bottom-5 left-5 z-10">
+      <div className="absolute bottom-5 pointer-events-none left-5 z-10">
         <p className="font-bold text-8xl max-md:text-[46px] max-md:leading-[100%] text-white">
           {t("header_transforming_infrastructure")}
         </p>
@@ -63,7 +77,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
         </p>
         <p
           onClick={scrollToFrame4}
-          className="font-bold text-[20px] group max-md:hidden text-white mt-4 ml-2 cursor-pointer flex space-x-3 items-center"
+          className="font-bold pointer-events-auto text-[20px] group max-md:hidden text-white mt-4 ml-2 cursor-pointer flex space-x-3 items-center"
         >
           <span>{t("header_learn_more")}</span>
           <span>

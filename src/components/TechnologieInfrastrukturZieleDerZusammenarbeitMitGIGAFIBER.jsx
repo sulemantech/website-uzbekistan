@@ -30,7 +30,7 @@ const TechnologieInfrastrukturZieleDerZusammenarbeitMitGIGAFIBER = ({
 
   return (
     <div
-      className={`w-[1276px] relative max-w-full h-[92px] text-left text-11xl text-white font-saira-condensed ${className}`}
+      className={`w-[1276px] relative max-w-full h-[92px] text-left text-11xl text-white  ${className}`}
       style={technologieInfrastrukturZiStyle}
     >
       <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-sm bg-blueviolet" />

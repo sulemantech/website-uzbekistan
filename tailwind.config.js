@@ -32,12 +32,12 @@ module.exports = {
         "81xl": "6.25rem",
         inherit: "inherit",
       },
-    },
-    fontFamily: {
-      SairaCondensed: ["Saira Condensed"],
-      SairaSemiCondensed: ["Saira Semi Condensed"],
-      saira: ["Saira"],
-      "saira-condensed": ["'Saira Condensed'"],
+      fontFamily: {
+        SairaCondensed: ["Saira Condensed"],
+        SairaSemiCondensed: ["Saira Semi Condensed"],
+        saira: ["Saira"],
+        "saira-condensed": ["'Saira Condensed'"],
+      },
     },
   },
   plugins: [
