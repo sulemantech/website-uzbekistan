@@ -81,7 +81,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             </span>
           </span>
           {isOpen && (
-            <div className="absolute cursor-pointer left-3 mt-3 bg-transparent rounded-[10px] z-10 text-white text-[18px] leading-6 font-semibold">
+            <div className="absolute cursor-pointer left-3 mt-3 bg-transparent rounded-[10px] z-10 text-white text-[18px] leading-[27.5px] font-semibold">
               <ul className="flex flex-col items-start mb-3 justify-center">
                 <li
                   className=" text-center hover:border-white hover:border-b-[2px]"
@@ -111,7 +111,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
         <p className="font-bold text-8xl max-md:text-[46px] max-md:leading-[100%] text-white">
           {t("header_transforming_infrastructure")}
         </p>
-        <p className="font-bold text-8xl max-md:text-[46px] text-[#8643F5] max-md:leading-[100%] leading-2">
+        <p className="font-bold text-8xl max-md:text-[46px] text-[#903FFF] max-md:leading-[100%] leading-2">
           {t("header_driving_regional_growth")}
         </p>
         <p

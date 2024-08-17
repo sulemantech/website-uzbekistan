@@ -73,13 +73,13 @@ const FrameComponent7 = forwardRef((props, ref) => {
       >
         <div className="flex justify-between w-full space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">
-            <span className="flex space-x-10 text-5xl font-medium leading-[68px] text-[#8643F5]  max-md:hidden">
-              <p className="border-r-2 px-3 border-[#8643F5]">03</p>{" "}
+            <span className="flex space-x-10 text-[55px] font-medium leading-[68px] text-[#903FFF]  max-md:hidden">
+              <p className="border-r-2 px-3 border-[#903FFF]">03</p>{" "}
               <p className="text-3xl font-bold">
                 {t("frameComponent7_title")}
               </p>
             </span>
-            <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
+            <div className="w-[518px] max-xl:w-full text-[16px] font-normal font-saira text-left">
              {t("frameComponent7_intro")}
             </div>
           </div>
@@ -104,10 +104,10 @@ const FrameComponent7 = forwardRef((props, ref) => {
           </div>
         </div>
         <div>
-          <p className="text-3xl mt-10  my-2 font-bold text-[#8643F5] border-[#8643F5] uppercase">
+          <p className="text-3xl mt-10  my-2 font-bold text-[#903FFF] border-[#903FFF] uppercase">
             {t("frameComponent7_title2")}
           </p>
-          <p className="text-black max-w-[1500px]  mt-6 mb-2 text-[16px] font-normal leading-[1.25]">
+          <p className="text-black max-w-[1500px]  mt-6 mb-2 text-[16px] font-normal font-saira leading-[1.25]">
             {t("frameComponent7_intro2_part1")}
             <br />
             <br />
@@ -211,7 +211,7 @@ export default FrameComponent7;
 const Section = ({ title, title2 = null, imageSrc, points }) => {
   return (
     <div className="w-[100%] md:w-[50%] rounded-xl z-50 bg-gradient-to-t bg-white md:from-[#8643F530] to-transparent space-y-3">
-      <span className="text-[#8643F5] hidden max-md:block  text-[22px] font-bold leading-[125%]">
+      <span className="text-[#903FFF] hidden max-md:block  text-[22px] font-bold leading-[125%]">
             {title}
           </span>
       <div className="col-span-1 h-[165px] md:h-[264px] rounded-xl relative overflow-hidden">
@@ -224,20 +224,20 @@ const Section = ({ title, title2 = null, imageSrc, points }) => {
       </div>
       {title2 && (
         <div className="mt-4 md:ml-[39px]">
-          <span className="flex justify-start w-full text-[#8643F5] font-saira text-base font-bold">
+          <span className="flex justify-start w-full text-[#903FFF] font-saira text-base font-bold">
             {title2}
           </span>
         </div>
       )}
       <ul
-        className={`list-none w-[90%] ${
+        className={`list-none w-[90%] font-saira ${
           !title2 && "mt-4"
         } md:ml-[20px]`}
       >
         {points.map((point, index) => (
           <li
             key={index}
-            className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full"
+            className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full"
           >
             {point}
           </li>

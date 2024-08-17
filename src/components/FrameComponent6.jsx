@@ -136,7 +136,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
               )}
               <button
                 onClick={handleShowMore}
-                className="text-[#8643F5] underline"
+                className="text-[#903FFF] underline"
               >
                 {showMore ? "Mehr lesen" : "Weniger lesen"}
               </button>
@@ -151,19 +151,19 @@ const FrameComponent6 = forwardRef((props, ref) => {
 
         <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
           <div className="flex flex-col space-y-7 max-md:hidden">
-            <span className=" text-5xl font-medium leading-[68px] text-[#8643F5]">
+            <span className=" text-5xl font-medium leading-[68px] text-[#903FFF]">
               <p className="text-3xl font-bold">
                 {t("frameComponent6_infrastructure_title")}
               </p>
             </span>
-            <div className="w-[518px] font-saira max-xl:w-full text-[16px] font-normal text-left">
+            <div className="w-[518px] font-saira max-xl:w-full text-[16px] font-normal font-saira text-left">
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <ul className="list-none">
-                <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
+                <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet1")}
                 </li>
-                <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
+                <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet2")}
                 </li>
               </ul>
@@ -212,12 +212,12 @@ const FrameComponent6 = forwardRef((props, ref) => {
               </span>
               <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
                 <ul className="list-none">
-                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
+                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
                     Besonderes Interesse für europäische E-Auto Hersteller
                     aufgrund kostengünstiger Herstellungskosten für ein
                     Batteriewerk.
                   </li>
-                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
+                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
                     Entstehung von ca. 1000 neuer Arbeitsplätze in den Werken.
                   </li>
                 </ul>
@@ -293,7 +293,7 @@ export const Imagewithdiscription = ({ imageSrc, text, applyBg = true }) => {
     <>
       <div
         className={`w-[520px] max-xl:w-full h-[152px]  ${
-          applyBg ? `bg-[#F5EEFF]` : "bg-[#8643F5]"
+          applyBg ? `bg-[#F5EEFF]` : "bg-[#903FFF]"
         } mt-3 rounded-3xl flex space-x-1`}
       >
         <div className="w-[185px] rounded-[8px]">
