@@ -157,8 +157,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
               </p>
             </span>
             <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
-              <span>{t("frameComponent6_infrastructure_paragraph")}</span>
-              <span>{t("frameComponent6_infrastructure_paragraph")}</span>
+              <span style={{ whiteSpace: 'pre-line' }}>{t("frameComponent6_infrastructure_paragraph")}</span>
               <ul className="list-none">
                 <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet1")}
