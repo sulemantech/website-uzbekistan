@@ -14,10 +14,10 @@ const DropdownFaq = ({ question, answer }) => {
         className="flex justify-between items-center mx-auto p-4 max-md:rounded-lg max-md:w-[100%] max-md:bg-[#8643F5] cursor-pointer"
         onClick={toggleDropdown}
       >
-        <div className="text-white font-bold  text-[30px] leading-[125%] bg-transparent  max-md:text-sm">{question}</div>
+        <div className="text-white font-bold  text-[30px] leading-[125%] bg-transparent mx-[30px]  max-md:text-sm">{question}</div>
         <div className=" bg-transparent">
           <img
-            className={`scale-95 ${
+            className={`scale-95 mx-[30px] ${
               isOpen ? "-rotate-90" : "rotate-0"
             } transition-transform`}
             src="objects3.svg"
