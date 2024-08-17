@@ -156,7 +156,6 @@ const FrameComponent6 = forwardRef((props, ref) => {
               "Entstehung von ca. 1000 neuer Arbeitsplätze in den Werken.",
             ]}
           />
-          ;
         </div>
         <DropdownFaq
           question={t("frameComponent6_faq_question")}
