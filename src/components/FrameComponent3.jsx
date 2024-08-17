@@ -25,7 +25,7 @@ const FrameComponent3 = ({ className = "" }) => {
       <div className="relative flex justify-center items-center w-[70%] max-md:w-[90%]  mb-7">
       <video
         ref={videoRef}
-        className=" border-[20px] rounded-2xl border-[#8643F5] max-md:border-2"
+        className=" border-[20px] rounded-2xl border-[#903FFF] max-md:border-2"
         width="100%"
         height="30%"
         autoPlay

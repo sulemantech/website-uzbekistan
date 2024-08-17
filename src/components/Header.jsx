@@ -58,7 +58,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             <img className="" src="lang.png" alt="Language" />
           </span>
           {isOpen && (
-            <div className="absolute cursor-pointer right-0 mt-0 bg-transparent rounded-[10px] z-10 text-white text-[22px] leading-6 font-bold">
+            <div className="absolute cursor-pointer right-0 mt-0 bg-transparent rounded-[10px] z-10 text-white text-[22px] leading-[27.5px] font-bold">
               <ul className="flex flex-col items-center justify-center">
                 <li
                   className="w-8 text-center hover:border-white hover:border-b-[2px]"
@@ -88,7 +88,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
         <p className="font-bold text-8xl max-md:text-[46px] max-md:leading-[100%] text-white">
           {t("header_transforming_infrastructure")}
         </p>
-        <p className="font-bold text-8xl max-md:text-[46px] text-[#8643F5] max-md:leading-[100%] leading-2">
+        <p className="font-bold text-8xl max-md:text-[46px] text-[#903FFF] max-md:leading-[100%] leading-2">
           {t("header_driving_regional_growth")}
         </p>
         <p

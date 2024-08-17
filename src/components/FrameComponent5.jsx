@@ -39,7 +39,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
       {items.map((item, index) => (
         <li
           key={index}
-          className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full"
+          className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full"
         >
           {item}
         </li>
@@ -69,7 +69,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
   const divcontainer = (question, answer) => {
     return (
       <div>
-        <span className="text-[#8643F5] font-bold text-[16px] leading-[114%]">
+        <span className="text-[#903FFF] font-bold text-[16px] leading-[114%]">
           {question}
         </span>
         <br />
@@ -204,24 +204,24 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
       <div ref={ref} className="bg-white rounded-2xl p-10 m-5 max-md:m-1">
         <div className="flex justify-between max-w-[1500px] mx-auto space-x-10 rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-7">
-            <span className="flex max-md:hidden space-x-6 text-5xl font-medium leading-[68px] text-[#8643F5]">
-              <p className="border-r-2 pr-3 border-[#8643F5]">01</p>{" "}
+            <span className="flex max-md:hidden space-x-6 text-[55px] font-medium leading-[68px] text-[#903FFF]">
+              <p className="border-r-2 pr-3 border-[#903FFF]">01</p>{" "}
               <p className="text-3xl w-[518px] max-xl:w-full font-bold">
                 {t("frameComponent5_title")}
               </p>
             </span>
-            <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
+            <div className="w-[518px] max-xl:w-full text-[16px] font-normal font-saira text-left">
               {t("frameComponent5_intro")}
             </div>
             <div>
-              <p className="text-3xl font-bold text-[#8643F5] mb-3">
+              <p className="text-3xl font-bold text-[#903FFF] mb-3">
                 {t("frameComponent5_potential")}
               </p>{" "}
               <div className="accordion font-saira w-[518px] max-xl:w-full">
                 {questionsAndAnswers.map((item, index) => (
                   <div key={index} className="mb-2 p-1">
                     <div
-                      className=" bg-white cursor-pointer border-b-2 border-[#8643F5] text-lg font-medium relative overflow-hidden"
+                      className=" bg-white cursor-pointer border-b-2 border-[#903FFF] text-lg font-medium relative overflow-hidden"
                       onClick={() => toggleAccordion(index)}
                     >
                       <div className="flex justify-between text-base  items-center text-[#3d3a3a]">
@@ -231,7 +231,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                             activeIndex === index ? "rotate-0" : "-rotate-180"
                           }`}
                         >
-                          <IconChevronUp color="#8643F5" />
+                          <IconChevronUp color="#903FFF" />
                         </div>
                       </div>
                       <div
@@ -317,12 +317,12 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                       ))}
                     </div>
                     <div
-                      className={`w-[520px] max-xl:w-full h-[152px]  mt-3 rounded-3xl flex space-x-1`}
+                      className={`w-[520px] max-xl:w-full h-[152px] mt-3 rounded-3xl flex space-x-1 bg-[#903FFF]`}
                     >
                       <p className="w-full flex justify-center items-center">
                         <span className="w-[90%]">
-                          <div className="text-[34px] text-[#8643F5] w-[50%] mb-4 border-t-2 border-[#8643F5]"></div>
-                          <div className="text-[34px] font-extrabold text-[#8643F5] mb-5">
+                          <div className="text-[34px] text-[#903FFF] w-[50%] mb-4 border-t-2 border-[#903FFF]"></div>
+                          <div className="text-[34px] font-extrabold text-[#903FFF] mb-5">
                             50%
                           </div>
                           <div className="text-black">
