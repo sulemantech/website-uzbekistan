@@ -160,10 +160,10 @@ const FrameComponent6 = forwardRef((props, ref) => {
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <ul className="list-none">
-                <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
+                <li className="relative whitespace-pre-line pl-5 mb-2 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet1")}
                 </li>
-                <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
+                <li className="relative whitespace-pre-line pl-5 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet2")}
                 </li>
               </ul>
@@ -193,11 +193,12 @@ const FrameComponent6 = forwardRef((props, ref) => {
             <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
               Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40%
               des Wertes) und Conenctivität für die Kommunikation sowohl beim
-              Fahren als auch beim Tanken. GIGA FIBER Technologies plant, eine
+              Fahren als auch beim Tanken. <br/><br/>GIGA FIBER Technologies plant, eine
               Lithiummine zu erwerben und eine Fabrik zur Herstellung von
               Batterien und Funktürmen zu errichten. Diese Fabrik wird Batterien
               produzieren, die für die Stromversorgung von Funktürmen benötigt
               werden.
+              
             </span>
             <div className="grid grid-cols-2 max-md:grid-cols-1  gap-4 col-span-1">
               <span className="w-full max-md:hidden">
