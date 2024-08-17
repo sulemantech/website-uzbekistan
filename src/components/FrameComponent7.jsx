@@ -89,7 +89,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
                 className="rounded-xl w-full h-full object-cover"
-                src="03vid.mov"
+                // src="03vid.mov"
                 autoPlay
                 loop
                 muted
@@ -134,7 +134,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
                   muted={isMuted}
                 >
                   <source
-                    src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/b8be/b0c2/-eeee-4eea-a39f-95f297674bb3?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oz31lVoqnvlhJVVwENHzG-CU9skXVh8uvxrIqRd6~xNLNospdMYLudQT8WmiVCqWexwAfrkf0SPEgp-8iso7mkbUs4-53bMA5xkMPplOTgiQFNz8sudbYkCAtUs7p0QxYIs~apjR27MuNwaOSggPeP~krgGW2DgNCXu4WcCdrTDUpPd~7NKn12A5lS0fVepWihScJrW21FI60XChNz9ztp6-ljK3JNK1UwWYTwenZySxcYnOD79Fmo2imgvbCXZ7rowAG0WlWvqyhHjP-E2DVAcMS1YQdGcm9LjVh4lSQh4YnUNMfSjhmXtlWZll51pv7NbcxZGXTgun69KPOgQxZA__"
+                    src="06_German_GIGAFuture_DB_low_892x450_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.

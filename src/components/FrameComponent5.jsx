@@ -249,7 +249,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 max-md:hidden gap-4 w-[658px] max-xl:w-full overflow-hidden">
+          <div className="grid grid-cols-1 max-md:hidden h-fit gap-4 w-[658px] max-xl:w-full overflow-hidden">
             <div className="col-span-1  rounded-xl relative overflow-hidden">
               <video
                 className="rounded-xl w-full h-full object-cover"

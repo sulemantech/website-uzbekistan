@@ -66,24 +66,24 @@ const FrameComponent6 = forwardRef((props, ref) => {
   return (
     <>
       <div ref={ref} className="bg-white rounded-22xl p-10 m-5 max-md:m-1">
-        <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mt-10 mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
+        <div className="flex justify-between items-start space-x-10 rounded-2xl max-w-[1500px] mx-auto max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="grid grid-cols-1 max-md:hidden gap-4 h-auto w-full overflow-hidden">
-            <div className="relative col-span-1 h-[264px] max-xl:h-auto rounded-xl overflow-hidden">
+            <div className="relative col-span-1 h-[320px] max-xl:h-auto rounded-xl overflow-hidden">
               <video
                 className="rounded-xl w-full h-full object-cover"
-                src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/03b2/cfbd/-a72d-4de6-a877-0bf1f5ef7225?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z9PZZLlQYOajJcnfUGH7yH0pNUZXYkJP5gjVEyk4-OHMA~4IXSICksHwcN9bnPklfwQytAvZlhACPspybDzMys~TnoCNvfpFr9zks1bPzlE01GOtFLwJ0u9OHu0CbTp-Tq6j7-DVNi1UE4LQ7kcD3qagYsY2pr~lM--7emzg48i3QeCpcohAiVxAC2qXmntIxFL4ZW2sBGfWOU6EviLObvQaEzPz2W8MsRwF56Br7hG-uZXRjTTIEVroAInOogc-CWAzeOGiJRfW0n6uwe8wR-f-aoah2hIyBs2rNLoeXasM95EO582XetHYD9J~nnbx4gFF7WSQzKo4i0dx0jDxNA__"
+                src="03_GIGADriveHub_low_658x264_1.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
               ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-full top-0 rounded-xl overflow-hidden">
+              <div className="absolute hidden w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-full top-0 rounded-xl overflow-hidden">
                 <span className="text-white absolute bottom-4 left-8  text-[55px] max-lg:text-[36px] max-md:text-[28px] font-bold leading-[125%]">
                   GIGA DRIVE HUB
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 h-auto gap-4 col-span-1 max-lg:h-auto max-md:grid-cols-1">
+            <div className="grid grid-cols-2 max-h-[279] rounded-xl h-auto gap-4 col-span-1 max-lg:h-auto max-md:grid-cols-1">
               <span className="w-full">
                 <img
                   src="d9.png"
@@ -102,15 +102,15 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </div>
 
           <div className="flex flex-col space-y-7 ">
-            <span className="flex space-x-7 text-5xl font-medium leading-[68px] text-[#8643F5]">
-              <p className="border-r-2 pr-3 max-md:hidden  border-[#8643F5]">
+            <span className="flex space-x-7 font-medium leading-[68px] text-[#8643F5]">
+              <p className="border-r-2 pr-3 text-[55px] max-md:hidden  border-[#8643F5]">
                 02
               </p>{" "}
-              <p className="text-3xl max-md:hidden w-[518px] max-xl:w-full font-bold">
+              <p className="text-3xl text-[30px] max-md:hidden w-[518px] max-xl:w-full font-bold">
                 {t("frameComponent6_title")}
               </p>
             </span>
-            <div className="w-[518px] max-md:hidden max-xl:w-full text-[16px] font-normal text-left">
+            <div className="w-[518px] font-saira max-md:hidden max-xl:w-full text-[16px] font-normal text-left">
               {t("frameComponent6_intro_part1")}
               <br />
               {t("frameComponent6_intro_part2")}
@@ -156,14 +156,14 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 {t("frameComponent6_infrastructure_title")}
               </p>
             </span>
-            <div className="w-[518px] max-xl:w-full text-[16px] font-normal text-left">
+            <div className="w-[518px] font-saira max-xl:w-full text-[16px] font-normal text-left">
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <ul className="list-none">
-                <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
+                <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet1")}
                 </li>
-                <li className="relative pl-5 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
+                <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#8643F5] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet2")}
                 </li>
               </ul>
@@ -171,16 +171,20 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </div>
           <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full max-md:h-full overflow-hidden">
             <div className="col-span-1  rounded-xl relative overflow-hidden">
-              <img src="carmobile.png" alt="" className="w-full h-auto md:hidden" />
+              <img
+                src="carmobile.png"
+                alt=""
+                className="w-full h-auto md:hidden"
+              />
               <video
                 className="rounded-xl w-full h-full max-md:hidden object-cover"
-                src="https://s3-figma-videos-production-sig.figma.com/video/1162680317508474349/TEAM/f65a/b9b6/-80f2-48c1-ae3d-f36ba02b30d2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P7FiNGSjyvDg2rXuKRBJOApt9A0Z1HONjxuZyrw1J3hdvcm01hKebkKRHNKM5RLI21OGAd8~uhn13tzhKwn9s~hhXYvo8qV7IcjkWhlsSVLnQ4qaWdgbFNbFY~zXCcFF47gRgjW2ArnqVXw45jFFwlthYSZCKerNuKFT4RE4nftRg9ejJeeCR-e4UFS1S31mDfvQYh6zmEvQ~ZylgzK5afLseAQ-3IJZNpAYtjV7fuezlqQLZyuAux7~pJMZ2hMbp51F9vYPOPO6~VqCF-wmR5lWEGjyWvn2gKiMfrPDbk0PFckCIgJhC~KnPEoS8FetKWnDlPQbfiFwjJgzyog0Og__"
+                src="04_GIGADriveHub_low_658x264_1.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
               ></video>
-              <div className="absolute max-md:hidden w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
+              <div className="absolute hidden max-md:hidden w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
                 <span className="text-white max-md:hidden absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
                   {t("frameComponent6_title2")}
                 </span>
@@ -200,7 +204,11 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 <img src="weather.png" alt="" className="w-full h-auto" />
               </span>
               <span className="w-full">
-                <img src="jars.png" alt="" className="w-full h-full rounded-lg" />
+                <img
+                  src="jars.png"
+                  alt=""
+                  className="w-full h-full rounded-lg"
+                />
               </span>
               <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
                 <ul className="list-none">
@@ -259,7 +267,10 @@ const FrameComponent6 = forwardRef((props, ref) => {
                     {imagedesData
                       .filter((_, index) => index % 2 !== 0)
                       .map((data, index) => (
-                        <div key={index} className="flex justify-center items-baseline mt-3">
+                        <div
+                          key={index}
+                          className="flex justify-center items-baseline mt-3"
+                        >
                           <span className="w-2.5 h-2.5 bg-purple-600 rounded-full mr-2"></span>
                           <Imagewithdiscription2 text={data.text} />
                         </div>
