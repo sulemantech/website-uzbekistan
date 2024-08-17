@@ -66,7 +66,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
   return (
     <>
       <div ref={ref} className="bg-white rounded-22xl p-10 m-5 max-md:m-1">
-        <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
+        <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mt-10 mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="grid grid-cols-1 max-md:hidden gap-4 h-auto w-full overflow-hidden">
             <div className="relative col-span-1 h-[264px] max-xl:h-auto rounded-xl overflow-hidden">
               <video

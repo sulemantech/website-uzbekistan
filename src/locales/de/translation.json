@@ -4,12 +4,16 @@
   "header_learn_more": "MEHR ERFAHREN",
   "frameComponent4_card1_number": "01",
   "frameComponent4_card1_title": "CU29 TECH",
- "frameComponent4_card1_description": "WIE STÄRKEN WIR DIE REGIONALE WIRTSCHAFTSKRAFT?",
+ 
+  "frameComponent4_card1_description": "WIE STEIGERN ​WIR DIE REGIONALE WIRTSCHAFTSKRAFT?​",
+ 
   "frameComponent4_card1_buttonText": "Mehr Erfahren",
   
   "frameComponent4_card2_number": "02",
   "frameComponent4_card2_title": "GIGA DRIVE HUB",
-  "frameComponent4_card2_description": "HOW DO WE SUPPORT THE AUTOMOTIVE INDUSTRY?",
+  
+  "frameComponent4_card2_description": "WIE UNTERSTÜTZEN WIRDIE AUTOMOBILINDUSTRIE?​",
+
   "frameComponent4_card2_buttonText": "View Details",
   
   "frameComponent4_card3_number": "03",
@@ -63,7 +67,7 @@
   "frameComponent5_imageDescriptions_7_text": "Schaffung nachhaltiger Geschäftsbeziehungen",
   "frameComponent5_imageDescriptions_8_text": "des erwirtschafteten Profits werden in die Teststrecke autonomes Fahren investiert.",
   "frameComponent5_faq_question_gigaFiberPartnership": "ZIELE DER KOOPERATION MIT GIGA FIBER",
-  "frameComponent5_faq_answer_gigaFiberPartnership": "Usbekistan verfügt über eine beeindruckende Vielfalt an mineralischen Metall- und Nichtmetallrohstoffen, die enorme Potenziale für Unternehmen bieten. Die im Jahr 2024 abgeschlossene Partnerschaft mit der EU eröffnet vielfältige Möglichkeiten zur Kooperation im Bergbau. Diese strategische Allianz schafft eine solide Grundlage für nachhaltige Investitionen und technologische Innovationen im usbekischen Rohstoffsektor.",
+  "frameComponent5_faq_answer_gigaFiberPartnership": "Usbekistan verfügt über eine beeindruckende Vielfalt an mineralischen Metall- und Nichtmetallrohstoffen, die enorme Potenziale für Unternehmen bieten. \n\nDie im Jahr 2024 abgeschlossene Partnerschaft mit der EU eröffnet vielfältige Möglichkeiten zur Kooperation im Bergbau. \nDiese strategische Allianz schafft eine solide Grundlage für nachhaltige Investitionen und technologische Innovationen im usbekischen Rohstoffsektor.",
 
 
   "frameComponent6_title": "WIE UNTERSTÜTZEN WIR  DIE AUTOMOBILINDUSTRIE?",
@@ -103,7 +107,7 @@
   "frameComponent7_sectionData_1_title": "Hospitality & Hotels",
   "frameComponent7_sectionData_1_imageSrc": "tree.png",
   "frameComponent7_sectionData_1_points_1": "Umsatzsteigerung durch gezielte Ansprache spezifischer Zielgruppen.",
-  "frameComponent7_sectionData_1_points_2": "WIFI und Kontextintensive Ansprachen der Kunden, local-based",
+  "frameComponent7_sectionData_1_points_2": "WIFI und Kontextsensitive Ansprachen der Kunden, local-based",
   "frameComponent7_sectionData_1_points_3": "Erhöhung der Buchungsraten aufgrund von positivem Kundenerlebnis",
   
   "frameComponent7_sectionData_2_title": "Discounter & Malls",
