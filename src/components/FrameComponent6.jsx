@@ -156,7 +156,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
                 {t("frameComponent6_infrastructure_title")}
               </p>
             </span>
-            <div className="w-[518px] font-saira max-xl:w-full text-[16px] font-normal font-saira text-left">
+            <div className="w-[518px] max-xl:w-full text-[16px] font-normal font-saira text-left">
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <span>{t("frameComponent6_infrastructure_paragraph")}</span>
               <ul className="list-none">
