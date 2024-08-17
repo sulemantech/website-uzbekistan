@@ -95,6 +95,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
               <br />
               {t("frameComponent6_intro_part3")}
               <br />
+              <br/>
               {t("frameComponent6_intro_part4")}
             </div>
             <div className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
