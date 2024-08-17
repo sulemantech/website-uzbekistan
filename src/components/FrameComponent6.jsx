@@ -152,7 +152,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
         <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
           <div className="flex flex-col space-y-7 max-md:hidden">
             <span className=" text-5xl font-medium leading-[68px] text-[#8643F5]">
-              <p className="text-3xl font-bold">
+              <p className="text-3xl font-bold" style={{ whiteSpace: 'pre-line' }}>
                 {t("frameComponent6_infrastructure_title")}
               </p>
             </span>
@@ -189,11 +189,12 @@ const FrameComponent6 = forwardRef((props, ref) => {
             <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
               Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40%
               des Wertes) und Conenctivität für die Kommunikation sowohl beim
-              Fahren als auch beim Tanken. GIGA FIBER Technologies plant, eine
+              Fahren als auch beim Tanken. <br/><br/>GIGA FIBER Technologies plant, eine
               Lithiummine zu erwerben und eine Fabrik zur Herstellung von
               Batterien und Funktürmen zu errichten. Diese Fabrik wird Batterien
               produzieren, die für die Stromversorgung von Funktürmen benötigt
               werden.
+              
             </span>
             <div className="grid grid-cols-2 max-md:grid-cols-1  gap-4 col-span-1">
               <span className="w-full max-md:hidden">
