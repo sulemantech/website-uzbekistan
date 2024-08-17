@@ -49,7 +49,7 @@ const FrameComponent4 = forwardRef(
     return (
       <div
         ref={ref}
-        className="flex flex-col items-center lg:flex-row justify-center max-md:items-center flex-wrap mt-4 gap-3 max-md:mb-10 p-0"
+        className="flex flex-col w-[97vw] mx-auto mb-2 items-center lg:flex-row justify-center max-md:items-center flex-wrap mt-4 gap-3.5 max-md:mb-10 p-0"
       >
         {cardData.map((card, index) => (
           <div
@@ -63,7 +63,7 @@ const FrameComponent4 = forwardRef(
               }}
               className="relative group cursor-pointer w-full h-[582px] max-md:h-[239px] rounded-lg overflow-hidden"
             >
-              <p className="absolute top-[74px] left-[32px] text-[55px] max-md:text-[30px] max-md:top-[41px] text-white z-50">
+              <p className="absolute top-[74px] left-[32px] text-[55px] leading-[125%] font-medium max-md:text-[30px] max-md:top-[41px] text-white z-50">
                 {card.number}
               </p>
               <img
@@ -78,15 +78,15 @@ const FrameComponent4 = forwardRef(
               />
               <div className="absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-60% to-[#3b2a89e3] w-full h-[8.438rem]" />
               <div className="flex flex-col-reverse justify-between bottom-[63px] max-md:bottom-[18px] left-1/2 transform -translate-x-1/2 min-w-[85%] absolute ">
-                <div className=" text-[#903FFF] mt-10 text-lg flex justify-between">
-                  <b className="font-bold text-[44px] max-md:text-[30px] leading-8 tracking-tight">{card.title}</b>
+                <div className=" text-[#903FFF] max-md:mt-10 text-lg flex justify-between">
+                  <b className="font-bold max-md:text-[30px] text-[50px] leading-[125%] tracking-tight">{card.title}</b>
                   <img
                     className="md:group-hover:rotate-90 transition-transform max-sm:h-[22px] max-sm:w-[25px]"
                     src="objects1.svg"
                     alt=""
                   />
                 </div>
-                <div className="text-3xl max-md:text-[22px] font-bold text-white">
+                <div className="text-3xl max-md:text-[22px] font-bold text-[30px] leading-[125%] text-white">
                   <p className="m-0">{card.description}</p>
                 </div>
               </div>

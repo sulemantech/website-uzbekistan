@@ -82,7 +82,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           </span>
           {isOpen && (
             <div className="absolute cursor-pointer left-3 mt-3 bg-transparent rounded-[10px] z-10 text-white text-[18px] leading-[27.5px] font-semibold">
-              <ul className="flex flex-col items-start mb-3 justify-center">
+              <ul className="flex flex-col items-start leading-[27.5px] mb-3 justify-center">
                 <li
                   className=" text-center hover:border-white hover:border-b-[2px]"
                   onClick={() => changeLanguage("en")}

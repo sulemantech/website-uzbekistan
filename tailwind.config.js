@@ -6,7 +6,7 @@ module.exports = {
       screens: {
         extrasm: "350px",
         tab: "1200px",
-        laptop: "1600px",
+        laptop: "1400px",
         laptop2: "1500px",
         laptopxxl: "1890px",
       },

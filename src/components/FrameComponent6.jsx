@@ -2,6 +2,8 @@ import React, { useState, forwardRef } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
 import { useTranslation } from "react-i18next";
+import Wrapper from "./Wrapper";
+import GridForImages from "./GridForImages";
 const FrameComponent6 = forwardRef((props, ref) => {
   const [showMore, setShowMore] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
@@ -65,42 +67,17 @@ const FrameComponent6 = forwardRef((props, ref) => {
   ];
   return (
     <>
-      <div ref={ref} className="bg-white rounded-22xl p-10 m-5 max-md:m-1">
+      <Wrapper ref={ref}>
         <div className="flex justify-between items-start space-x-10 rounded-2xl max-w-[1500px] mx-auto max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
-          <div className="grid grid-cols-1 max-md:hidden gap-4 h-auto w-full overflow-hidden">
-            <div className="relative col-span-1 h-[320px] max-xl:h-auto rounded-xl overflow-hidden">
-              <video
-                className="rounded-xl w-full h-full object-cover"
-                src="03_GIGADriveHub_low_658x264_1.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-              ></video>
-              <div className="absolute hidden w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-full top-0 rounded-xl overflow-hidden">
-                <span className="text-white absolute bottom-4 left-8  text-[55px] max-lg:text-[36px] max-md:text-[28px] font-bold leading-[125%]">
-                  GIGA DRIVE HUB
-                </span>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 max-h-[279] rounded-xl h-auto gap-4 col-span-1 max-lg:h-auto max-md:grid-cols-1">
-              <span className="w-full">
-                <img
-                  src="d9.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-xl"
-                />
-              </span>
-              <span className="w-full">
-                <img
-                  src="car.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-xl"
-                />
-              </span>
-            </div>
-          </div>
-
+          <GridForImages
+            videoSrc="03_GIGADriveHub_low_658x264_1.mp4"
+            videoTitle="GIGA DRIVE HUB"
+            imageSrc1="d9.png"
+            imageSrc2="car.png"
+            isFullWidth
+            videoHiddenClass="max-md:hidden"
+          />
+          ;
           <div className="flex flex-col space-y-7 ">
             <span className="flex space-x-7 font-medium leading-[68px] text-[#8643F5]">
               <p className="border-r-2 pr-3 text-[55px] max-md:hidden  border-[#8643F5]">
@@ -169,62 +146,18 @@ const FrameComponent6 = forwardRef((props, ref) => {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 w-[658px] max-xl:w-full max-md:h-full overflow-hidden">
-            <div className="col-span-1  rounded-xl relative overflow-hidden">
-              <img
-                src="carmobile.png"
-                alt=""
-                className="w-full h-auto md:hidden"
-              />
-              <video
-                className="rounded-xl w-full h-full max-md:hidden object-cover"
-                src="04_GIGADriveHub_low_658x264_1.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-              ></video>
-              <div className="absolute hidden max-md:hidden w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-[264px] top-0  rounded-xl overflow-hidden">
-                <span className="text-white max-md:hidden absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
-                  {t("frameComponent6_title2")}
-                </span>
-              </div>
-            </div>
-            <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
-              Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40%
-              des Wertes) und Conenctivität für die Kommunikation sowohl beim
-              Fahren als auch beim Tanken. <br/><br/>GIGA FIBER Technologies plant, eine
-              Lithiummine zu erwerben und eine Fabrik zur Herstellung von
-              Batterien und Funktürmen zu errichten. Diese Fabrik wird Batterien
-              produzieren, die für die Stromversorgung von Funktürmen benötigt
-              werden.
-              
-            </span>
-            <div className="grid grid-cols-2 max-md:grid-cols-1  gap-4 col-span-1">
-              <span className="w-full max-md:hidden">
-                <img src="weather.png" alt="" className="w-full h-auto" />
-              </span>
-              <span className="w-full">
-                <img
-                  src="jars.png"
-                  alt=""
-                  className="w-full h-full rounded-lg"
-                />
-              </span>
-              <span className="w-[518px] md:hidden max-xl:w-full text-[16px] font-normal text-left">
-                <ul className="list-none">
-                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
-                    Besonderes Interesse für europäische E-Auto Hersteller
-                    aufgrund kostengünstiger Herstellungskosten für ein
-                    Batteriewerk.
-                  </li>
-                  <li className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
-                    Entstehung von ca. 1000 neuer Arbeitsplätze in den Werken.
-                  </li>
-                </ul>
-              </span>
-            </div>
-          </div>
+          <GridForImages
+            videoSrc="04_GIGADriveHub_low_658x264_1.mp4"
+            videoTitle={t("frameComponent6_title2")}
+            imageSrc1="weather.png"
+            imageSrc2="jars.png"
+            content="Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40% des Wertes) und Conenctivität..."
+            listItems={[
+              "Besonderes Interesse für europäische E-Auto Hersteller...",
+              "Entstehung von ca. 1000 neuer Arbeitsplätze in den Werken.",
+            ]}
+          />
+          ;
         </div>
         <DropdownFaq
           question={t("frameComponent6_faq_question")}
@@ -282,7 +215,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
             </div>
           }
         />
-      </div>
+      </Wrapper>
     </>
   );
 });
@@ -293,7 +226,7 @@ export const Imagewithdiscription = ({ imageSrc, text, applyBg = true }) => {
   return (
     <>
       <div
-        className={`w-[520px] max-xl:w-full h-[152px]  ${
+        className={`w-[520px] max-xl:w-full h-[162px]  ${
           applyBg ? `bg-[#F5EEFF]` : "bg-[#903FFF]"
         } mt-3 rounded-3xl flex space-x-1`}
       >
@@ -301,7 +234,7 @@ export const Imagewithdiscription = ({ imageSrc, text, applyBg = true }) => {
           <img
             src={imageSrc}
             alt=""
-            className="w-[185px] h-[152px] rounded-[8px] object-cover"
+            className="w-[185px] h-[162px] rounded-[8px] object-cover"
           />
         </div>
         <p className="w-[365px] flex justify-center items-center">

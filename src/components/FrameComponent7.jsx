@@ -1,6 +1,7 @@
 import React, { useRef, useState, forwardRef } from "react";
 import DropdownFaq from "./SingleDropDown";
 import { useTranslation } from 'react-i18next';
+import Wrapper from "./Wrapper";
 
 const FrameComponent7 = forwardRef((props, ref) => {
   const { t } = useTranslation();
@@ -67,29 +68,27 @@ const FrameComponent7 = forwardRef((props, ref) => {
   ];
   return (
     <>
-      <div
-        ref={ref}
-        className="bg-white w-[95vw] mx-auto mb-2 flex flex-col items-center rounded-22xl p-5 md:p-10 m-5 max-md:w-[88vw]"
+      <Wrapper ref={ref}
       >
         <div className="flex justify-between w-full space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col w-full space-y-4">
             <span className="flex space-x-10 text-[55px] font-medium leading-[68px] text-[#903FFF]  max-md:hidden">
               <p className="border-r-2 px-3 border-[#903FFF]">03</p>{" "}
               <p className="text-3xl font-bold">
                 {t("frameComponent7_title")}
               </p>
             </span>
-            <div className="w-[518px] max-xl:w-full text-[16px] font-normal font-saira text-left">
+            <div className="min-w-[518px] max-xl:w-full xl:w-[518px] text-[16px] font-normal font-saira text-left">
              {t("frameComponent7_intro")}
             </div>
           </div>
 
-          <div className="grid grid-cols-1  gap-4 overflow-hidden">
+          <div className="grid grid-cols-1 md:min-w-[658px] lg:min-w-[570px] w-full gap-4 overflow-hidden">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
                 className="rounded-xl w-full h-full object-cover"
-                // src="03vid.mov"
+                src="03vid.mov"
                 autoPlay
                 loop
                 muted
@@ -179,6 +178,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
             />
           ))}
         </div>
+        <p className="font-saira text-[16px] leading-[125%]">Diese Erfolge demonstrieren das Potenzial von GIGA FIBER Connectivity, wirtschaftliche Vorteile zu erzielen und die Kundenzufriedenheit in verschiedenen Branchen zu steigern. Die Technologie ist vielseitig einsetzbar und trägt maßgeblich zur Effizienzsteigerung und Umsatzverbesserung bei.</p>
 
         <DropdownFaq
           question={t("frameComponent7_dropdown_title")}
@@ -201,7 +201,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
             </div>
           }
         />
-      </div>
+      </Wrapper>
     </>
   );
 });
@@ -217,7 +217,7 @@ const Section = ({ title, title2 = null, imageSrc, points }) => {
       <div className="col-span-1 h-[165px] md:h-[264px] rounded-xl relative overflow-hidden">
         <img src={imageSrc} alt="" className="w-full h-full object-cover" />
         <div className={`absolute w-full ${title ? "bg-gradient-to-t from-[#271C5BAA] to-transparent" : ""} z-50 h-[264px] top-0 rounded-xl overflow-hidden`}>
-          <span className="text-white absolute bottom-5 left-8  text-[30px] font-bold leading-[125%]">
+          <span className="text-white absolute bottom-5 left-9  text-[38px] font-bold leading-[125%]">
             {title}
           </span>
         </div>
@@ -230,14 +230,14 @@ const Section = ({ title, title2 = null, imageSrc, points }) => {
         </div>
       )}
       <ul
-        className={`list-none w-[90%] font-saira ${
-          !title2 && "mt-4"
-        } md:ml-[20px]`}
+        className={`list-none w-[90%] font-saira h-fit ${
+          !title2 && "mt-[46px] mb-[54px]"
+        } md:ml-[39px]`}
       >
         {points.map((point, index) => (
           <li
             key={index}
-            className="relative pl-5 mb-2 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full"
+            className="relative pl-5 mb-2 last:mb-4 before:absolute before:left-0 before:top-[25%] before:-translate-y-1/2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full"
           >
             {point}
           </li>

@@ -3,6 +3,8 @@ import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import DropdownFaq from "./SingleDropDown";
 import { Imagewithdiscription, Imagewithdiscription2 } from "./FrameComponent6";
 import { useTranslation } from "react-i18next";
+import Wrapper from "./Wrapper";
+import GridForImages from "./GridForImages";
 
 const FrameComponent5 = forwardRef((isMobile, ref) => {
   const { t } = useTranslation(); // Initialize the translation function
@@ -69,7 +71,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
   const divcontainer = (question, answer) => {
     return (
       <div>
-        <span className="text-[#903FFF] font-extrabold text-[16px] leading-[114%]">
+        <span className="text-[#8643F5] font-bold text-[16px] leading-[114%]">
           {question}
         </span>
         <br />
@@ -201,7 +203,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
   ];
   return (
     <>
-      <div ref={ref} className="bg-white rounded-22xl p-10 m-5 max-md:m-1">
+      <Wrapper ref={ref}>
         <div className="flex justify-between max-w-[1500px] mx-auto space-x-10 rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-7">
             <span className="flex max-md:hidden space-x-6 text-[55px] font-medium leading-[68px] text-[#903FFF]">
@@ -249,39 +251,14 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 max-md:hidden h-fit gap-4 w-[658px] max-xl:w-full overflow-hidden">
-            <div className="col-span-1  rounded-xl relative overflow-hidden">
-              <video
-                className="rounded-xl w-full h-full object-cover"
-                src="01screenvid.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-              ></video>
-              <div className="absolute w-full bg-gradient-to-t from-[#3B2A89] to-transparent z-50 top-0  rounded-xl overflow-hidden">
-                <span className="text-white absolute bottom-4 left-8  text-[55px] font-bold leading-[125%]">
-                  {t("frameComponent4_card1_title")}
-                </span>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 max-xl:h-full gap-4 col-span-1">
-              <span className="w-full h-full">
-                <img
-                  src="rock.png"
-                  alt=""
-                  className=" rounded-xl w-full h-full object-cover"
-                />
-              </span>
-              <span className="w-full h-full">
-                <img
-                  src="machine.png"
-                  alt=""
-                  className="rounded-xl w-full h-full object-cover"
-                />
-              </span>
-            </div>
-          </div>
+          <GridForImages
+            videoSrc="01screenvid.mp4"
+            videoTitle={t("frameComponent4_card1_title")}
+            imageSrc1="rock.png"
+            imageSrc2="machine.png"
+            videoGradient="from-[#3B2A89]"
+            // isFullWidth
+          />
         </div>
         <DropdownFaq
           question={t("frameComponent5_faq_question_gigaFiberPartnership")}
@@ -302,7 +279,11 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                 </div>
                 <div className="flex flex-wrap md:hidden justify-between mt-5">
                   <div>
-                    <img className="w-full mb-3 mt-3" src="R11.png" alt="Description" />
+                    <img
+                      className="w-full mb-3 mt-3"
+                      src="R11.png"
+                      alt="Description"
+                    />
                     <div>
                       {imagedesData.slice(0, 4).map((data, index) => (
                         <Imagewithdiscription2 key={index} text={data.text} />
@@ -310,7 +291,11 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                     </div>
                   </div>
                   <div className="">
-                    <img className="w-full mb-3 mt-3" src="R16.png" alt="Description" />
+                    <img
+                      className="w-full mb-3 mt-3"
+                      src="R16.png"
+                      alt="Description"
+                    />
                     <div>
                       {imagedesData.slice(4, 7).map((data, index) => (
                         <Imagewithdiscription2 key={index} text={data.text} />
@@ -339,7 +324,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
             </div>
           }
         />
-      </div>
+      </Wrapper>
     </>
   );
 });

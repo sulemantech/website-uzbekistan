@@ -1,6 +1,5 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 const Footer = ({ className = "" }) => {
   const navigate = useNavigate();
@@ -10,25 +9,31 @@ const Footer = ({ className = "" }) => {
   };
 
   return (
-    <div
-    className={`w-[95.5vw] max-md:w-full mx-auto relative h-[15.5rem] text-left text-base text-white font-saira ${className}`}
-  >
-    <div className="absolute top-0 left-0 rounded-t-3xl  bg-giga-fiber-lila w-full h-full" />
-    <img
-      className="absolute top-[calc(50%+2.875rem)] left-[5%] w-[75%] max-w-[18.75rem] h-auto overflow-hidden"
-      alt=""
-      src="/ebene-11.svg"
-    />
-    <div className="absolute bottom-4 max-md:bottom-1/2 max-md:right-1/3 right-4 flex flex-row items-center justify-start gap-4 text-sm sm:text-base">
-      <div onClick={() => handleClick("/impersum")} className="cursor-pointer">
-        Impressum
-      </div>
-      <div onClick={() => handleClick("/datenschutz")} className="cursor-pointer">
-        Datenschutz
+    <div className={`mx-[35px] h-[288px] max-md:mx-0 pb-10 max-md:pb-0 text-left text-base text-white font-saira ${className}`}>
+      <div className="bg-giga-fiber-lila rounded-22xl max-md:rounded-b-none flex items-end justify-between max-md:flex-col-reverse max-md:items-center max-md:justify-center h-full mb-10 max-md:mb-0">
+        <div className="flex justify-center mb-10 ml-5">
+          <img
+            className="w-[75%] max-w-[18.75rem] h-auto"
+            alt=""
+            src="/ebene-11.svg"
+          />
+        </div>
+        <div className="flex items-center mb-11 mr-10 gap-4 text-sm sm:text-base">
+          <div
+            onClick={() => handleClick("/impersum")}
+            className="cursor-pointer"
+          >
+            Impressum
+          </div>
+          <div
+            onClick={() => handleClick("/datenschutz")}
+            className="cursor-pointer"
+          >
+            Datenschutz
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  
   );
 };
 
