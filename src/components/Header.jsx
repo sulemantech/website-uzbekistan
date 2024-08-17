@@ -54,29 +54,52 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
       <span className="absolute flex justify-between w-[97%] left-1/2 transform -translate-x-1/2 top-5 z-10">
         <img src="gigafibertoplogo.svg" alt="Gigafiber Logo" />
         <div className="relative max-md:mr-16 inline-block text-left">
-          <span className="cursor-pointer" onClick={toggleDropdown}>
-            <img className="" src="lang.png" alt="Language" />
+          <span
+            className="cursor-pointer flex space-x-2"
+            onClick={toggleDropdown}
+          >
+            <img className="" src="globe.svg" alt="Language" />
+            <p className="font-bold text-[22px] leading-[125%] text-white">
+              Select Language
+            </p>
+            {/* <img className="" src="globe.svg" alt="Language" /> */}
+            <span className="mt-2.5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.666275 0.0373535C0.832474 0.0373535 0.991411 0.105467 1.10603 0.225814L6.56024 5.95243C6.79957 6.20371 7.20043 6.20371 7.43976 5.95243L12.894 0.225815C13.0086 0.105467 13.1675 0.0373535 13.3337 0.0373535H13.3915C13.9254 0.0373535 14.1995 0.676856 13.8312 1.0635L7.43976 7.7742C7.20043 8.02548 6.79957 8.02548 6.56024 7.7742L0.168751 1.0635C-0.199496 0.676857 0.0745648 0.0373535 0.608509 0.0373535H0.666275Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
           </span>
           {isOpen && (
-            <div className="absolute cursor-pointer right-0 mt-0 bg-transparent rounded-[10px] z-10 text-white text-[22px] leading-6 font-bold">
-              <ul className="flex flex-col items-center justify-center">
+            <div className="absolute cursor-pointer left-3 mt-3 bg-transparent rounded-[10px] z-10 text-white text-[18px] leading-6 font-semibold">
+              <ul className="flex flex-col items-start mb-3 justify-center">
                 <li
-                  className="w-8 text-center hover:border-white hover:border-b-[2px]"
+                  className=" text-center hover:border-white hover:border-b-[2px]"
                   onClick={() => changeLanguage("en")}
                 >
-                  EN
+                  ENGLISH (EN)
                 </li>
                 <li
-                  className="w-8 text-center hover:border-white hover:border-b-[2px]"
+                  className=" text-center hover:border-white hover:border-b-[2px]"
                   onClick={() => changeLanguage("ru")}
                 >
-                  RUS
+                  RUSSISCH (RUS)
                 </li>
                 <li
-                  className="w-8 text-center hover:border-white hover:border-b-[2px]"
+                  className="text-center hover:border-white hover:border-b-[2px]"
                   onClick={() => changeLanguage("de")}
                 >
-                  DE
+                  DEUTSCH (DE)
                 </li>
               </ul>
             </div>

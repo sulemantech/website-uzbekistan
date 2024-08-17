@@ -69,7 +69,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
     <>
       <div
         ref={ref}
-        className="bg-white w-[95vw] mx-auto mb-2 flex flex-col items-center rounded-2xl p-5 md:p-10 m-5 max-md:w-[88vw]"
+        className="bg-white w-[95vw] mx-auto mb-2 flex flex-col items-center rounded-22xl p-5 md:p-10 m-5 max-md:w-[88vw]"
       >
         <div className="flex justify-between w-full space-x-10 max-w-[1500px] rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-4">

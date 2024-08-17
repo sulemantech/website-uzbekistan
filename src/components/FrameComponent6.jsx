@@ -65,7 +65,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
   ];
   return (
     <>
-      <div ref={ref} className="bg-white rounded-2xl p-10 m-5 max-md:m-1">
+      <div ref={ref} className="bg-white rounded-22xl p-10 m-5 max-md:m-1">
         <div className="flex justify-between items-center space-x-10 rounded-2xl max-w-[1500px] mx-auto h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="grid grid-cols-1 max-md:hidden gap-4 h-auto w-full overflow-hidden">
             <div className="relative col-span-1 h-[264px] max-xl:h-auto rounded-xl overflow-hidden">
@@ -285,11 +285,11 @@ export const Imagewithdiscription = ({ imageSrc, text, applyBg = true }) => {
           applyBg ? `bg-[#F5EEFF]` : "bg-[#8643F5]"
         } mt-3 rounded-3xl flex space-x-1`}
       >
-        <div className="w-[185px]">
+        <div className="w-[185px] rounded-[8px]">
           <img
             src={imageSrc}
             alt=""
-            className="w-[185px] h-[152px] object-cover"
+            className="w-[185px] h-[152px] rounded-[8px] object-cover"
           />
         </div>
         <p className="w-[365px] flex justify-center items-center">
