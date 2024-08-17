@@ -74,11 +74,11 @@ const FrameComponent7 = forwardRef((props, ref) => {
           <div className="flex flex-col w-full space-y-4">
             <span className="flex space-x-10 text-[55px] font-medium leading-[68px] text-[#903FFF]  max-md:hidden">
               <p className="border-r-2 px-3 border-[#903FFF]">03</p>{" "}
-              <p className="text-3xl font-bold">
+              <p className="text-3xl font-bold whitespace-pre-line">
                 {t("frameComponent7_title")}
               </p>
             </span>
-            <div className="min-w-[518px] max-xl:w-full xl:w-[518px] text-[16px] font-normal font-saira text-left">
+            <div className="min-w-[518px] max-xl:w-full xl:w-[518px] text-[16px] font-normal font-saira text-left  whitespace-pre-line">
              {t("frameComponent7_intro")}
             </div>
           </div>
