@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const Header = ({ isMobile, scrollToFrame4 }) => {
-  const { t, i18n } = useTranslation(); // Call useTranslation here
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null); // Reference to the menu
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -21,8 +22,23 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setIsOpen(false); // Close the dropdown after changing the language
+    setIsOpen(false);
   };
+
+  // Close the menu if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // If the menuRef is defined and the clicked element is not within the menuRef
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false); // Close the menu
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="relative h-screen max-md:w-[100%] mx-auto overflow-hidden">
@@ -42,23 +58,23 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             <img className="" src="lang.png" alt="Language" />
           </span>
           {isOpen && (
-            <div className="absolute cursor-pointer right-0 mt-0 bg-transparent rounded-[10px] z-10 text-white  text-[22px] leading-6 font-bold">
+            <div className="absolute cursor-pointer right-0 mt-0 bg-transparent rounded-[10px] z-10 text-white text-[22px] leading-6 font-bold">
               <ul className="flex flex-col items-center justify-center">
                 <li
                   className="w-8 text-center hover:border-white hover:border-b-[2px]"
-                  onClick={() => changeLanguage('en')}
+                  onClick={() => changeLanguage("en")}
                 >
                   EN
                 </li>
                 <li
                   className="w-8 text-center hover:border-white hover:border-b-[2px]"
-                  onClick={() => changeLanguage('ru')}
+                  onClick={() => changeLanguage("ru")}
                 >
                   RUS
                 </li>
                 <li
                   className="w-8 text-center hover:border-white hover:border-b-[2px]"
-                  onClick={() => changeLanguage('de')}
+                  onClick={() => changeLanguage("de")}
                 >
                   DE
                 </li>
@@ -68,11 +84,11 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
         </div>
       </span>
 
-      <div className="absolute bottom-5 pointer-events-none w-[96%] left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-10 pointer-events-none w-[96%] max-md:w-[88%] break-words left-1/2 transform -translate-x-1/2 z-10">
         <p className="font-bold text-8xl max-md:text-[46px] max-md:leading-[100%] text-white">
           {t("header_transforming_infrastructure")}
         </p>
-        <p className="font-bold text-8xl max-md:text-[46px] text-[#903fff] max-md:leading-[100%] leading-2">
+        <p className="font-bold text-8xl max-md:text-[46px] text-[#8643F5] max-md:leading-[100%] leading-2">
           {t("header_driving_regional_growth")}
         </p>
         <p
@@ -102,14 +118,15 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
       )}
 
       <div
+        ref={menuRef} // Attach ref to the menu div
         className={`fixed z-50 top-0 right-0 w-[70vw] rounded-l-3xl h-[70%] bg-white transition-transform transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col items-center mt-10 space-y-6 text-[#903fff]">
+        <div className="flex flex-col items-center mt-10 space-y-6 text-[#8643F5]">
           <button
             onClick={() => navigateToPage()}
-            className="text-[22px] flex justify-between space-x-3 items-center font-bold leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
+            className="text-[22px] flex justify-between space-x-3 items-center font-bold leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
             <span> {t("CU29 TECH")}</span>
             <span>
@@ -122,7 +139,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           </button>
           <button
             onClick={() => navigateToPage()}
-            className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
+            className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
             <span> {t("GIGA DRIVE HUB")}</span>
             <span>
@@ -135,7 +152,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           </button>
           <button
             onClick={() => navigateToPage()}
-            className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#903fff] w-[182px] h-[42px] cursor-pointer hover:text-[#903fff]"
+            className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
             <span> {t("GIGA FUTURE")} </span>
             <span>
@@ -151,7 +168,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           href="mailto:info@gigafiber.group"
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute flex justify-center items-center bottom-4 left-1/2 transform -translate-x-1/2 w-[145px] h-[49px] px-[52px] py-[10px] text-center text-white bg-[#903fff] rounded-22xl leading-[125%] text-[22px] font-bold"
+          className="absolute flex justify-center items-center bottom-4 left-1/2 transform -translate-x-1/2 w-[145px] h-[49px] px-[52px] py-[10px] text-center text-white bg-[#8643F5] rounded-22xl leading-[125%] text-[22px] font-bold"
         >
           <span>KONTAKT</span>
         </a>
