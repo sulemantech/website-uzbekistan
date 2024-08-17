@@ -32,7 +32,7 @@ const FrameComponent4 = forwardRef(
       },
       {
         number: "03",
-        title: t("frameComponent4_card3_title"),
+        title: t("frameComponent4_card3_title  whitespace-pre-line"),
         description: t("frameComponent4_card3_description"),
         imgSrc: "GIGA FUTURE.png",
         imgSrc2: "giga_future.png",

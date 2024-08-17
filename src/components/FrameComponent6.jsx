@@ -152,13 +152,12 @@ const FrameComponent6 = forwardRef((props, ref) => {
         <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
           <div className="flex flex-col space-y-7 max-md:hidden">
             <span className=" text-5xl font-medium leading-[68px] text-[#903FFF]">
-              <p className="text-3xl font-bold">
+              <p className="text-3xl font-bold whitespace-pre-line">
                 {t("frameComponent6_infrastructure_title")}
               </p>
             </span>
             <div className="w-[518px] max-xl:w-full text-[16px] font-normal font-saira text-left">
-              <span>{t("frameComponent6_infrastructure_paragraph")}</span>
-              <span>{t("frameComponent6_infrastructure_paragraph")}</span>
+              <span className="whitespace-pre-line">{t("frameComponent6_infrastructure_paragraph")}</span>
               <ul className="list-none">
                 <li className="relative whitespace-pre-line pl-5 mb-2 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#903FFF] before:rounded-full">
                   {t("frameComponent6_infrastructure_bullet1")}
