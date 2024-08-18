@@ -86,7 +86,7 @@ const Cards = forwardRef(
                     alt=""
                   />
                 </div>
-                <div className="text-3xl max-md:text-[22px] font-bold text-[30px] leading-[125%] text-white">
+                <div className="text-3xl max-md:text-[22px]  font-bold text-[30px] leading-[125%] text-white">
                   <p className="m-0 whitespace-pre-line">{card.description}</p>
                 </div>
               </div>
