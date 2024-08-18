@@ -9,7 +9,7 @@ const DropdownFaq = ({ question, answer }) => {
   };
 
   return (
-    <div className="w-full max-w-[1500px] mx-auto max-md:bg-transparent md:bg-[#8643F5]  mt-[21px] md:mt-[61px] rounded-[14px] overflow-hidden">
+    <div className="w-full mx-auto max-md:bg-transparent md:bg-[#8643F5]  mt-[21px] md:mt-[61px] rounded-[14px] overflow-hidden">
       <div
         className="flex justify-between items-center mx-auto p-4 max-md:rounded-lg max-md:w-[100%] max-md:bg-[#8643F5] cursor-pointer"
         onClick={toggleDropdown}

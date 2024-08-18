@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import GroupComponent from "../components/GroupComponent";
 import Footer from "./Footer";
 
 const Impressum = () => {
