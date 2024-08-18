@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
-import PropTypes from "prop-types";
 
-const FrameComponent3 = ({ className = "" }) => {
+const Video = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
@@ -61,8 +60,5 @@ const FrameComponent3 = ({ className = "" }) => {
   );
 };
 
-FrameComponent3.propTypes = {
-  className: PropTypes.string,
-};
 
-export default FrameComponent3;
+export default Video;
