@@ -80,7 +80,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
           
           <div className="flex flex-col space-y-7 lg:pl-5">
             <span className="flex space-x-7 font-medium leading-[68px] text-[#8643F5]">
-              <p className="border-r-2 pr-3 text-[55px] max-md:hidden  border-[#8643F5]">
+              <p className="border-r-2 px-3 text-[55px] max-md:hidden  border-[#8643F5]">
                 02
               </p>{" "}
               <p className="text-3xl text-[30px] max-md:hidden w-[518px] max-xl:w-full font-bold">

@@ -4,7 +4,7 @@ import FrameComponent5 from "./FrameComponent5";
 import FrameComponent6 from "./FrameComponent6";
 import FrameComponent7 from "./FrameComponent7";
 
-const FrameComponent4 = forwardRef(
+const Cards = forwardRef(
   ({ isMobile, scrollToFrame5, scrollToFrame6, scrollToFrame7 }, ref) => {
     const { t } = useTranslation();
     const [activeCard, setActiveCard] = useState(null);
@@ -101,4 +101,4 @@ const FrameComponent4 = forwardRef(
   }
 );
 
-export default FrameComponent4;
+export default Cards;

@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import FrameComponent3 from "../components/FrameComponent3";
-import FrameComponent4 from "../components/FrameComponent4";
+import Video from "../components/Video";
+import Cards from "../components/Cards";
 import FrameComponent5 from "../components/FrameComponent5";
 import FrameComponent6 from "../components/FrameComponent6";
 import FrameComponent7 from "../components/FrameComponent7";
@@ -56,8 +56,8 @@ const Gigafibertechcom = () => {
         isMobile={isMobile}
         scrollToFrame4={() => scrollToRef(frame4Ref)}
       />
-      <FrameComponent3 />
-      <FrameComponent4
+      <Video />
+      <Cards
         isMobile={isMobile}
         ref={frame4Ref}
         scrollToFrame5={() => scrollToRef(frame5Ref)}
