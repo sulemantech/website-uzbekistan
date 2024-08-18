@@ -68,7 +68,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
   return (
     <>
       <Wrapper ref={ref}>
-        <div className="flex justify-between items-start space-x-10 rounded-2xl max-w-[1500px] mx-auto max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
+        <div className="flex justify-between items-start space-x-10 w-full rounded-2xl max-w-[1500px] mx-auto max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <GridForImages
             videoSrc="03_GIGADriveHub_low_658x264_1.mp4"
             videoTitle="GIGA DRIVE HUB"
@@ -77,7 +77,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
             isFullWidth
             videoHiddenClass="max-md:hidden"
           />
-          ;
+          
           <div className="flex flex-col space-y-7 ">
             <span className="flex space-x-7 font-medium leading-[68px] text-[#8643F5]">
               <p className="border-r-2 pr-3 text-[55px] max-md:hidden  border-[#8643F5]">
@@ -126,7 +126,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </span>
         </div>
 
-        <div className="flex justify-between space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
+        <div className="flex justify-between w-full space-x-10 mt-10 max-w-[1500px] mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
           <div className="flex flex-col space-y-7 max-md:hidden">
             <span className=" text-5xl font-medium leading-[68px] text-[#903FFF]">
               <p className="text-3xl font-bold whitespace-pre-line">

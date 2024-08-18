@@ -204,7 +204,7 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
   return (
     <>
       <Wrapper ref={ref}>
-        <div className="flex justify-between max-w-[1500px] mx-auto space-x-10 rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
+        <div className="flex justify-between w-full max-w-[1500px] mx-auto space-x-10 rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <div className="flex flex-col space-y-7">
             <span className="flex max-md:hidden space-x-6 text-[55px] font-medium leading-[68px] text-[#903FFF]">
               <p className="border-r-2 pr-3 border-[#903FFF]">01</p>{" "}
