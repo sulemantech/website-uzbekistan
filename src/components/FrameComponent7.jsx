@@ -83,7 +83,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:min-w-[658px] lg:min-w-[570px] w-full gap-4 overflow-hidden">
+          <div className="grid grid-cols-1 gap-8 w-[658px] max-xl:w-full xl:w-full max-xl:h-full xl:max-h-[574px] laptop:max-w-[658px] xl:h-[540px]">
             <div className="col-span-1 h-[264px] rounded-xl relative overflow-hidden">
               {/* <img src="01.png" alt="" className="w-full h-auto" /> */}
               <video
