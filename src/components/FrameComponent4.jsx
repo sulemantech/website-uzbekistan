@@ -49,7 +49,7 @@ const FrameComponent4 = forwardRef(
     return (
       <div
         ref={ref}
-        className="flex flex-col w-[97vw] max-w-[1800px] mx-auto mb-2 items-center lg:flex-row justify-center max-md:items-center flex-wrap mt-4 gap-3.5 max-md:mb-10 p-0"
+        className="flex flex-col w-[97vw] max-w-[1500px] mx-auto mb-2 items-center lg:flex-row justify-center max-md:items-center flex-wrap mt-4 gap-3.5 max-md:mb-10 p-0"
       >
         {cardData.map((card, index) => (
           <div
