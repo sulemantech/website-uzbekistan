@@ -64,7 +64,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
               <span className="md:hidden">DE</span>
             </p>
             {/* <img className="" src="globe.svg" alt="Language" /> */}
-            <span className="mt-2.5">
+            <span className="mt-2.5 max-md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
