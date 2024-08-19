@@ -51,8 +51,8 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
         playsInline
       ></video>
 
-      <span className="absolute flex justify-between w-[97%] left-1/2 transform -translate-x-1/2 top-5 z-10">
-        <img src="gigafibertoplogo.svg" alt="Gigafiber Logo" />
+      <div className="absolute max-md:mt-[20px] max-md:scale-x-95 flex justify-between w-[97%] left-1/2 transform -translate-x-1/2 top-5 z-10">
+        <img className="max-md:h-[21px] max-md:w-[169px]" src="gigafibertoplogo.svg" alt="Gigafiber Logo" />
         <div className="relative max-md:mr-16 inline-block text-left">
           <span
             className="cursor-pointer flex space-x-2"
@@ -109,7 +109,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             </div>
           )}
         </div>
-      </span>
+      </div>
 
       <div className="absolute bottom-10 pointer-events-none w-[96%] max-md:w-[88%] break-words left-1/2 transform -translate-x-1/2 z-10">
         <p className="font-bold text-8xl max-md:text-[46px] max-md:leading-[100%] text-white">
@@ -136,7 +136,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
       {isMobile && (
         <button
           onClick={toggleMenu}
-          className="absolute top-2.5 right-5 z-20 flex flex-col items-center justify-center w-12 h-12 rounded-full"
+          className="absolute top-2.5 max-md:mt-[18px] right-5 max-md:right-7 z-20 flex flex-col items-center justify-center w-12 h-12 rounded-full"
         >
           <div className="w-6 h-0.5 bg-white mb-1"></div>
           <div className="w-6 h-0.5 bg-white mb-1"></div>
