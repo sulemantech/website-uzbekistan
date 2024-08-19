@@ -60,7 +60,8 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
           >
             <img className="" src="globe.svg" alt="Language" />
             <p className="font-bold text-[22px] leading-[125%] text-white">
-              Select Language
+              <span className="max-md:hidden">Select Language</span>{" "}
+              <span className="md:hidden">DE</span>
             </p>
             {/* <img className="" src="globe.svg" alt="Language" /> */}
             <span className="mt-2.5">
@@ -87,19 +88,22 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
                   className=" text-center hover:border-white hover:border-b-[2px]"
                   onClick={() => changeLanguage("en")}
                 >
-                  ENGLISH (EN)
+                  <span className="max-md:hidden"> ENGLISH (EN)</span>
+                  <span className="md:hidden">EN</span>
                 </li>
                 <li
                   className=" text-center hover:border-white hover:border-b-[2px]"
                   onClick={() => changeLanguage("ru")}
                 >
-                  RUSSISCH (RUS)
+                  <span className="max-md:hidden">RUSSISCH (RUS)</span>
+                  <span className="md:hidden">RUS</span>
                 </li>
                 <li
                   className="text-center hover:border-white hover:border-b-[2px]"
                   onClick={() => changeLanguage("de")}
                 >
-                  DEUTSCH (DE)
+                  <span className="max-md:hidden"> DEUTSCH (DE) </span>
+                  <span className="md:hidden">DE</span>
                 </li>
               </ul>
             </div>
