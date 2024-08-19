@@ -78,7 +78,7 @@ const Cards = forwardRef(
               />
               <div className="absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-60% to-[#3b2a89e3] w-full h-[8.438rem]" />
               <div className="flex flex-col-reverse  justify-between bottom-[63px] max-md:bottom-[18px] left-1/2 transform -translate-x-1/2 min-w-[85%] xl:min-w-[87%] absolute ">
-                <div className=" text-[#903FFF] max-md:mt-10 text-lg flex justify-between">
+                <div className=" text-[#903FFF] max-md:mt-10 text-lg flex justify-between max-lg:items-center">
                   <b className="font-bold max-md:text-[30px] text-[50px] leading-[125%] tracking-tight">{card.title}</b>
                   <img
                     className="md:group-hover:rotate-90 transition-transform max-sm:h-[22px] max-sm:w-[25px]"

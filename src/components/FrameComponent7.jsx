@@ -71,7 +71,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
       <Wrapper ref={ref}
       >
         <div className="flex justify-between w-full space-x-10 rounded-2xl max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
-          <div className="flex flex-col w-full space-y-4">
+          <div className="flex flex-col w-full space-y-4 xl:w-[533px]">
             <span className="flex space-x-10 text-[55px] font-medium leading-[68px] text-[#903FFF]  max-md:hidden">
               <p className="border-r-2 px-3 border-[#903FFF]">03</p>{" "}
               <p className="text-3xl font-bold whitespace-pre-line">
