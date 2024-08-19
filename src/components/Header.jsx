@@ -155,7 +155,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             onClick={() => navigateToPage()}
             className="text-[22px] flex justify-between space-x-3 items-center font-bold leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
-            <span> {t("CU29 TECH")}</span>
+            <span> {t("frameComponent4_card1_title")}</span>
             <span>
               <img
                 className="w-[20px] group-hover:rotate-90 transition-transform"
@@ -168,7 +168,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             onClick={() => navigateToPage()}
             className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
-            <span> {t("GIGA DRIVE HUB")}</span>
+            <span> {t("frameComponent4_card2_title")}</span>
             <span>
               <img
                 className="w-[20px] group-hover:rotate-90 transition-transform"
@@ -181,7 +181,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             onClick={() => navigateToPage()}
             className="text-[22px] font-bold flex justify-between space-x-3 items-center leading-[125%] group border-b-2 border-[#8643F5] w-[182px] h-[42px] cursor-pointer hover:text-[#8643F5]"
           >
-            <span> {t("GIGA FUTURE")} </span>
+            <span> {t("frameComponent4_card3_title")} </span>
             <span>
               <img
                 className="w-[20px] group-hover:rotate-90 transition-transform"
