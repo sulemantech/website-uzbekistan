@@ -121,13 +121,13 @@ const FrameComponent6 = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        <div className=" mx-auto mt-[61px] bg-[#8643F5] rounded-lg overflow-hidden h-[172px] max-md:h-auto p-2 flex justify-center items-center text-white text-[30px] max-md:text-[4vw] max-lg:text-[2.8vw] font-bold leading-[107%] uppercase">
-          <span className=" my-5 max-md:mx-[30px] md:px-5 mx-auto">
+        <div className=" mx-auto mt-[61px] max-md:mt-7 bg-[#8643F5] rounded-lg overflow-hidden h-[172px] max-md:h-auto p-2 flex justify-center items-center text-white text-[30px] max-md:text-[20px] max-lg:text-[2.8vw] font-bold leading-[125%] md:uppercase">
+          <span className=" my-[21px] max-md:mx-[30px] md:px-5 mx-auto">
             {t("frameComponent6_highlight")}
           </span>
         </div>
 
-        <div className="flex justify-between w-full space-x-10 mt-10 mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
+        <div className="flex justify-between w-full space-x-10 mt-10 max-md:mt-3 mx-auto rounded-2xl h-[580px] max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit ">
           <div className="flex flex-col space-y-7 max-md:hidden">
             <span className=" text-5xl font-medium leading-[68px] text-[#903FFF]">
               <p className="text-3xl font-bold whitespace-pre-line">

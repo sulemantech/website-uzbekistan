@@ -158,7 +158,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             <span> {t("CU29 TECH")}</span>
             <span>
               <img
-                className="w-[20px] group-hover:rotate-90 transition-transform"
+                className="w-[25px] h-[22px] group-hover:rotate-90 transition-transform"
                 src="objects1.svg"
                 alt=""
               />
@@ -171,7 +171,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             <span> {t("GIGA DRIVE HUB")}</span>
             <span>
               <img
-                className="w-[20px] group-hover:rotate-90 transition-transform"
+                className="w-[25px] h-[22px] group-hover:rotate-90 transition-transform"
                 src="objects1.svg"
                 alt=""
               />
@@ -184,7 +184,7 @@ const Header = ({ isMobile, scrollToFrame4 }) => {
             <span> {t("GIGA FUTURE")} </span>
             <span>
               <img
-                className="w-[20px] group-hover:rotate-90 transition-transform"
+                className="w-[25px] h-[22px] group-hover:rotate-90 transition-transform"
                 src="objects1.svg"
                 alt=""
               />
