@@ -78,7 +78,7 @@ const FrameComponent7 = forwardRef((props, ref) => {
                 {t("frameComponent7_title")}
               </p>
             </span>
-            <div className="min-w-[518px] max-xl:w-full xl:w-[518px] text-[16px] font-normal font-saira text-left  whitespace-pre-line">
+            <div className="min-w-[518px] max-xl:min-w-full xl:w-[518px] text-[16px] font-normal font-saira text-left  whitespace-pre-line">
              {t("frameComponent7_intro")}
             </div>
           </div>

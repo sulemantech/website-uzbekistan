@@ -302,11 +302,11 @@ const FrameComponent5 = forwardRef((isMobile, ref) => {
                       ))}
                     </div>
                     <div
-                      className={`w-[520px] max-xl:w-full h-[152px] mt-3 rounded-3xl flex space-x-1 bg-[#903FFF]`}
+                      className={`w-[520px] max-xl:w-full h-[152px] mt-3 rounded-3xl flex space-x-1`}
                     >
                       <p className="w-full flex justify-center items-center">
                         <span className="w-[90%]">
-                          <div className="text-[34px] text-[#903FFF] w-[50%] mb-4 border-t-2 border-[#903FFF]"></div>
+                          <div className="text-[34px] text-[#903FFF] w-[50%] mb-4 border-t-2 border-[#903FFF] pt-3"></div>
                           <div className="text-[34px] font-extrabold text-[#903FFF] mb-5">
                             50%
                           </div>
