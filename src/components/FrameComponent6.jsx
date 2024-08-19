@@ -71,7 +71,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
         <div className="flex justify-between items-start space-x-10 w-full rounded-2xl mx-auto max-xl:flex-col max-xl:space-y-5 max-xl:space-x-0 max-xl:h-fit">
           <GridForImages
             videoSrc="03_GIGADriveHub_low_658x264_1.mp4"
-            videoTitle="GIGA DRIVE HUB"
+            // videoTitle="GIGA DRIVE HUB"
             imageSrc1="d9.png"
             imageSrc2="car.png"
             isFullWidth
@@ -148,7 +148,7 @@ const FrameComponent6 = forwardRef((props, ref) => {
           </div>
           <GridForImages
             videoSrc="04_GIGADriveHub_low_658x264_1.mp4"
-            videoTitle={t("frameComponent6_title2")}
+            // videoTitle={t("frameComponent6_title2")}
             imageSrc1="weather.png"
             imageSrc2="jars.png"
             content="Ein E-Mobilitäts Fahrzeug besteht hauptsächlich aus Batterie (40% des Wertes) und Conenctivität..."

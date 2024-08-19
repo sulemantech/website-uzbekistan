@@ -12,7 +12,7 @@ const GridForImages = ({ videoSrc, videoTitle, imageSrc1, imageSrc2, content, li
           muted
           playsInline
         ></video>
-        <div className="absolute hidden max-md:hidden w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-full top-0 rounded-xl overflow-hidden">
+        <div className={`absolute max-md:hidden ${!videoTitle && "hidden"} w-full bg-gradient-to-t from-[#8643F560] to-transparent z-50 h-full top-0 rounded-xl overflow-hidden`}>
           <span className="text-white absolute bottom-4 left-8 text-[55px] font-bold leading-[125%]">
             {videoTitle}
           </span>
